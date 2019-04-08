@@ -1364,12 +1364,7 @@ Patch1333: 1333-ASoC-Intel-Skl-Virt-Fix-logic-of-vbe_skl_pcm_close_a.patch
 Patch1334: 1334-ASoC-Intel-Skl-Virt-Cleanup-static-analysis-issues.patch
 #END XXXX: PK Series
 
-# Bug fixes
-Patch8001: 8001-add-include-irq-h-vmbus_drv.patch
-Patch8002: 8002-cpu-intel-rdt-update-cpus_allowed.patch
-
 # Clear Linux patch
-# needs to add to PK series
 Patch9001: 9001-init-wait-for-partition-and-retry-scan.patch
 
 %description
@@ -2723,9 +2718,7 @@ Linux kernel extra files
 %patch1334 -p1
 # End XXXX PK Series
 
-%patch8001 -p1
-%patch8002 -p1
-
+# Clear Linux patch
 %patch9001 -p1
 
 cp %{SOURCE2} .
