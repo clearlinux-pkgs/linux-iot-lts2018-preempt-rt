@@ -1,13 +1,13 @@
 # This is a linux kernel with the preempt_rt patch set plus PK patches
 
 Name:           linux-iot-lts2018-preempt-rt
-Version:        4.14.93
+Version:        4.19.13
 Release:        3
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.93.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.13.tar.xz
 Source2:        config
 Source3:        cmdline
 
@@ -24,8 +24,8 @@ Requires: systemd-bin
 %define __strip /bin/true
 
 # quilt.url: https://github.com/intel/linux-intel-quilt
-# quilt.branch: 4.14/preempt-rt
-# quilt.tag:  lts-v4.14.93-preempt-rt-190123T184244Z
+# quilt.branch: 4.19/preempt-rt
+# quilt.tag:  lts-v4.19.13-preempt-rt-190114T183036
 
 # PK XXXX: Series
 Patch2276: 2276-net-sched-rename-qdisc_put-to-qdisc_destroy.patch
@@ -53,7 +53,7 @@ Group:          kernel
 Linux kernel extra files
 
 %prep
-%setup -q -n linux-4.14.93
+%setup -q -n linux-4.19.13
 
 #patchXXXX PK Series
 %patch2276 -p1
