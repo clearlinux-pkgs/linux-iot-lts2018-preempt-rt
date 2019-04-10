@@ -4,7 +4,7 @@
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190405 gcc-8-branch@270157
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 8.3.1 20190409 gcc-8-branch@270218
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=80301
@@ -289,7 +289,7 @@ CONFIG_X86_X2APIC=y
 CONFIG_X86_MPPARSE=y
 # CONFIG_GOLDFISH is not set
 CONFIG_RETPOLINE=y
-CONFIG_INTEL_RDT=y
+# CONFIG_X86_CPU_RESCTRL is not set
 # CONFIG_X86_EXTENDED_PLATFORM is not set
 CONFIG_X86_INTEL_LPSS=y
 # CONFIG_X86_AMD_PLATFORM_DEVICE is not set
