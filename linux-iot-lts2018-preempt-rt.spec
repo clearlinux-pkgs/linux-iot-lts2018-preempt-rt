@@ -25,7 +25,7 @@ Requires: systemd-bin
 
 # quilt.url: https://github.com/intel/linux-intel-quilt
 # quilt.branch: 4.19/preempt-rt
-# quilt.tag:  lts-v4.19.31-preempt-rt-190326T041445Z
+# quilt.tag:  lts-v4.19.31-preempt-rt-190408T152015Z
 
 # PK XXXX: Series
 Patch0001: 0001-ARM-at91-add-TCB-registers-definitions.patch
@@ -1362,6 +1362,35 @@ Patch1331: 1331-ASoC-Intel-Skl-Virt-Don-t-duplicate-VBS-audio-client.patch
 Patch1332: 1332-ASoC-Intel-Skl-Virt-Fix-NULL-ptr-in-pcm_close-on-SOS.patch
 Patch1333: 1333-ASoC-Intel-Skl-Virt-Fix-logic-of-vbe_skl_pcm_close_a.patch
 Patch1334: 1334-ASoC-Intel-Skl-Virt-Cleanup-static-analysis-issues.patch
+Patch1335: 1335-perf-x86-Add-helper-to-obtain-performance-counter-in.patch
+Patch1336: 1336-x86-intel_rdt-Remove-local-register-variables.patch
+Patch1337: 1337-x86-intel_rdt-Create-required-perf-event-attributes.patch
+Patch1338: 1338-x86-intel_rdt-Use-perf-infrastructure-for-measuremen.patch
+Patch1339: 1339-x86-intel_rdt-Re-enable-pseudo-lock-measurements.patch
+Patch1340: 1340-x86-intel_rdt-Switch-to-bitmap_zalloc.patch
+Patch1341: 1341-x86-intel_rdt-Introduce-utility-to-obtain-CDP-peer.patch
+Patch1342: 1342-x86-intel_rdt-CBM-overlap-should-also-check-for-over.patch
+Patch1343: 1343-x86-intel_rdt-Fix-initial-allocation-to-consider-CDP.patch
+Patch1344: 1344-x86-intel_rdt-Prevent-pseudo-locking-from-using-stal.patch
+Patch1345: 1345-x86-resctrl-Rename-and-move-rdt-files-to-a-separate-.patch
+Patch1346: 1346-x86-resctrl-Rename-the-RDT-functions-and-definitions.patch
+Patch1347: 1347-x86-resctrl-Re-arrange-the-RDT-init-code.patch
+Patch1348: 1348-x86-resctrl-Move-all-the-macros-to-resctrl-internal..patch
+Patch1349: 1349-x86-resctrl-Initialize-the-vendor-specific-resource-.patch
+Patch1350: 1350-x86-resctrl-Bring-cbm_validate-into-the-resource-str.patch
+Patch1351: 1351-x86-resctrl-Add-vendor-check-for-the-MBA-software-co.patch
+Patch1352: 1352-x86-resctrl-Rename-the-config-option-INTEL_RDT-to-RE.patch
+Patch1353: 1353-x86-resctrl-Fixup-the-user-visible-strings.patch
+Patch1354: 1354-x86-resctrl-Introduce-AMD-QOS-feature.patch
+Patch1355: 1355-x86-resctrl-Add-AMD-s-X86_FEATURE_MBA-to-the-scatter.patch
+Patch1356: 1356-MAINTAINERS-Update-resctrl-filename-patterns.patch
+Patch1357: 1357-Documentation-Rename-and-update-intel_rdt_ui.txt-to-.patch
+Patch1358: 1358-x86-resctrl-Use-rdt_last_cmd_puts-where-possible.patch
+Patch1359: 1359-x86-resctrl-Remove-unnecessary-check-for-cbm_validat.patch
+Patch1360: 1360-x86-resctrl-Fix-rdt_find_domain-return-value-and-che.patch
+Patch1361: 1361-x86-cache-Rename-config-option-to-CONFIG_X86_RESCTRL.patch
+Patch1362: 1362-x86-resctrl-Avoid-confusion-over-the-new-X86_RESCTRL.patch
+Patch1363: 1363-x86-resctrl-Remove-duplicate-MSR_MISC_FEATURE_CONTRO.patch
 #END XXXX: PK Series
 
 # Clear Linux patch
@@ -2716,6 +2745,35 @@ Linux kernel extra files
 %patch1332 -p1
 %patch1333 -p1
 %patch1334 -p1
+%patch1335 -p1
+%patch1336 -p1
+%patch1337 -p1
+%patch1338 -p1
+%patch1339 -p1
+%patch1340 -p1
+%patch1341 -p1
+%patch1342 -p1
+%patch1343 -p1
+%patch1344 -p1
+%patch1345 -p1
+%patch1346 -p1
+%patch1347 -p1
+%patch1348 -p1
+%patch1349 -p1
+%patch1350 -p1
+%patch1351 -p1
+%patch1352 -p1
+%patch1353 -p1
+%patch1354 -p1
+%patch1355 -p1
+%patch1356 -p1
+%patch1357 -p1
+%patch1358 -p1
+%patch1359 -p1
+%patch1360 -p1
+%patch1361 -p1
+%patch1362 -p1
+%patch1363 -p1
 # End XXXX PK Series
 
 # Clear Linux patch
