@@ -1,10 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.31 Kernel Configuration
+# Linux/x86 4.19.37 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190507 gcc-9-branch@270948
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190515 gcc-9-branch@271198
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=90101
@@ -3307,6 +3307,7 @@ CONFIG_NOZOMI=m
 CONFIG_N_GSM=m
 # CONFIG_TRACE_SINK is not set
 # CONFIG_CBC_LDISC is not set
+CONFIG_LDISC_AUTOLOAD=y
 # CONFIG_DEVMEM is not set
 # CONFIG_DEVKMEM is not set
 
@@ -3368,7 +3369,6 @@ CONFIG_HW_RANDOM_AMD=y
 # CONFIG_HW_RANDOM_VIA is not set
 CONFIG_HW_RANDOM_VIRTIO=y
 CONFIG_NVRAM=m
-CONFIG_R3964=m
 # CONFIG_APPLICOM is not set
 CONFIG_MWAVE=m
 # CONFIG_RAW_DRIVER is not set
@@ -3623,6 +3623,7 @@ CONFIG_GPIO_WHISKEY_COVE=m
 CONFIG_GPIO_PCI_IDIO_16=m
 # CONFIG_GPIO_PCIE_IDIO_24 is not set
 # CONFIG_GPIO_RDC321X is not set
+# CONFIG_GPIO_VIRTIO is not set
 
 #
 # SPI GPIO expanders
@@ -5858,6 +5859,7 @@ CONFIG_INTEL_TURBO_MAX_3=y
 # CONFIG_TOUCHSCREEN_DMI is not set
 CONFIG_INTEL_CHTDC_TI_PWRBTN=m
 # CONFIG_I2C_MULTI_INSTANTIATE is not set
+# CONFIG_INTEL_ATOMISP2_PM is not set
 CONFIG_PMC_ATOM=y
 CONFIG_INTEL_SOCWATCH=m
 # CONFIG_INTEL_SEP is not set
@@ -7351,8 +7353,3 @@ CONFIG_DEBUG_BOOT_PARAMS=y
 # CONFIG_UNWINDER_ORC is not set
 CONFIG_UNWINDER_FRAME_POINTER=y
 # CONFIG_UNWINDER_GUESS is not set
-
-
-# kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-4-26
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-26
