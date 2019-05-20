@@ -23,6 +23,8 @@ Requires: systemd-bin
 %define debug_package %{nil}
 %define __strip /bin/true
 
+# kconfig: linux-5.0.17-762
+
 # quilt.url: https://github.com/intel/linux-intel-quilt
 # quilt.branch: 4.19/preempt-rt
 # quilt.tag:  lts-v4.19.37-preempt-rt-190508T185018Z
