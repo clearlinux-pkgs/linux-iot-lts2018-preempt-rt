@@ -4,7 +4,7 @@
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190520 gcc-9-branch@271393
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190619 gcc-9-branch@272463
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=90101
@@ -146,7 +146,7 @@ CONFIG_CGROUP_WRITEBACK=y
 CONFIG_CGROUP_SCHED=y
 CONFIG_FAIR_GROUP_SCHED=y
 CONFIG_CFS_BANDWIDTH=y
-CONFIG_RT_GROUP_SCHED=y
+# CONFIG_RT_GROUP_SCHED is not set
 CONFIG_CGROUP_PIDS=y
 # CONFIG_CGROUP_RDMA is not set
 CONFIG_CGROUP_FREEZER=y
@@ -7415,5 +7415,5 @@ CONFIG_UNWINDER_FRAME_POINTER=y
 
 
 # kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-4-26
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-26
+# FILEVER=/usr/share/kernel-config/base-4.19-4-27
+# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-27
