@@ -1,14 +1,15 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.37 Kernel Configuration
+# Linux/x86 4.19.50 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190619 gcc-9-branch@272463
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.1.1 20190707 gcc-9-branch@273177
 #
 CONFIG_CC_IS_GCC=y
 CONFIG_GCC_VERSION=90101
 CONFIG_CLANG_VERSION=0
+CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_IRQ_WORK=y
 CONFIG_BUILDTIME_EXTABLE_SORT=y
 CONFIG_THREAD_INFO_IN_TASK=y
@@ -4398,6 +4399,7 @@ CONFIG_CHASH=m
 # CONFIG_CHASH_STATS is not set
 # CONFIG_CHASH_SELFTEST is not set
 CONFIG_DRM_NOUVEAU=m
+CONFIG_NOUVEAU_LEGACY_CTX_SUPPORT=y
 CONFIG_NOUVEAU_DEBUG=5
 CONFIG_NOUVEAU_DEBUG_DEFAULT=3
 # CONFIG_NOUVEAU_DEBUG_MMU is not set
@@ -5826,7 +5828,6 @@ CONFIG_MTK_MMC=m
 # Gasket devices
 #
 # CONFIG_STAGING_GASKET_FRAMEWORK is not set
-# CONFIG_XIL_AXIS_FIFO is not set
 # CONFIG_EROFS_FS is not set
 CONFIG_X86_PLATFORM_DEVICES=y
 CONFIG_ACER_WMI=m
@@ -7412,8 +7413,3 @@ CONFIG_DEBUG_BOOT_PARAMS=y
 # CONFIG_UNWINDER_ORC is not set
 CONFIG_UNWINDER_FRAME_POINTER=y
 # CONFIG_UNWINDER_GUESS is not set
-
-
-# kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.19-4-27
-# FILEVER=/usr/share/kernel-config/mandatory-4.19-4-27
