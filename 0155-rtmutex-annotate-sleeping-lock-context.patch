@@ -249,10 +249,10 @@ index a97c20e..564e392 100644
  	    !t->rcu_read_unlock_special.b.blocked) {
  
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 14eb51d..a522672 100644
+index b2149a7..ce1cb23 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
-@@ -7309,4 +7309,49 @@ void migrate_enable(void)
+@@ -7316,4 +7316,49 @@ void migrate_enable(void)
  	preempt_enable();
  }
  EXPORT_SYMBOL(migrate_enable);

@@ -11,9 +11,9 @@ This patch uses swork_queue() instead.
 
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/interrupt.h |  6 ++++++
- kernel/irq/manage.c       | 43 ++++++++++++++++++++++++++++++++++++---
- 2 files changed, 46 insertions(+), 3 deletions(-)
+ include/linux/interrupt.h |  6 +++++
+ kernel/irq/manage.c       | 46 ++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 49 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
 index 315f852..a943c07 100644
@@ -48,7 +48,7 @@ index 315f852..a943c07 100644
  	void (*release)(struct kref *ref);
  };
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 94a18cf..d2270f6 100644
+index c3b9f6d..af2a875 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -259,7 +259,12 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,
@@ -125,6 +125,17 @@ index 94a18cf..d2270f6 100644
  	}
  
  	raw_spin_lock_irqsave(&desc->lock, flags);
+@@ -359,7 +396,10 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
+ 	raw_spin_unlock_irqrestore(&desc->lock, flags);
+ 
+ 	if (old_notify) {
++#ifndef CONFIG_PREEMPT_RT_BASE
++		/* Need to address this for PREEMPT_RT */
+ 		cancel_work_sync(&old_notify->work);
++#endif
+ 		kref_put(&old_notify->kref, old_notify->release);
+ 	}
+ 
 -- 
 https://clearlinux.org
 

@@ -14,10 +14,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index ba5bba5..48c2690 100644
+index 69b4bfd..aafe225 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
-@@ -2277,7 +2277,7 @@ EXPORT_SYMBOL_GPL(irq_get_irqchip_state);
+@@ -2282,7 +2282,7 @@ EXPORT_SYMBOL_GPL(irq_get_irqchip_state);
   *	This call sets the internal irqchip state of an interrupt,
   *	depending on the value of @which.
   *

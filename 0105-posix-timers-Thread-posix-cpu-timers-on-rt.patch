@@ -57,10 +57,10 @@ index 0b49b9c..9e33627 100644
  	.thread_group	= LIST_HEAD_INIT(init_task.thread_group),
  	.thread_node	= LIST_HEAD_INIT(init_signals.thread_head),
 diff --git a/kernel/fork.c b/kernel/fork.c
-index bfe9c5c..1b8ac52 100644
+index 98c971c..492bc89 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
-@@ -1575,6 +1575,9 @@ static void rt_mutex_init_task(struct task_struct *p)
+@@ -1585,6 +1585,9 @@ static void rt_mutex_init_task(struct task_struct *p)
   */
  static void posix_cpu_timers_init(struct task_struct *tsk)
  {

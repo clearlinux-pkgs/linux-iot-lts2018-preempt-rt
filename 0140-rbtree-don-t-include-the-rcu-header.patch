@@ -103,7 +103,7 @@ index 0000000..7066962
 +
 +#endif
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index 0539f55..63cd0a1 100644
+index 87eafcb..b73715c 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
 @@ -42,6 +42,7 @@
@@ -114,7 +114,7 @@ index 0539f55..63cd0a1 100644
  
  #define ULONG_CMP_GE(a, b)	(ULONG_MAX / 2 >= (a) - (b))
  #define ULONG_CMP_LT(a, b)	(ULONG_MAX / 2 < (a) - (b))
-@@ -371,54 +372,6 @@ static inline void rcu_preempt_sleep_check(void) { }
+@@ -369,54 +370,6 @@ static inline void rcu_preempt_sleep_check(void) { }
  	((typeof(*p) __force __kernel *)(________p1)); \
  })
  

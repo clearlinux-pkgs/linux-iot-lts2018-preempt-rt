@@ -36,10 +36,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 59 insertions(+), 2 deletions(-)
 
 diff --git a/arch/x86/entry/common.c b/arch/x86/entry/common.c
-index 3b2490b..ec46ee7 100644
+index 8353348..91676b0 100644
 --- a/arch/x86/entry/common.c
 +++ b/arch/x86/entry/common.c
-@@ -151,6 +151,13 @@ static void exit_to_usermode_loop(struct pt_regs *regs, u32 cached_flags)
+@@ -152,6 +152,13 @@ static void exit_to_usermode_loop(struct pt_regs *regs, u32 cached_flags)
  		if (cached_flags & _TIF_NEED_RESCHED)
  			schedule();
  
@@ -93,7 +93,7 @@ index df39ad5..535e577 100644
  	size_t				sas_ss_size;
  	unsigned int			sas_ss_flags;
 diff --git a/kernel/signal.c b/kernel/signal.c
-index f29def2..57c48b3 100644
+index d5a9646..56edb05 100644
 --- a/kernel/signal.c
 +++ b/kernel/signal.c
 @@ -1268,8 +1268,8 @@ int do_send_sig_info(int sig, struct siginfo *info, struct task_struct *p,

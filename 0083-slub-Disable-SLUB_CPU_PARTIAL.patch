@@ -36,10 +36,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/init/Kconfig b/init/Kconfig
-index 707ca4d..68b4e39 100644
+index 61e8b53..b4e88fb 100644
 --- a/init/Kconfig
 +++ b/init/Kconfig
-@@ -1698,7 +1698,7 @@ config SLAB_FREELIST_HARDENED
+@@ -1701,7 +1701,7 @@ config SLAB_FREELIST_HARDENED
  
  config SLUB_CPU_PARTIAL
  	default y

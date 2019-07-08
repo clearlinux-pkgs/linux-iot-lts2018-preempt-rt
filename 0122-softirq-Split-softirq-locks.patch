@@ -198,7 +198,7 @@ index ad44849..7eccccc 100644
  #define PF_EXITING		0x00000004	/* Getting shut down */
  #define PF_EXITPIDONE		0x00000008	/* PI exit done on shut down */
 diff --git a/init/main.c b/init/main.c
-index e083fac..1647cb0 100644
+index 020972f..4a74716 100644
 --- a/init/main.c
 +++ b/init/main.c
 @@ -561,6 +561,7 @@ asmlinkage __visible void __init start_kernel(void)

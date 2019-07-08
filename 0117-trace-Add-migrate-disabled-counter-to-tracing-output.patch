@@ -25,10 +25,10 @@ index 78a010e..0403d96 100644
  
  #define TRACE_EVENT_TYPE_MAX						\
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index c65cea7..0af1495 100644
+index 1bd7a75..10843c8 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
-@@ -2146,6 +2146,8 @@ tracing_generic_entry_update(struct trace_entry *entry, unsigned long flags,
+@@ -2149,6 +2149,8 @@ tracing_generic_entry_update(struct trace_entry *entry, unsigned long flags,
  		((pc & SOFTIRQ_OFFSET) ? TRACE_FLAG_SOFTIRQ : 0) |
  		(tif_need_resched() ? TRACE_FLAG_NEED_RESCHED : 0) |
  		(test_preempt_need_resched() ? TRACE_FLAG_PREEMPT_RESCHED : 0);
@@ -37,7 +37,7 @@ index c65cea7..0af1495 100644
  }
  EXPORT_SYMBOL_GPL(tracing_generic_entry_update);
  
-@@ -3349,9 +3351,10 @@ static void print_lat_help_header(struct seq_file *m)
+@@ -3352,9 +3354,10 @@ static void print_lat_help_header(struct seq_file *m)
  		    "#                | / _----=> need-resched    \n"
  		    "#                || / _---=> hardirq/softirq \n"
  		    "#                ||| / _--=> preempt-depth   \n"
@@ -52,7 +52,7 @@ index c65cea7..0af1495 100644
  
  static void print_event_info(struct trace_buffer *buf, struct seq_file *m)
 diff --git a/kernel/trace/trace_events.c b/kernel/trace/trace_events.c
-index f94be0c..acdb2c2 100644
+index 7345f5f..6455e2c 100644
 --- a/kernel/trace/trace_events.c
 +++ b/kernel/trace/trace_events.c
 @@ -188,6 +188,8 @@ static int trace_define_common_fields(void)

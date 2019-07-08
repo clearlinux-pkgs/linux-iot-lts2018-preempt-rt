@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 73 insertions(+), 73 deletions(-)
 
 diff --git a/mm/slab.c b/mm/slab.c
-index b8e0ec7..21fe15f 100644
+index 018d324..8ccc092 100644
 --- a/mm/slab.c
 +++ b/mm/slab.c
 @@ -233,7 +233,7 @@ static void kmem_cache_node_init(struct kmem_cache_node *parent)
@@ -368,7 +368,7 @@ index b8e0ec7..21fe15f 100644
  	}
  	num_objs = total_slabs * cachep->num;
  	active_slabs = total_slabs - free_slabs;
-@@ -4333,13 +4333,13 @@ static int leaks_show(struct seq_file *m, void *p)
+@@ -4334,13 +4334,13 @@ static int leaks_show(struct seq_file *m, void *p)
  		for_each_kmem_cache_node(cachep, node, n) {
  
  			check_irq_on();

@@ -29,7 +29,7 @@ index eeceac3..315f852 100644
  #define force_irqthreads	(0)
  #endif
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 5c0ba5c..94a18cf 100644
+index cd4f9f3..c3b9f6d 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -23,6 +23,7 @@

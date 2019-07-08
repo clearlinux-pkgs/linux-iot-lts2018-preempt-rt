@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/arch/Kconfig b/arch/Kconfig
-index 6801123..42b9062 100644
+index a336548..3f537b2 100644
 --- a/arch/Kconfig
 +++ b/arch/Kconfig
 @@ -28,6 +28,7 @@ config OPROFILE

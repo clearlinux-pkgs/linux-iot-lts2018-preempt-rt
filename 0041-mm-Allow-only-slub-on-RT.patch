@@ -12,10 +12,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/init/Kconfig b/init/Kconfig
-index 864af10..f3f0739 100644
+index 47035b5..ae9a011 100644
 --- a/init/Kconfig
 +++ b/init/Kconfig
-@@ -1634,6 +1634,7 @@ choice
+@@ -1637,6 +1637,7 @@ choice
  
  config SLAB
  	bool "SLAB"
@@ -23,7 +23,7 @@ index 864af10..f3f0739 100644
  	select HAVE_HARDENED_USERCOPY_ALLOCATOR
  	help
  	  The regular slab allocator that is established and known to work
-@@ -1654,6 +1655,7 @@ config SLUB
+@@ -1657,6 +1658,7 @@ config SLUB
  config SLOB
  	depends on EXPERT
  	bool "SLOB (Simple Allocator)"

@@ -43,7 +43,7 @@ index 8a1bcfb..5869330 100644
  }
  
 diff --git a/include/linux/jbd2.h b/include/linux/jbd2.h
-index b708e51..0186653 100644
+index 583b82b..57f4ad8 100644
 --- a/include/linux/jbd2.h
 +++ b/include/linux/jbd2.h
 @@ -347,32 +347,56 @@ static inline struct journal_head *bh2jh(struct buffer_head *bh)

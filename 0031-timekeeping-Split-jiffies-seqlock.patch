@@ -135,7 +135,7 @@ index 5b33e2f..54fd344 100644
  	ts->timer_expires_base = basemono;
  
 diff --git a/kernel/time/timekeeping.c b/kernel/time/timekeeping.c
-index 7846ce2..68cf975 100644
+index 9a6bfcd..5e584cd 100644
 --- a/kernel/time/timekeeping.c
 +++ b/kernel/time/timekeeping.c
 @@ -2417,8 +2417,10 @@ EXPORT_SYMBOL(hardpps);
