@@ -27,7 +27,7 @@ Requires: systemd-bin
 
 # quilt.url: https://github.com/intel/linux-intel-quilt
 # quilt.branch: 4.19/preempt-rt
-# quilt.tag:  lts-v4.19.50-preempt-rt-190627T062800Z
+# quilt.tag:  lts-v4.19.50-preempt-rt-190708T708000Z
 
 # PK XXXX: Series
 Patch0001: 0001-ARM-at91-add-TCB-registers-definitions.patch
@@ -1447,6 +1447,7 @@ Patch1414: 1414-x86-cache-Rename-config-option-to-CONFIG_X86_RESCTRL.patch
 Patch1415: 1415-x86-resctrl-Avoid-confusion-over-the-new-X86_RESCTRL.patch
 Patch1416: 1416-x86-resctrl-Remove-duplicate-MSR_MISC_FEATURE_CONTRO.patch
 Patch1417: 1417-x86-resctrl-change-geminilake-to-goldmontlake.patch
+Patch1418: 1418-ACRN-don-t-init-SCI-GL-handler-for-ACRN-RT-VM.patch
 #END XXXX: PK Series
 
 # Clear Linux patch
@@ -2884,6 +2885,7 @@ Linux kernel extra files
 %patch1415 -p1
 %patch1416 -p1
 %patch1417 -p1
+%patch1418 -p1
 # End XXXX PK Series
 
 # Clear Linux patch
