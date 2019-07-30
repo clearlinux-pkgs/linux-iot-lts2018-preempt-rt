@@ -25,7 +25,7 @@ index 78a010e..0403d96 100644
  
  #define TRACE_EVENT_TYPE_MAX						\
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 1bd7a75..10843c8 100644
+index 3b0de19..496c5d3 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
 @@ -2149,6 +2149,8 @@ tracing_generic_entry_update(struct trace_entry *entry, unsigned long flags,

@@ -37,7 +37,7 @@ index 5ed8f62..f430cf0 100644
  		atomic_long_t hugetlb_usage;
  #endif
 diff --git a/include/linux/sched/mm.h b/include/linux/sched/mm.h
-index cebb79f..6e57890 100644
+index 0d10b7c..b6758c6 100644
 --- a/include/linux/sched/mm.h
 +++ b/include/linux/sched/mm.h
 @@ -49,6 +49,17 @@ static inline void mmdrop(struct mm_struct *mm)

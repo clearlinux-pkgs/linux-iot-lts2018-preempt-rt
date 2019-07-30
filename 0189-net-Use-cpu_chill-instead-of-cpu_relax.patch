@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 5 insertions(+), 3 deletions(-)
 
 diff --git a/net/packet/af_packet.c b/net/packet/af_packet.c
-index d98fcf9..e99b698 100644
+index 93b5a42..47009dd 100644
 --- a/net/packet/af_packet.c
 +++ b/net/packet/af_packet.c
 @@ -63,6 +63,7 @@

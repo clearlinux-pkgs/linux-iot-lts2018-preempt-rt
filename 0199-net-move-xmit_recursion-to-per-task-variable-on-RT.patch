@@ -248,7 +248,7 @@ index 616429a..1a86772 100644
  	queue->dev = dev;
  #ifdef CONFIG_BQL
 diff --git a/net/core/filter.c b/net/core/filter.c
-index eb81e9d..2dd1f2e 100644
+index 34ec932..0392596 100644
 --- a/net/core/filter.c
 +++ b/net/core/filter.c
 @@ -2000,7 +2000,7 @@ static inline int __bpf_tx_skb(struct net_device *dev, struct sk_buff *skb)

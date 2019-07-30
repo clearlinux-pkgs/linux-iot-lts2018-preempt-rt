@@ -22,7 +22,7 @@ index 76e6cda..0445d5c 100644
  	int				migrate_disable_atomic;
  # endif
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index e1efb98..4f91212 100644
+index 9001e17..89b5688 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -75,6 +75,11 @@ static DEFINE_PER_CPU(struct cpuhp_cpu_state, cpuhp_state) = {

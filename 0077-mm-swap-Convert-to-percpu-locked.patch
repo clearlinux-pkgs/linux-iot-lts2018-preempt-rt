@@ -55,10 +55,10 @@ index faca45e..f8ccb9d 100644
  				cc->last_migrated_pfn = 0;
  			}
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 4d11ec1..a01c15f 100644
+index 99b3861..1679f58 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
-@@ -7205,8 +7205,9 @@ void __init free_area_init(unsigned long *zones_size)
+@@ -7207,8 +7207,9 @@ void __init free_area_init(unsigned long *zones_size)
  
  static int page_alloc_cpu_dead(unsigned int cpu)
  {

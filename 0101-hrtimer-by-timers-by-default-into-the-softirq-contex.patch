@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  11 files changed, 37 insertions(+), 14 deletions(-)
 
 diff --git a/arch/x86/kvm/lapic.c b/arch/x86/kvm/lapic.c
-index cba414d..e4e4147 100644
+index 031bd7f..4b2a399 100644
 --- a/arch/x86/kvm/lapic.c
 +++ b/arch/x86/kvm/lapic.c
 @@ -2252,7 +2252,7 @@ int kvm_create_lapic(struct kvm_vcpu *vcpu)

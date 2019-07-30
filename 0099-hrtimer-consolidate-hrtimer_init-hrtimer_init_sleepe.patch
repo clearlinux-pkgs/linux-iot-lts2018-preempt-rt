@@ -27,10 +27,10 @@ Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
  7 files changed, 67 insertions(+), 34 deletions(-)
 
 diff --git a/block/blk-mq.c b/block/blk-mq.c
-index 4e563ee..fa98452 100644
+index 70d839b..e3e7a88 100644
 --- a/block/blk-mq.c
 +++ b/block/blk-mq.c
-@@ -3126,10 +3126,9 @@ static bool blk_mq_poll_hybrid_sleep(struct request_queue *q,
+@@ -3128,10 +3128,9 @@ static bool blk_mq_poll_hybrid_sleep(struct request_queue *q,
  	kt = nsecs;
  
  	mode = HRTIMER_MODE_REL;

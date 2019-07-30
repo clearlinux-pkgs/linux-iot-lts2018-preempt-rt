@@ -68,7 +68,7 @@ index 10225a9..dcde8ff 100644
  		rcu_read_unlock();
  		goto retry;
 diff --git a/fs/inode.c b/fs/inode.c
-index 42f6d25..97f11df 100644
+index 5c63693..c3e17dc 100644
 --- a/fs/inode.c
 +++ b/fs/inode.c
 @@ -155,7 +155,7 @@ int inode_init_always(struct super_block *sb, struct inode *inode)

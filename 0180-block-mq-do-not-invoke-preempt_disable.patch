@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/block/blk-mq.c b/block/blk-mq.c
-index fa98452..8d00d8d 100644
+index e3e7a88..b07332c 100644
 --- a/block/blk-mq.c
 +++ b/block/blk-mq.c
 @@ -570,7 +570,7 @@ static void __blk_mq_complete_request(struct request *rq)
