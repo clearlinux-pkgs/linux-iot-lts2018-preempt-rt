@@ -1,13 +1,13 @@
 # This is a linux kernel with the preempt_rt patch set plus PK patches
 
 Name:           linux-iot-lts2018-preempt-rt
-Version:        4.19.59
-Release:        15
+Version:        4.19.72
+Release:        16
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.59.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.72.tar.xz
 Source2:        config
 Source3:        cmdline
 
@@ -1540,7 +1540,7 @@ Group:          kernel
 Linux kernel extra files
 
 %prep
-%setup -q -n linux-4.19.59
+%setup -q -n linux-4.19.72
 
 #patchXXXX PK Series
 %patch0001 -p1
