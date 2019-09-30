@@ -15,7 +15,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 2 insertions(+), 7 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 91a9b25..1b2503b 100644
+index e686ee8..34e786c 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -558,14 +558,11 @@ void resched_cpu(int cpu)

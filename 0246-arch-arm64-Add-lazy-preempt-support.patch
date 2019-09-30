@@ -20,7 +20,7 @@ Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
  5 files changed, 17 insertions(+), 5 deletions(-)
 
 diff --git a/arch/arm64/Kconfig b/arch/arm64/Kconfig
-index 8790a29..4a4db69 100644
+index e3ebece..8f1d890 100644
 --- a/arch/arm64/Kconfig
 +++ b/arch/arm64/Kconfig
 @@ -140,6 +140,7 @@ config ARM64
@@ -83,7 +83,7 @@ index 92fba85..844c71b 100644
  #ifdef CONFIG_ARM64_SW_TTBR0_PAN
    DEFINE(TSK_TI_TTBR0,		offsetof(struct task_struct, thread_info.ttbr0));
 diff --git a/arch/arm64/kernel/entry.S b/arch/arm64/kernel/entry.S
-index 8556876..d30ca1b 100644
+index 5f80038..b582580 100644
 --- a/arch/arm64/kernel/entry.S
 +++ b/arch/arm64/kernel/entry.S
 @@ -623,11 +623,16 @@ el1_irq:

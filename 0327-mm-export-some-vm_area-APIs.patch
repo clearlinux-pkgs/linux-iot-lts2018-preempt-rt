@@ -15,7 +15,7 @@ Signed-off-by: Meng Wei <wei.meng@intel.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/mm/vmalloc.c b/mm/vmalloc.c
-index 5c6939c..533e58c 100644
+index 9b7cf99..2a8cdbe 100644
 --- a/mm/vmalloc.c
 +++ b/mm/vmalloc.c
 @@ -1468,6 +1468,7 @@ struct vm_struct *find_vm_area(const void *addr)

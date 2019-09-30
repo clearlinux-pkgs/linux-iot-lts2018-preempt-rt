@@ -70,7 +70,7 @@ index 9eafc34..ed8413e 100644
  {
  	return 0;
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 8f0bb5f..a023e1b 100644
+index c5f050a..53d9215 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -667,7 +667,7 @@ struct task_struct {
@@ -93,7 +93,7 @@ index 8f0bb5f..a023e1b 100644
  # endif
  #endif
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index ce1cb23..36f791f 100644
+index 4c3e929..49922b0 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1031,7 +1031,7 @@ void set_cpus_allowed_common(struct task_struct *p, const struct cpumask *new_ma

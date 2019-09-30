@@ -48,10 +48,10 @@ index 315f852..a943c07 100644
  	void (*release)(struct kref *ref);
  };
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index c3b9f6d..af2a875 100644
+index 3c26d07..eadcbfb 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
-@@ -259,7 +259,12 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,
+@@ -285,7 +285,12 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,
  
  	if (desc->affinity_notify) {
  		kref_get(&desc->affinity_notify->kref);
@@ -64,7 +64,7 @@ index c3b9f6d..af2a875 100644
  	}
  	irqd_set(data, IRQD_AFFINITY_SET);
  
-@@ -297,10 +302,8 @@ int irq_set_affinity_hint(unsigned int irq, const struct cpumask *m)
+@@ -323,10 +328,8 @@ int irq_set_affinity_hint(unsigned int irq, const struct cpumask *m)
  }
  EXPORT_SYMBOL_GPL(irq_set_affinity_hint);
  
@@ -76,7 +76,7 @@ index c3b9f6d..af2a875 100644
  	struct irq_desc *desc = irq_to_desc(notify->irq);
  	cpumask_var_t cpumask;
  	unsigned long flags;
-@@ -322,6 +325,35 @@ static void irq_affinity_notify(struct work_struct *work)
+@@ -348,6 +351,35 @@ static void irq_affinity_notify(struct work_struct *work)
  	kref_put(&notify->kref, notify->release);
  }
  
@@ -112,7 +112,7 @@ index c3b9f6d..af2a875 100644
  /**
   *	irq_set_affinity_notifier - control notification of IRQ affinity changes
   *	@irq:		Interrupt for which to enable/disable notification
-@@ -350,7 +382,12 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
+@@ -376,7 +408,12 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
  	if (notify) {
  		notify->irq = irq;
  		kref_init(&notify->kref);
@@ -125,7 +125,7 @@ index c3b9f6d..af2a875 100644
  	}
  
  	raw_spin_lock_irqsave(&desc->lock, flags);
-@@ -359,7 +396,10 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
+@@ -385,7 +422,10 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
  	raw_spin_unlock_irqrestore(&desc->lock, flags);
  
  	if (old_notify) {

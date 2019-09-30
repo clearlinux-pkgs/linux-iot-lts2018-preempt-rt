@@ -34,7 +34,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  7 files changed, 73 insertions(+), 2 deletions(-)
 
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index b73715c..241a4a9 100644
+index e6733d7..08d64e5 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
 @@ -56,7 +56,11 @@ void call_rcu(struct rcu_head *head, rcu_callback_t func);

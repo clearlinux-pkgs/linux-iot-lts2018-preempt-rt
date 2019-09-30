@@ -144,7 +144,7 @@ index fa3cb91..6895049 100644
 +obj-$(CONFIG_RESCTRL)	+= ctrlmondata.o pseudo_lock.o
  CFLAGS_pseudo_lock.o = -I$(src)
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index c342fa0..524fb0d 100644
+index 3c213ec..36a85f0 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1019,7 +1019,7 @@ struct task_struct {

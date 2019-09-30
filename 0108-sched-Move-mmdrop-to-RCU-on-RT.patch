@@ -59,7 +59,7 @@ index 0d10b7c..b6758c6 100644
   * This has to be called after a get_task_mm()/mmget_not_zero()
   * followed by taking the mmap_sem for writing before modifying the
 diff --git a/kernel/fork.c b/kernel/fork.c
-index cba3cad..0981300 100644
+index dc66932..b32c73f 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -637,6 +637,19 @@ void __mmdrop(struct mm_struct *mm)
@@ -83,7 +83,7 @@ index cba3cad..0981300 100644
  {
  	struct mm_struct *mm;
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 88a886c..0c916e7 100644
+index 83030c3..8f36040 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -2729,9 +2729,13 @@ static struct rq *finish_task_switch(struct task_struct *prev)

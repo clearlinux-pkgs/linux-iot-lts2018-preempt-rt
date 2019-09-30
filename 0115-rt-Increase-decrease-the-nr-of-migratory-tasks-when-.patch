@@ -81,7 +81,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 44 insertions(+), 5 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 5ca8f53..434fd89 100644
+index d25a260..58ad016 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -7147,6 +7147,47 @@ const u32 sched_prio_to_wmult[40] = {

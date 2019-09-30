@@ -28,7 +28,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  create mode 100644 include/linux/kthread-cgroup.h
 
 diff --git a/drivers/block/loop.c b/drivers/block/loop.c
-index f1e63eb..aa76c81 100644
+index cef8e00..298c96b 100644
 --- a/drivers/block/loop.c
 +++ b/drivers/block/loop.c
 @@ -70,7 +70,7 @@

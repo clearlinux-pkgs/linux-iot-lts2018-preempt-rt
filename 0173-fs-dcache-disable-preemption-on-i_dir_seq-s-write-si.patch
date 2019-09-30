@@ -113,7 +113,7 @@ index 0fb590d..cd95874 100644
  }
  
 diff --git a/include/linux/fs.h b/include/linux/fs.h
-index d4e1b43..72749fe 100644
+index 9242000..9b2b707 100644
 --- a/include/linux/fs.h
 +++ b/include/linux/fs.h
 @@ -678,7 +678,7 @@ struct inode {

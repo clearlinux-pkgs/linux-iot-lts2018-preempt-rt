@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 13 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 89b5688..0523f2f 100644
+index e1cd4bf..69b5853 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -75,7 +75,7 @@ static DEFINE_PER_CPU(struct cpuhp_cpu_state, cpuhp_state) = {

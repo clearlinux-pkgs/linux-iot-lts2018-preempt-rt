@@ -33,7 +33,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 47 insertions(+), 100 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 36f791f..0805219 100644
+index 49922b0..313028e 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1704,10 +1704,6 @@ static inline void ttwu_activate(struct rq *rq, struct task_struct *p, int en_fl

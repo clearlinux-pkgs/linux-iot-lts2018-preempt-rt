@@ -21,7 +21,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 0805219..33e81e7 100644
+index 313028e..0615087 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -904,7 +904,7 @@ static inline bool is_cpu_allowed(struct task_struct *p, int cpu)
