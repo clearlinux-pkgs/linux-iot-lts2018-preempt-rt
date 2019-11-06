@@ -2,7 +2,7 @@
 
 Name:           linux-iot-lts2018-preempt-rt
 Version:        4.19.72
-Release:        16
+Release:        17
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -1527,6 +1527,8 @@ Patch1493: 1493-fix-merge-issue-for-RDT-update-in-rt24.patch
 
 # Clear Linux patch
 Patch9001: 9001-init-wait-for-partition-and-retry-scan.patch
+Patch9002: 9002-Add-boot-option-to-allow-unsigned-modules.patch
+Patch9003: 9003-add-workaround-for-binutils-optimization.patch
 
 %description
 The Linux kernel.
@@ -3040,6 +3042,8 @@ Linux kernel extra files
 
 # Clear Linux patch
 %patch9001 -p1
+%patch9002 -p1
+%patch9003 -p1
 
 cp %{SOURCE2} .
 cp %{SOURCE3} .
