@@ -1529,6 +1529,7 @@ Patch1493: 1493-fix-merge-issue-for-RDT-update-in-rt24.patch
 Patch9001: 9001-init-wait-for-partition-and-retry-scan.patch
 Patch9002: 9002-Add-boot-option-to-allow-unsigned-modules.patch
 Patch9003: 9003-add-workaround-for-binutils-optimization.patch
+Patch9004: 9004-x86-cpu-Add-Atom-Tremont-Jacobsville.patch
 
 %description
 The Linux kernel.
@@ -3044,6 +3045,7 @@ Linux kernel extra files
 %patch9001 -p1
 %patch9002 -p1
 %patch9003 -p1
+%patch9004 -p1
 
 cp %{SOURCE2} .
 cp %{SOURCE3} .
