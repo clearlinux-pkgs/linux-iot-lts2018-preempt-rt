@@ -2,7 +2,7 @@
 
 Name:           linux-iot-lts2018-preempt-rt
 Version:        4.19.72
-Release:        17
+Release:        18
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
