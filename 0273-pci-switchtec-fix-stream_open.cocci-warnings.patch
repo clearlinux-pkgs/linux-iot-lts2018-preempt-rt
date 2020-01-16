@@ -22,7 +22,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/pci/switch/switchtec.c b/drivers/pci/switch/switchtec.c
-index 77d4fb8..ea70bc0 100644
+index df32c5195..45cebf92a 100644
 --- a/drivers/pci/switch/switchtec.c
 +++ b/drivers/pci/switch/switchtec.c
 @@ -360,7 +360,7 @@ static int switchtec_dev_open(struct inode *inode, struct file *filp)

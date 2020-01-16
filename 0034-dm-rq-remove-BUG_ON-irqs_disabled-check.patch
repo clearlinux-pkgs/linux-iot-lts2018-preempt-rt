@@ -20,10 +20,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 deletion(-)
 
 diff --git a/drivers/md/dm-rq.c b/drivers/md/dm-rq.c
-index 264b84e..5e4b136 100644
+index 4d36373e1..12ed08245 100644
 --- a/drivers/md/dm-rq.c
 +++ b/drivers/md/dm-rq.c
-@@ -691,7 +691,6 @@ static void dm_old_request_fn(struct request_queue *q)
+@@ -692,7 +692,6 @@ static void dm_old_request_fn(struct request_queue *q)
  		/* Establish tio->ti before queuing work (map_tio_request) */
  		tio->ti = ti;
  		kthread_queue_work(&md->kworker, &tio->work);

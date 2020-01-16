@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 41 insertions(+)
 
 diff --git a/drivers/block/zram/zram_drv.c b/drivers/block/zram/zram_drv.c
-index 70cbd0e..42de45e 100644
+index 76abe40bf..d6cf9508b 100644
 --- a/drivers/block/zram/zram_drv.c
 +++ b/drivers/block/zram/zram_drv.c
 @@ -53,6 +53,40 @@ static size_t huge_class_size;
@@ -67,7 +67,7 @@ index 70cbd0e..42de45e 100644
  
  static inline bool init_done(struct zram *zram)
  {
-@@ -901,6 +936,8 @@ static DEVICE_ATTR_RO(io_stat);
+@@ -902,6 +937,8 @@ static DEVICE_ATTR_RO(io_stat);
  static DEVICE_ATTR_RO(mm_stat);
  static DEVICE_ATTR_RO(debug_stat);
  
@@ -76,7 +76,7 @@ index 70cbd0e..42de45e 100644
  static void zram_meta_free(struct zram *zram, u64 disksize)
  {
  	size_t num_pages = disksize >> PAGE_SHIFT;
-@@ -931,6 +968,7 @@ static bool zram_meta_alloc(struct zram *zram, u64 disksize)
+@@ -932,6 +969,7 @@ static bool zram_meta_alloc(struct zram *zram, u64 disksize)
  
  	if (!huge_class_size)
  		huge_class_size = zs_huge_class_size(zram->mem_pool);
@@ -85,7 +85,7 @@ index 70cbd0e..42de45e 100644
  }
  
 diff --git a/drivers/block/zram/zram_drv.h b/drivers/block/zram/zram_drv.h
-index d1095df..144e910 100644
+index d1095dfdf..144e91061 100644
 --- a/drivers/block/zram/zram_drv.h
 +++ b/drivers/block/zram/zram_drv.h
 @@ -61,6 +61,9 @@ struct zram_table_entry {

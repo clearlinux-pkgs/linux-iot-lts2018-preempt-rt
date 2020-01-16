@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 7 insertions(+), 12 deletions(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index a4b2af7..f058bb9 100644
+index a4b2af771..f058bb976 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1201,18 +1201,13 @@ __rt_mutex_slowlock(struct rt_mutex *lock, int state,

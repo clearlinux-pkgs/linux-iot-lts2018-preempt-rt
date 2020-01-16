@@ -11,7 +11,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 6 insertions(+), 4 deletions(-)
 
 diff --git a/net/core/skbuff.c b/net/core/skbuff.c
-index 9b9f696..9ce072f 100644
+index 0629ca89a..6ca7cb2b4 100644
 --- a/net/core/skbuff.c
 +++ b/net/core/skbuff.c
 @@ -63,6 +63,7 @@

@@ -32,7 +32,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/net/sunrpc/svc_xprt.c b/net/sunrpc/svc_xprt.c
-index 6cf0fd3..48c0a0b 100644
+index 6cf0fd37c..48c0a0b90 100644
 --- a/net/sunrpc/svc_xprt.c
 +++ b/net/sunrpc/svc_xprt.c
 @@ -393,7 +393,7 @@ void svc_xprt_do_enqueue(struct svc_xprt *xprt)

@@ -18,7 +18,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 10 insertions(+), 6 deletions(-)
 
 diff --git a/arch/powerpc/platforms/pseries/iommu.c b/arch/powerpc/platforms/pseries/iommu.c
-index 06f0296..d80d919 100644
+index 06f02960b..d80d919c7 100644
 --- a/arch/powerpc/platforms/pseries/iommu.c
 +++ b/arch/powerpc/platforms/pseries/iommu.c
 @@ -38,6 +38,7 @@

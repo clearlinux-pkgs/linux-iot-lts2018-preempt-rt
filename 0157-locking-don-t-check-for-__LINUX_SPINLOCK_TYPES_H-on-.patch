@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  10 files changed, 40 deletions(-)
 
 diff --git a/arch/alpha/include/asm/spinlock_types.h b/arch/alpha/include/asm/spinlock_types.h
-index 1d5716b..6883bc9 100644
+index 1d5716bc0..6883bc952 100644
 --- a/arch/alpha/include/asm/spinlock_types.h
 +++ b/arch/alpha/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -42,7 +42,7 @@ index 1d5716b..6883bc9 100644
  	volatile unsigned int lock;
  } arch_spinlock_t;
 diff --git a/arch/arm/include/asm/spinlock_types.h b/arch/arm/include/asm/spinlock_types.h
-index 5976958..a37c080 100644
+index 597695864..a37c08039 100644
 --- a/arch/arm/include/asm/spinlock_types.h
 +++ b/arch/arm/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -57,7 +57,7 @@ index 5976958..a37c080 100644
  
  typedef struct {
 diff --git a/arch/arm64/include/asm/spinlock_types.h b/arch/arm64/include/asm/spinlock_types.h
-index a157ff4..f952fdd 100644
+index a157ff465..f952fdda8 100644
 --- a/arch/arm64/include/asm/spinlock_types.h
 +++ b/arch/arm64/include/asm/spinlock_types.h
 @@ -16,10 +16,6 @@
@@ -72,7 +72,7 @@ index a157ff4..f952fdd 100644
  #include <asm-generic/qrwlock_types.h>
  
 diff --git a/arch/hexagon/include/asm/spinlock_types.h b/arch/hexagon/include/asm/spinlock_types.h
-index 7a906b5..d8f596f 100644
+index 7a906b521..d8f596fec 100644
 --- a/arch/hexagon/include/asm/spinlock_types.h
 +++ b/arch/hexagon/include/asm/spinlock_types.h
 @@ -21,10 +21,6 @@
@@ -87,7 +87,7 @@ index 7a906b5..d8f596f 100644
  	volatile unsigned int lock;
  } arch_spinlock_t;
 diff --git a/arch/ia64/include/asm/spinlock_types.h b/arch/ia64/include/asm/spinlock_types.h
-index 6e345fe..681408d 100644
+index 6e345fefc..681408d68 100644
 --- a/arch/ia64/include/asm/spinlock_types.h
 +++ b/arch/ia64/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -102,7 +102,7 @@ index 6e345fe..681408d 100644
  	volatile unsigned int lock;
  } arch_spinlock_t;
 diff --git a/arch/powerpc/include/asm/spinlock_types.h b/arch/powerpc/include/asm/spinlock_types.h
-index 87adaf1..7305cb6 100644
+index 87adaf13b..7305cb6a5 100644
 --- a/arch/powerpc/include/asm/spinlock_types.h
 +++ b/arch/powerpc/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -117,7 +117,7 @@ index 87adaf1..7305cb6 100644
  	volatile unsigned int slock;
  } arch_spinlock_t;
 diff --git a/arch/s390/include/asm/spinlock_types.h b/arch/s390/include/asm/spinlock_types.h
-index cfed272..8e28e81 100644
+index cfed272e4..8e28e8176 100644
 --- a/arch/s390/include/asm/spinlock_types.h
 +++ b/arch/s390/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -132,7 +132,7 @@ index cfed272..8e28e81 100644
  	int lock;
  } __attribute__ ((aligned (4))) arch_spinlock_t;
 diff --git a/arch/sh/include/asm/spinlock_types.h b/arch/sh/include/asm/spinlock_types.h
-index e82369f..22ca9a9 100644
+index e82369f28..22ca9a98b 100644
 --- a/arch/sh/include/asm/spinlock_types.h
 +++ b/arch/sh/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -147,7 +147,7 @@ index e82369f..22ca9a9 100644
  	volatile unsigned int lock;
  } arch_spinlock_t;
 diff --git a/arch/xtensa/include/asm/spinlock_types.h b/arch/xtensa/include/asm/spinlock_types.h
-index bb1fe6c..8a22f1e 100644
+index bb1fe6c18..8a22f1e7b 100644
 --- a/arch/xtensa/include/asm/spinlock_types.h
 +++ b/arch/xtensa/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -162,7 +162,7 @@ index bb1fe6c..8a22f1e 100644
  	volatile unsigned int slock;
  } arch_spinlock_t;
 diff --git a/include/linux/spinlock_types_up.h b/include/linux/spinlock_types_up.h
-index c09b640..b0243ba 100644
+index c09b6407a..b0243ba07 100644
 --- a/include/linux/spinlock_types_up.h
 +++ b/include/linux/spinlock_types_up.h
 @@ -1,10 +1,6 @@

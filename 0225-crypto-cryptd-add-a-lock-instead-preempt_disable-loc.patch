@@ -19,7 +19,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 9 insertions(+), 10 deletions(-)
 
 diff --git a/crypto/cryptd.c b/crypto/cryptd.c
-index e0c8e90..e079f9a 100644
+index e0c8e907b..e079f9a70 100644
 --- a/crypto/cryptd.c
 +++ b/crypto/cryptd.c
 @@ -39,6 +39,7 @@ MODULE_PARM_DESC(cryptd_max_cpu_qlen, "Set cryptd Max queue depth");

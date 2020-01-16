@@ -18,12 +18,11 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  fs/dcache.c        | 12 +++++++-----
  fs/inode.c         |  2 +-
- fs/libfs.c         |  6 ++++--
  include/linux/fs.h |  2 +-
- 4 files changed, 13 insertions(+), 9 deletions(-)
+ 3 files changed, 9 insertions(+), 7 deletions(-)
 
 diff --git a/fs/dcache.c b/fs/dcache.c
-index 10225a9..dcde8ff 100644
+index 10225a913..dcde8ffe3 100644
 --- a/fs/dcache.c
 +++ b/fs/dcache.c
 @@ -2404,9 +2404,10 @@ EXPORT_SYMBOL(d_rehash);
@@ -68,7 +67,7 @@ index 10225a9..dcde8ff 100644
  		rcu_read_unlock();
  		goto retry;
 diff --git a/fs/inode.c b/fs/inode.c
-index 5c63693..c3e17dc 100644
+index 9c50521c9..40114e8b6 100644
 --- a/fs/inode.c
 +++ b/fs/inode.c
 @@ -155,7 +155,7 @@ int inode_init_always(struct super_block *sb, struct inode *inode)
@@ -80,40 +79,8 @@ index 5c63693..c3e17dc 100644
  	inode->i_rdev = 0;
  	inode->dirtied_when = 0;
  
-diff --git a/fs/libfs.c b/fs/libfs.c
-index 0fb590d..cd95874 100644
---- a/fs/libfs.c
-+++ b/fs/libfs.c
-@@ -90,7 +90,7 @@ static struct dentry *next_positive(struct dentry *parent,
- 				    struct list_head *from,
- 				    int count)
- {
--	unsigned *seq = &parent->d_inode->i_dir_seq, n;
-+	unsigned *seq = &parent->d_inode->__i_dir_seq, n;
- 	struct dentry *res;
- 	struct list_head *p;
- 	bool skipped;
-@@ -123,8 +123,9 @@ static struct dentry *next_positive(struct dentry *parent,
- static void move_cursor(struct dentry *cursor, struct list_head *after)
- {
- 	struct dentry *parent = cursor->d_parent;
--	unsigned n, *seq = &parent->d_inode->i_dir_seq;
-+	unsigned n, *seq = &parent->d_inode->__i_dir_seq;
- 	spin_lock(&parent->d_lock);
-+	preempt_disable_rt();
- 	for (;;) {
- 		n = *seq;
- 		if (!(n & 1) && cmpxchg(seq, n, n + 1) == n)
-@@ -137,6 +138,7 @@ static void move_cursor(struct dentry *cursor, struct list_head *after)
- 	else
- 		list_add_tail(&cursor->d_child, &parent->d_subdirs);
- 	smp_store_release(seq, n + 2);
-+	preempt_enable_rt();
- 	spin_unlock(&parent->d_lock);
- }
- 
 diff --git a/include/linux/fs.h b/include/linux/fs.h
-index 9242000..9b2b707 100644
+index 92420009b..9b2b707e9 100644
 --- a/include/linux/fs.h
 +++ b/include/linux/fs.h
 @@ -678,7 +678,7 @@ struct inode {

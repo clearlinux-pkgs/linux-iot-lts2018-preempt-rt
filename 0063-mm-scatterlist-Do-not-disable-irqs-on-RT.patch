@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/lib/scatterlist.c b/lib/scatterlist.c
-index 8c3036c..336162c 100644
+index 8c3036c37..336162c28 100644
 --- a/lib/scatterlist.c
 +++ b/lib/scatterlist.c
 @@ -777,7 +777,7 @@ void sg_miter_stop(struct sg_mapping_iter *miter)

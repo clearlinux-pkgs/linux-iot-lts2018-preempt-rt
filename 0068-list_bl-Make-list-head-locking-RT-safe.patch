@@ -51,7 +51,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 26 insertions(+), 2 deletions(-)
 
 diff --git a/include/linux/list_bl.h b/include/linux/list_bl.h
-index 3fc2cc5..69b6592 100644
+index 3fc2cc57b..69b659259 100644
 --- a/include/linux/list_bl.h
 +++ b/include/linux/list_bl.h
 @@ -3,6 +3,7 @@

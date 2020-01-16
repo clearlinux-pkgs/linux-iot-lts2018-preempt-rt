@@ -29,7 +29,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 13 insertions(+), 2 deletions(-)
 
 diff --git a/fs/aio.c b/fs/aio.c
-index 911e230..16dcf85 100644
+index 911e23087..16dcf8521 100644
 --- a/fs/aio.c
 +++ b/fs/aio.c
 @@ -42,6 +42,7 @@

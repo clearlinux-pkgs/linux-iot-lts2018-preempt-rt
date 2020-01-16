@@ -19,7 +19,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  3 files changed, 21 insertions(+), 14 deletions(-)
 
 diff --git a/arch/powerpc/include/asm/thread_info.h b/arch/powerpc/include/asm/thread_info.h
-index ce31607..64c3d1a 100644
+index ce316076b..64c3d1a72 100644
 --- a/arch/powerpc/include/asm/thread_info.h
 +++ b/arch/powerpc/include/asm/thread_info.h
 @@ -83,18 +83,18 @@ extern int arch_dup_task_struct(struct task_struct *dst, struct task_struct *src
@@ -56,7 +56,7 @@ index ce31607..64c3d1a 100644
  /* as above, but as bit values */
  #define _TIF_SYSCALL_TRACE	(1<<TIF_SYSCALL_TRACE)
 diff --git a/arch/powerpc/kernel/entry_32.S b/arch/powerpc/kernel/entry_32.S
-index 3783f3e..44bcf15 100644
+index 3783f3ef1..44bcf1585 100644
 --- a/arch/powerpc/kernel/entry_32.S
 +++ b/arch/powerpc/kernel/entry_32.S
 @@ -393,7 +393,9 @@ ret_from_syscall:
@@ -102,7 +102,7 @@ index 3783f3e..44bcf15 100644
  3:	lwarx	r8,0,r12
  	andc	r8,r8,r11
 diff --git a/arch/powerpc/kernel/entry_64.S b/arch/powerpc/kernel/entry_64.S
-index 7671fa5..fe713d0 100644
+index ef02e41d5..229cdb04e 100644
 --- a/arch/powerpc/kernel/entry_64.S
 +++ b/arch/powerpc/kernel/entry_64.S
 @@ -250,7 +250,9 @@ system_call_exit:

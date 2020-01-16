@@ -23,7 +23,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 6 deletions(-)
 
 diff --git a/arch/x86/platform/efi/efi_64.c b/arch/x86/platform/efi/efi_64.c
-index ee5d08f..e8da7f4 100644
+index ee5d08f25..e8da7f492 100644
 --- a/arch/x86/platform/efi/efi_64.c
 +++ b/arch/x86/platform/efi/efi_64.c
 @@ -619,18 +619,16 @@ void __init efi_dump_pagetable(void)

@@ -34,7 +34,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/connector/cn_proc.c b/drivers/connector/cn_proc.c
-index ad48fd5..c5264b3 100644
+index ad48fd52c..c5264b3ee 100644
 --- a/drivers/connector/cn_proc.c
 +++ b/drivers/connector/cn_proc.c
 @@ -32,6 +32,7 @@

@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 8 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index 68cbe11..027c58c 100644
+index 68cbe1114..027c58cdb 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
 @@ -73,6 +73,11 @@ void synchronize_rcu(void);
@@ -39,10 +39,10 @@ index 68cbe11..027c58c 100644
  
  /* Internal to kernel */
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 65d42f6..e41721f 100644
+index d1c564acf..59d43c084 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
-@@ -6156,7 +6156,7 @@ void __init sched_init(void)
+@@ -6198,7 +6198,7 @@ void __init sched_init(void)
  #ifdef CONFIG_DEBUG_ATOMIC_SLEEP
  static inline int preempt_count_equals(int preempt_offset)
  {

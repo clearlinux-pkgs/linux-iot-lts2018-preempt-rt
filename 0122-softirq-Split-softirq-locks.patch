@@ -35,7 +35,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  7 files changed, 478 insertions(+), 90 deletions(-)
 
 diff --git a/include/linux/bottom_half.h b/include/linux/bottom_half.h
-index a19519f..40dd5ef 100644
+index a19519f42..40dd5ef9c 100644
 --- a/include/linux/bottom_half.h
 +++ b/include/linux/bottom_half.h
 @@ -4,6 +4,39 @@
@@ -86,7 +86,7 @@ index a19519f..40dd5ef 100644
  
  #endif /* _LINUX_BH_H */
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index cb2d138..6c25b96 100644
+index cb2d1384c..6c25b962b 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -503,10 +503,11 @@ struct softirq_action
@@ -135,7 +135,7 @@ index cb2d138..6c25b96 100644
  	struct hrtimer		timer;
  	struct tasklet_struct	tasklet;
 diff --git a/include/linux/preempt.h b/include/linux/preempt.h
-index 9984f2b..27c3176 100644
+index 9984f2b75..27c3176d8 100644
 --- a/include/linux/preempt.h
 +++ b/include/linux/preempt.h
 @@ -51,7 +51,11 @@
@@ -177,7 +177,7 @@ index 9984f2b..27c3176 100644
  #define in_task()		(!(preempt_count() & \
  				   (NMI_MASK | HARDIRQ_MASK | SOFTIRQ_OFFSET)))
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index c073a32..baa5fce 100644
+index c073a3273..baa5fceea 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1198,6 +1198,8 @@ struct task_struct {
@@ -198,10 +198,10 @@ index c073a32..baa5fce 100644
  #define PF_EXITING		0x00000004	/* Getting shut down */
  #define PF_EXITPIDONE		0x00000008	/* PI exit done on shut down */
 diff --git a/init/main.c b/init/main.c
-index 020972f..4a74716 100644
+index 38a603f62..6e0218838 100644
 --- a/init/main.c
 +++ b/init/main.c
-@@ -561,6 +561,7 @@ asmlinkage __visible void __init start_kernel(void)
+@@ -560,6 +560,7 @@ asmlinkage __visible void __init start_kernel(void)
  	setup_command_line(command_line);
  	setup_nr_cpu_ids();
  	setup_per_cpu_areas();
@@ -210,7 +210,7 @@ index 020972f..4a74716 100644
  	boot_cpu_hotplug_init();
  
 diff --git a/kernel/softirq.c b/kernel/softirq.c
-index 1d3a482..fd89f8a 100644
+index 1d3a48224..fd89f8ab8 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
 @@ -26,7 +26,9 @@
@@ -807,7 +807,7 @@ index 1d3a482..fd89f8a 100644
  	.thread_fn		= run_ksoftirqd,
  	.thread_comm		= "ksoftirqd/%u",
 diff --git a/kernel/time/tick-sched.c b/kernel/time/tick-sched.c
-index c217af7..6482945 100644
+index c217af74d..6482945f8 100644
 --- a/kernel/time/tick-sched.c
 +++ b/kernel/time/tick-sched.c
 @@ -891,14 +891,7 @@ static bool can_stop_idle_tick(int cpu, struct tick_sched *ts)

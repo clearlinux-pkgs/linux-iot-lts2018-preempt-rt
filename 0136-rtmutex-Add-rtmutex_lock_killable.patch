@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 20 insertions(+)
 
 diff --git a/include/linux/rtmutex.h b/include/linux/rtmutex.h
-index 6fd615a..81ece6a 100644
+index 6fd615a0e..81ece6a82 100644
 --- a/include/linux/rtmutex.h
 +++ b/include/linux/rtmutex.h
 @@ -115,6 +115,7 @@ extern void rt_mutex_lock(struct rt_mutex *lock);
@@ -25,7 +25,7 @@ index 6fd615a..81ece6a 100644
  			       struct hrtimer_sleeper *timeout);
  
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 1c3f56d..a4b2af7 100644
+index 1c3f56d3d..a4b2af771 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1562,6 +1562,25 @@ int __sched __rt_mutex_futex_trylock(struct rt_mutex *lock)

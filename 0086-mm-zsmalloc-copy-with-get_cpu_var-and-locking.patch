@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 74 insertions(+), 6 deletions(-)
 
 diff --git a/mm/zsmalloc.c b/mm/zsmalloc.c
-index 4b9063d..1a2f6c1 100644
+index 85cc29c93..63e83b47f 100644
 --- a/mm/zsmalloc.c
 +++ b/mm/zsmalloc.c
 @@ -56,6 +56,7 @@

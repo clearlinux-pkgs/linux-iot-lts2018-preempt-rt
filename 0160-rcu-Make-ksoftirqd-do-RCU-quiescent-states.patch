@@ -28,7 +28,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 20 insertions(+), 6 deletions(-)
 
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index 1456a3d..1a40e3d 100644
+index 1456a3d97..1a40e3d44 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
 @@ -244,7 +244,19 @@ void rcu_sched_qs(void)
@@ -64,7 +64,7 @@ index 1456a3d..1a40e3d 100644
  
  /*
 diff --git a/kernel/rcu/tree_plugin.h b/kernel/rcu/tree_plugin.h
-index 429a2f1..bee9bff 100644
+index 429a2f144..bee9bffeb 100644
 --- a/kernel/rcu/tree_plugin.h
 +++ b/kernel/rcu/tree_plugin.h
 @@ -29,6 +29,7 @@

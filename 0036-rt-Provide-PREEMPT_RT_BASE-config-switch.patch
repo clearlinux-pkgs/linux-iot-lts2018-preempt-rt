@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 18 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/Kconfig.preempt b/kernel/Kconfig.preempt
-index cd16551..027db59 100644
+index cd1655122..027db5976 100644
 --- a/kernel/Kconfig.preempt
 +++ b/kernel/Kconfig.preempt
 @@ -1,3 +1,10 @@

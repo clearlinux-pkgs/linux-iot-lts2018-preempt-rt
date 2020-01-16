@@ -31,7 +31,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/x86/include/asm/signal.h b/arch/x86/include/asm/signal.h
-index fb0438d..c00e27a 100644
+index fb0438d06..c00e27af2 100644
 --- a/arch/x86/include/asm/signal.h
 +++ b/arch/x86/include/asm/signal.h
 @@ -37,7 +37,7 @@ typedef struct {

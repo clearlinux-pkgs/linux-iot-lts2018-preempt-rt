@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 8 insertions(+), 6 deletions(-)
 
 diff --git a/arch/arm64/include/asm/alternative.h b/arch/arm64/include/asm/alternative.h
-index 4b650ec..f561ea0 100644
+index 4b650ec1d..f561ea0ac 100644
 --- a/arch/arm64/include/asm/alternative.h
 +++ b/arch/arm64/include/asm/alternative.h
 @@ -35,6 +35,12 @@ void apply_alternatives_module(void *start, size_t length);
@@ -33,7 +33,7 @@ index 4b650ec..f561ea0 100644
  	" .word 661b - .\n"				/* label           */ \
  	" .if " __stringify(cb) " == 0\n"				      \
 diff --git a/arch/arm64/kernel/alternative.c b/arch/arm64/kernel/alternative.c
-index b5d6039..f92815d 100644
+index b5d603992..f92815d56 100644
 --- a/arch/arm64/kernel/alternative.c
 +++ b/arch/arm64/kernel/alternative.c
 @@ -224,6 +224,7 @@ static int __apply_alternatives_multi_stop(void *unused)
@@ -45,7 +45,7 @@ index b5d6039..f92815d 100644
  }
  
 diff --git a/arch/arm64/kvm/va_layout.c b/arch/arm64/kvm/va_layout.c
-index c712a73..792da0e 100644
+index c712a7376..792da0e12 100644
 --- a/arch/arm64/kvm/va_layout.c
 +++ b/arch/arm64/kvm/va_layout.c
 @@ -33,7 +33,7 @@ static u8 tag_lsb;

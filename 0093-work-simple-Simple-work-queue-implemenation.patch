@@ -20,7 +20,7 @@ Signed-off-by: Daniel Wagner <daniel.wagner@bmw-carit.de>
 
 diff --git a/include/linux/swork.h b/include/linux/swork.h
 new file mode 100644
-index 0000000..f175fa9
+index 000000000..f175fa9a6
 --- /dev/null
 +++ b/include/linux/swork.h
 @@ -0,0 +1,24 @@
@@ -49,7 +49,7 @@ index 0000000..f175fa9
 +
 +#endif /* _LINUX_SWORK_H */
 diff --git a/kernel/sched/Makefile b/kernel/sched/Makefile
-index 7fe1834..2b765aa 100644
+index 7fe183404..2b765aa4e 100644
 --- a/kernel/sched/Makefile
 +++ b/kernel/sched/Makefile
 @@ -18,7 +18,7 @@ endif
@@ -63,7 +63,7 @@ index 7fe1834..2b765aa 100644
  obj-$(CONFIG_SCHED_AUTOGROUP) += autogroup.o
 diff --git a/kernel/sched/swork.c b/kernel/sched/swork.c
 new file mode 100644
-index 0000000..a5b89fd
+index 000000000..a5b89fdac
 --- /dev/null
 +++ b/kernel/sched/swork.c
 @@ -0,0 +1,173 @@

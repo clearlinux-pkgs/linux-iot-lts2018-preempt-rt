@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/arch/x86/Kconfig b/arch/x86/Kconfig
-index 04a45d6..1b05ae8 100644
+index e40ba59ef..f22e78732 100644
 --- a/arch/x86/Kconfig
 +++ b/arch/x86/Kconfig
 @@ -264,8 +264,11 @@ config ARCH_MAY_HAVE_PC_FDC

@@ -19,10 +19,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 851b213..6f2736e 100644
+index 98a771065..21a454557 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
-@@ -1902,15 +1902,18 @@ void cpu_chill(void)
+@@ -1905,15 +1905,18 @@ void cpu_chill(void)
  {
  	ktime_t chill_time;
  	unsigned int freeze_flag = current->flags & PF_NOFREEZE;

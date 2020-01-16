@@ -16,7 +16,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  2 files changed, 1 insertion(+), 31 deletions(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 2a9bf24..7f6f402 100644
+index 2a9bf2443..7f6f402e0 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -144,8 +144,7 @@ static void fixup_rt_mutex_waiters(struct rt_mutex *lock)
@@ -65,7 +65,7 @@ index 2a9bf24..7f6f402 100644
  	ret = task_blocks_on_rt_mutex(lock, waiter, task,
  				      RT_MUTEX_FULL_CHAINWALK);
 diff --git a/kernel/locking/rtmutex_common.h b/kernel/locking/rtmutex_common.h
-index 546aaf0..a501f3b 100644
+index 546aaf058..a501f3b47 100644
 --- a/kernel/locking/rtmutex_common.h
 +++ b/kernel/locking/rtmutex_common.h
 @@ -133,7 +133,6 @@ enum rtmutex_chainwalk {

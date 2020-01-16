@@ -23,10 +23,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index e41721f..d25a260 100644
+index 59d43c084..e792543de 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
-@@ -3498,8 +3498,10 @@ static void __sched notrace __schedule(bool preempt)
+@@ -3539,8 +3539,10 @@ static void __sched notrace __schedule(bool preempt)
  			 * If a worker went to sleep, notify and ask workqueue
  			 * whether it wants to wake up a task to maintain
  			 * concurrency.

@@ -51,10 +51,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 15 insertions(+), 1 deletion(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index 3f08d6f..f7e16b4 100644
+index 4860cd26c..13bf37156 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
-@@ -969,12 +969,21 @@ void blk_queue_exit(struct request_queue *q)
+@@ -973,12 +973,21 @@ void blk_queue_exit(struct request_queue *q)
  	percpu_ref_put(&q->q_usage_counter);
  }
  
@@ -77,7 +77,7 @@ index 3f08d6f..f7e16b4 100644
  }
  
  static void blk_rq_timed_out_timer(struct timer_list *t)
-@@ -1071,6 +1080,7 @@ struct request_queue *blk_alloc_queue_node(gfp_t gfp_mask, int node_id,
+@@ -1075,6 +1084,7 @@ struct request_queue *blk_alloc_queue_node(gfp_t gfp_mask, int node_id,
  	queue_flag_set_unlocked(QUEUE_FLAG_BYPASS, q);
  
  	init_waitqueue_head(&q->mq_freeze_wq);
@@ -85,7 +85,7 @@ index 3f08d6f..f7e16b4 100644
  
  	/*
  	 * Init percpu_ref in atomic mode so that it's faster to shutdown.
-@@ -3960,6 +3970,8 @@ int __init blk_dev_init(void)
+@@ -3964,6 +3974,8 @@ int __init blk_dev_init(void)
  	if (!kblockd_workqueue)
  		panic("Failed to create kblockd\n");
  
@@ -95,7 +95,7 @@ index 3f08d6f..f7e16b4 100644
  			sizeof(struct request), 0, SLAB_PANIC, NULL);
  
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index f1960ad..7b7c0bc 100644
+index f1960add9..7b7c0bc6a 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -27,6 +27,7 @@

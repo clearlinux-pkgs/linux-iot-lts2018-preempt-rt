@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 30 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index 99f8b7a..7233389 100644
+index 99f8b7ace..72333899f 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -524,6 +524,14 @@ extern void thread_do_softirq(void);
@@ -39,7 +39,7 @@ index 99f8b7a..7233389 100644
  extern void raise_softirq_irqoff(unsigned int nr);
  extern void raise_softirq(unsigned int nr);
 diff --git a/kernel/softirq.c b/kernel/softirq.c
-index 27a4bb2..25bcf2f 100644
+index 27a4bb230..25bcf2f27 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
 @@ -721,6 +721,27 @@ void __raise_softirq_irqoff(unsigned int nr)
@@ -71,10 +71,10 @@ index 27a4bb2..25bcf2f 100644
   * This function must run with irqs disabled!
   */
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 6aa52e6..9ad6cc4 100644
+index ed1537cc9..7605c7220 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
-@@ -6382,7 +6382,7 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)
+@@ -6397,7 +6397,7 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)
  	list_splice_tail(&repoll, &list);
  	list_splice(&list, &sd->poll_list);
  	if (!list_empty(&sd->poll_list))

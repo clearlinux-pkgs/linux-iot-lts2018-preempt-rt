@@ -34,7 +34,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/include/linux/cgroup-defs.h b/include/linux/cgroup-defs.h
-index a01ebb6..34fb541 100644
+index a01ebb630..34fb541e9 100644
 --- a/include/linux/cgroup-defs.h
 +++ b/include/linux/cgroup-defs.h
 @@ -20,6 +20,7 @@
@@ -54,7 +54,7 @@ index a01ebb6..34fb541 100644
  
  	/*
 diff --git a/kernel/cgroup/cgroup.c b/kernel/cgroup/cgroup.c
-index 78ef274..30dd575 100644
+index 78ef274b0..30dd5754e 100644
 --- a/kernel/cgroup/cgroup.c
 +++ b/kernel/cgroup/cgroup.c
 @@ -4666,10 +4666,10 @@ static void css_free_rwork_fn(struct work_struct *work)

@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/block/blk-mq.c b/block/blk-mq.c
-index e3e7a88..b07332c 100644
+index 4aa328487..376fb90de 100644
 --- a/block/blk-mq.c
 +++ b/block/blk-mq.c
 @@ -570,7 +570,7 @@ static void __blk_mq_complete_request(struct request *rq)
@@ -34,7 +34,7 @@ index e3e7a88..b07332c 100644
  }
  
  static void hctx_unlock(struct blk_mq_hw_ctx *hctx, int srcu_idx)
-@@ -1368,14 +1368,14 @@ static void __blk_mq_delay_run_hw_queue(struct blk_mq_hw_ctx *hctx, bool async,
+@@ -1371,14 +1371,14 @@ static void __blk_mq_delay_run_hw_queue(struct blk_mq_hw_ctx *hctx, bool async,
  		return;
  
  	if (!async && !(hctx->flags & BLK_MQ_F_BLOCKING)) {

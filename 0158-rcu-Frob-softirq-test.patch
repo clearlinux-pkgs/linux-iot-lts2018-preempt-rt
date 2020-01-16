@@ -155,7 +155,7 @@ Signed-off-by: Peter Zijlstra <a.p.zijlstra@chello.nl>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/rcu/tree_plugin.h b/kernel/rcu/tree_plugin.h
-index 564e392..429a2f1 100644
+index 564e3927e..429a2f144 100644
 --- a/kernel/rcu/tree_plugin.h
 +++ b/kernel/rcu/tree_plugin.h
 @@ -524,7 +524,7 @@ static void rcu_read_unlock_special(struct task_struct *t)

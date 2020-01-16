@@ -19,7 +19,7 @@ Signed-off-by: Peter Zijlstra <a.p.zijlstra@chello.nl>
  1 file changed, 12 insertions(+)
 
 diff --git a/kernel/ksysfs.c b/kernel/ksysfs.c
-index 46ba853..9a23632 100644
+index 46ba85365..9a23632b6 100644
 --- a/kernel/ksysfs.c
 +++ b/kernel/ksysfs.c
 @@ -140,6 +140,15 @@ KERNEL_ATTR_RO(vmcoreinfo);

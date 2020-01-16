@@ -42,7 +42,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 125 insertions(+), 34 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index a943c07..e74936c 100644
+index a943c07b5..e74936c7b 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -542,8 +542,9 @@ static inline struct task_struct *this_cpu_ksoftirqd(void)
@@ -115,7 +115,7 @@ index a943c07..e74936c 100644
  extern void tasklet_kill_immediate(struct tasklet_struct *t, unsigned int cpu);
  extern void tasklet_init(struct tasklet_struct *t,
 diff --git a/kernel/softirq.c b/kernel/softirq.c
-index 6f58486..1d3a482 100644
+index 6f584861d..1d3a48224 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
 @@ -21,6 +21,7 @@

@@ -19,7 +19,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 2 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_request.c b/drivers/gpu/drm/i915/i915_request.c
-index 5c2c93c..7124510 100644
+index 5c2c93cba..7124510b9 100644
 --- a/drivers/gpu/drm/i915/i915_request.c
 +++ b/drivers/gpu/drm/i915/i915_request.c
 @@ -356,9 +356,7 @@ static void __retire_engine_request(struct intel_engine_cs *engine,

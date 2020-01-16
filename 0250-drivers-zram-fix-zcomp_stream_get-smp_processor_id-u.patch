@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/block/zram/zcomp.c b/drivers/block/zram/zcomp.c
-index dd65a27..eece022 100644
+index dd65a27ae..eece02262 100644
 --- a/drivers/block/zram/zcomp.c
 +++ b/drivers/block/zram/zcomp.c
 @@ -118,7 +118,7 @@ struct zcomp_strm *zcomp_stream_get(struct zcomp *comp)

@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 25 insertions(+)
 
 diff --git a/arch/arm/mach-at91/Kconfig b/arch/arm/mach-at91/Kconfig
-index 903f23c..fa493a8 100644
+index 903f23c30..fa493a86e 100644
 --- a/arch/arm/mach-at91/Kconfig
 +++ b/arch/arm/mach-at91/Kconfig
 @@ -107,6 +107,31 @@ config SOC_AT91SAM9

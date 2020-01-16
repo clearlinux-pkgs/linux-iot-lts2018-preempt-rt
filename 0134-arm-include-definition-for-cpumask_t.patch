@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/arch/arm/include/asm/irq.h b/arch/arm/include/asm/irq.h
-index 46d4114..c421b5b 100644
+index 46d41140d..c421b5b81 100644
 --- a/arch/arm/include/asm/irq.h
 +++ b/arch/arm/include/asm/irq.h
 @@ -23,6 +23,8 @@

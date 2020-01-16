@@ -1,0 +1,19 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Steven Rostedt <rostedt@goodmis.org>
+Date: Mon, 14 Oct 2019 13:24:30 -0400
+Subject: [PATCH] Linux 4.19.94-rt38 REBASE
+
+---
+ localversion-rt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/localversion-rt b/localversion-rt
+index 1199ebade..49bae8d6a 100644
+--- a/localversion-rt
++++ b/localversion-rt
+@@ -1 +1 @@
+--rt16
++-rt38
+-- 
+https://clearlinux.org
+

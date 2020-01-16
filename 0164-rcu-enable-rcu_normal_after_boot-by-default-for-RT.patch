@@ -19,7 +19,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/rcu/update.c b/kernel/rcu/update.c
-index 6ffafb1..16d8dba 100644
+index 6ffafb1b1..16d8dba23 100644
 --- a/kernel/rcu/update.c
 +++ b/kernel/rcu/update.c
 @@ -68,7 +68,7 @@ extern int rcu_expedited; /* from sysctl */

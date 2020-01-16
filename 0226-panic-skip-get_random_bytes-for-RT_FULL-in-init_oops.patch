@@ -12,10 +12,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/kernel/panic.c b/kernel/panic.c
-index 6a6df23..8f0a896 100644
+index 8138a676f..fa114be5c 100644
 --- a/kernel/panic.c
 +++ b/kernel/panic.c
-@@ -479,9 +479,11 @@ static u64 oops_id;
+@@ -480,9 +480,11 @@ static u64 oops_id;
  
  static int init_oops_id(void)
  {

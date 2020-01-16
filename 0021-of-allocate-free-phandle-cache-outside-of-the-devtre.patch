@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 13 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/of/base.c b/drivers/of/base.c
-index 3f21ea6..2c7cf83 100644
+index f0dbb7ad8..c59b30bab 100644
 --- a/drivers/of/base.c
 +++ b/drivers/of/base.c
 @@ -130,31 +130,34 @@ static u32 phandle_cache_mask;

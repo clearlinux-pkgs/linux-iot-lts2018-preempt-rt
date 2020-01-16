@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/drivers/md/bcache/Kconfig b/drivers/md/bcache/Kconfig
-index f6e0a8b..18c03d7 100644
+index f6e0a8b3a..18c03d79a 100644
 --- a/drivers/md/bcache/Kconfig
 +++ b/drivers/md/bcache/Kconfig
 @@ -1,6 +1,7 @@

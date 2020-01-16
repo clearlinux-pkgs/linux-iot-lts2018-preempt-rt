@@ -25,7 +25,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 12 insertions(+), 4 deletions(-)
 
 diff --git a/fs/squashfs/decompressor_multi_percpu.c b/fs/squashfs/decompressor_multi_percpu.c
-index 23a9c28..6a73c4f 100644
+index 23a9c28ad..6a73c4fa8 100644
 --- a/fs/squashfs/decompressor_multi_percpu.c
 +++ b/fs/squashfs/decompressor_multi_percpu.c
 @@ -10,6 +10,7 @@

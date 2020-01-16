@@ -18,7 +18,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/arch/x86/include/asm/stackprotector.h b/arch/x86/include/asm/stackprotector.h
-index 8ec97a6..7bc8584 100644
+index 8ec97a62c..7bc85841f 100644
 --- a/arch/x86/include/asm/stackprotector.h
 +++ b/arch/x86/include/asm/stackprotector.h
 @@ -60,7 +60,7 @@

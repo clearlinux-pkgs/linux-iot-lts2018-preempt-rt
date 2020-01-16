@@ -45,10 +45,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/net/sched/sch_generic.c b/net/sched/sch_generic.c
-index 77b289d..31b9c2b 100644
+index 8a4d01e42..4ab20f113 100644
 --- a/net/sched/sch_generic.c
 +++ b/net/sched/sch_generic.c
-@@ -1183,7 +1183,7 @@ void dev_deactivate_many(struct list_head *head)
+@@ -1204,7 +1204,7 @@ void dev_deactivate_many(struct list_head *head)
  	/* Wait for outstanding qdisc_run calls. */
  	list_for_each_entry(dev, head, close_list) {
  		while (some_qdisc_is_busy(dev))

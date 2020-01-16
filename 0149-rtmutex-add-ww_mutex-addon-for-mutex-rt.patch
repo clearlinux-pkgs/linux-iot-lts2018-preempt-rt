@@ -11,7 +11,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 261 insertions(+), 14 deletions(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 88df1ff..1f2dc2d 100644
+index 88df1ff7c..1f2dc2dfe 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -23,6 +23,7 @@
@@ -407,7 +407,7 @@ index 88df1ff..1f2dc2d 100644
 +EXPORT_SYMBOL(__rt_mutex_owner_current);
 +#endif
 diff --git a/kernel/locking/rtmutex_common.h b/kernel/locking/rtmutex_common.h
-index 6fcf0a3..546aaf0 100644
+index 6fcf0a3e1..546aaf058 100644
 --- a/kernel/locking/rtmutex_common.h
 +++ b/kernel/locking/rtmutex_common.h
 @@ -165,6 +165,7 @@ extern void rt_mutex_postunlock(struct wake_q_head *wake_q,
@@ -427,7 +427,7 @@ index 6fcf0a3..546aaf0 100644
  void __sched rt_spin_lock_slowlock_locked(struct rt_mutex *lock,
  					  struct rt_mutex_waiter *waiter,
 diff --git a/kernel/locking/rwsem-rt.c b/kernel/locking/rwsem-rt.c
-index 7d3c5cf..660e22c 100644
+index 7d3c5cf3d..660e22caf 100644
 --- a/kernel/locking/rwsem-rt.c
 +++ b/kernel/locking/rwsem-rt.c
 @@ -131,7 +131,7 @@ static int __sched __down_read_common(struct rw_semaphore *sem, int state)

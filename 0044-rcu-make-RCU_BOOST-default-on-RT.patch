@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/rcu/Kconfig b/kernel/rcu/Kconfig
-index 644264b..a243a78 100644
+index 644264be9..a243a78ff 100644
 --- a/kernel/rcu/Kconfig
 +++ b/kernel/rcu/Kconfig
 @@ -190,8 +190,8 @@ config RCU_FAST_NO_HZ

@@ -51,7 +51,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 24 insertions(+)
 
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index abf24e6..c72eb8b 100644
+index 1fd5ec39e..9f3412acd 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -730,6 +730,29 @@ static void hrtimer_switch_to_hres(void)

@@ -50,7 +50,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 
 diff --git a/include/linux/rwsem_rt.h b/include/linux/rwsem_rt.h
 new file mode 100644
-index 0000000..2018ff7
+index 000000000..2018ff779
 --- /dev/null
 +++ b/include/linux/rwsem_rt.h
 @@ -0,0 +1,68 @@
@@ -124,7 +124,7 @@ index 0000000..2018ff7
 +#endif
 diff --git a/kernel/locking/rwsem-rt.c b/kernel/locking/rwsem-rt.c
 new file mode 100644
-index 0000000..7d3c5cf
+index 000000000..7d3c5cf3d
 --- /dev/null
 +++ b/kernel/locking/rwsem-rt.c
 @@ -0,0 +1,293 @@
