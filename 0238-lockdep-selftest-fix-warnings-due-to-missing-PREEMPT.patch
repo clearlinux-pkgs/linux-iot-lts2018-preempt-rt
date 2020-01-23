@@ -28,7 +28,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 27 insertions(+)
 
 diff --git a/lib/locking-selftest.c b/lib/locking-selftest.c
-index 5cdf38099..32db9532d 100644
+index 5cdf380..32db953 100644
 --- a/lib/locking-selftest.c
 +++ b/lib/locking-selftest.c
 @@ -742,6 +742,8 @@ GENERATE_TESTCASE(init_held_rtmutex);

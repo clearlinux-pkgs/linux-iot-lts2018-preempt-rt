@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 6 insertions(+)
 
 diff --git a/mm/slub.c b/mm/slub.c
-index 224663e20..cbe47408c 100644
+index 224663e..cbe4740 100644
 --- a/mm/slub.c
 +++ b/mm/slub.c
 @@ -3680,6 +3680,11 @@ static void list_slab_objects(struct kmem_cache *s, struct page *page,

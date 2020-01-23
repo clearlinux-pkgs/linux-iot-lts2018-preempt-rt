@@ -8,7 +8,7 @@ Subject: [PATCH] Linux 4.19.94-rt38 REBASE
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/localversion-rt b/localversion-rt
-index 1199ebade..49bae8d6a 100644
+index 1199eba..49bae8d 100644
 --- a/localversion-rt
 +++ b/localversion-rt
 @@ -1 +1 @@

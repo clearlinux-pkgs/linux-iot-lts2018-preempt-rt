@@ -30,7 +30,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  create mode 100644 include/linux/rcu_assign_pointer.h
 
 diff --git a/include/linux/rbtree.h b/include/linux/rbtree.h
-index fcbeed405..2aa2aec35 100644
+index fcbeed4..2aa2aec 100644
 --- a/include/linux/rbtree.h
 +++ b/include/linux/rbtree.h
 @@ -31,7 +31,7 @@
@@ -44,7 +44,7 @@ index fcbeed405..2aa2aec35 100644
  	unsigned long  __rb_parent_color;
 diff --git a/include/linux/rcu_assign_pointer.h b/include/linux/rcu_assign_pointer.h
 new file mode 100644
-index 000000000..7066962a4
+index 0000000..7066962
 --- /dev/null
 +++ b/include/linux/rcu_assign_pointer.h
 @@ -0,0 +1,54 @@
@@ -103,7 +103,7 @@ index 000000000..7066962a4
 +
 +#endif
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index 027c58cdb..e6733d791 100644
+index 027c58c..e6733d7 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
 @@ -42,6 +42,7 @@

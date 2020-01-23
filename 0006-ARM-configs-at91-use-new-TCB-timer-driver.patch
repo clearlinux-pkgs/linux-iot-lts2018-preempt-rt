@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 2 deletions(-)
 
 diff --git a/arch/arm/configs/at91_dt_defconfig b/arch/arm/configs/at91_dt_defconfig
-index e4b1be66b..09f262e59 100644
+index e4b1be6..09f262e 100644
 --- a/arch/arm/configs/at91_dt_defconfig
 +++ b/arch/arm/configs/at91_dt_defconfig
 @@ -64,7 +64,6 @@ CONFIG_BLK_DEV_LOOP=y
@@ -26,7 +26,7 @@ index e4b1be66b..09f262e59 100644
  CONFIG_SCSI=y
  CONFIG_BLK_DEV_SD=y
 diff --git a/arch/arm/configs/sama5_defconfig b/arch/arm/configs/sama5_defconfig
-index 208002555..f2bbc6339 100644
+index 2080025..f2bbc63 100644
 --- a/arch/arm/configs/sama5_defconfig
 +++ b/arch/arm/configs/sama5_defconfig
 @@ -75,7 +75,6 @@ CONFIG_BLK_DEV_LOOP=y

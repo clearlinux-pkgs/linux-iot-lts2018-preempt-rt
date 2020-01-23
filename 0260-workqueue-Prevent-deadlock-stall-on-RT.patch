@@ -42,7 +42,7 @@ Cc: Steven Rostedt <rostedt@goodmis.org>
  2 files changed, 51 insertions(+), 15 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index a17c765d3..cfde725e1 100644
+index a17c765..cfde725 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -3610,9 +3610,8 @@ void __noreturn do_task_dead(void)
@@ -67,7 +67,7 @@ index a17c765d3..cfde725e1 100644
  	 * If we are going to sleep and we have plugged IO queued,
  	 * make sure to submit it to avoid deadlocks.
 diff --git a/kernel/workqueue.c b/kernel/workqueue.c
-index 045b82ca0..714d0cfe4 100644
+index 045b82c..714d0cf 100644
 --- a/kernel/workqueue.c
 +++ b/kernel/workqueue.c
 @@ -125,6 +125,11 @@ enum {

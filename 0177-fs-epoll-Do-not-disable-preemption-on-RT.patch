@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/fs/eventpoll.c b/fs/eventpoll.c
-index 58f48ea0d..a41120a34 100644
+index 58f48ea..a41120a 100644
 --- a/fs/eventpoll.c
 +++ b/fs/eventpoll.c
 @@ -571,12 +571,12 @@ static int ep_poll_wakeup_proc(void *priv, void *cookie, int call_nests)

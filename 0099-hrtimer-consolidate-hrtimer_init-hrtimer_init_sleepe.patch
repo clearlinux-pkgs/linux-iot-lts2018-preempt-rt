@@ -27,7 +27,7 @@ Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
  7 files changed, 67 insertions(+), 34 deletions(-)
 
 diff --git a/block/blk-mq.c b/block/blk-mq.c
-index 684acaa96..4aa328487 100644
+index 684acaa..4aa3284 100644
 --- a/block/blk-mq.c
 +++ b/block/blk-mq.c
 @@ -3128,10 +3128,9 @@ static bool blk_mq_poll_hybrid_sleep(struct request_queue *q,
@@ -43,7 +43,7 @@ index 684acaa96..4aa328487 100644
  		if (blk_mq_rq_state(rq) == MQ_RQ_COMPLETE)
  			break;
 diff --git a/drivers/staging/android/vsoc.c b/drivers/staging/android/vsoc.c
-index 22571abca..78a529d36 100644
+index 22571ab..78a529d 100644
 --- a/drivers/staging/android/vsoc.c
 +++ b/drivers/staging/android/vsoc.c
 @@ -437,12 +437,10 @@ static int handle_vsoc_cond_wait(struct file *filp, struct vsoc_cond_wait *arg)
@@ -62,7 +62,7 @@ index 22571abca..78a529d36 100644
  
  	while (1) {
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index 542b4fa2c..cbd041b22 100644
+index 542b4fa..cbd041b 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -364,10 +364,17 @@ DECLARE_PER_CPU(struct tick_device, tick_cpu_device);
@@ -110,7 +110,7 @@ index 542b4fa2c..cbd041b22 100644
  						const enum hrtimer_mode mode);
  extern int schedule_hrtimeout_range_clock(ktime_t *expires,
 diff --git a/include/linux/wait.h b/include/linux/wait.h
-index 2b5ef8e94..94bd2e841 100644
+index 2b5ef8e..94bd2e8 100644
 --- a/include/linux/wait.h
 +++ b/include/linux/wait.h
 @@ -489,8 +489,8 @@ do {										\
@@ -125,7 +125,7 @@ index 2b5ef8e94..94bd2e841 100644
  		hrtimer_start_range_ns(&__t.timer, timeout,			\
  				       current->timer_slack_ns,			\
 diff --git a/kernel/futex.c b/kernel/futex.c
-index 5c8053098..23e1f8a47 100644
+index 5c80530..23e1f8a 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -2704,10 +2704,9 @@ static int futex_wait(u32 __user *uaddr, unsigned int flags, u32 val,
@@ -169,7 +169,7 @@ index 5c8053098..23e1f8a47 100644
  					     current->timer_slack_ns);
  	}
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 736255441..c6f755495 100644
+index 7362554..c6f7554 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -1651,13 +1651,44 @@ static enum hrtimer_restart hrtimer_wakeup(struct hrtimer *timer)
@@ -263,7 +263,7 @@ index 736255441..c6f755495 100644
  
  	if (likely(t.task))
 diff --git a/net/core/pktgen.c b/net/core/pktgen.c
-index 092fa3d75..9d472d626 100644
+index 092fa3d..9d472d6 100644
 --- a/net/core/pktgen.c
 +++ b/net/core/pktgen.c
 @@ -2160,7 +2160,8 @@ static void spin(struct pktgen_dev *pkt_dev, ktime_t spin_until)

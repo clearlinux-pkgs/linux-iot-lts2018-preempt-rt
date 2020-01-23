@@ -22,7 +22,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 44 insertions(+), 44 deletions(-)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index f636dcc70..a9d928360 100644
+index f636dcc..a9d9283 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -243,7 +243,7 @@ struct futex_q {

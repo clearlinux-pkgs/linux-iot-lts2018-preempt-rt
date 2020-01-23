@@ -17,7 +17,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 44 insertions(+), 11 deletions(-)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index a9d928360..0b8cff8d9 100644
+index a9d9283..0b8cff8 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -825,13 +825,13 @@ static void get_pi_state(struct futex_pi_state *pi_state)

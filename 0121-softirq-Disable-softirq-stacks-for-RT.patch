@@ -19,7 +19,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  8 files changed, 15 insertions(+), 1 deletion(-)
 
 diff --git a/arch/powerpc/kernel/irq.c b/arch/powerpc/kernel/irq.c
-index d37704ebc..b45a9849b 100644
+index d37704e..b45a984 100644
 --- a/arch/powerpc/kernel/irq.c
 +++ b/arch/powerpc/kernel/irq.c
 @@ -766,6 +766,7 @@ void irq_ctx_init(void)
@@ -39,7 +39,7 @@ index d37704ebc..b45a9849b 100644
  irq_hw_number_t virq_to_hw(unsigned int virq)
  {
 diff --git a/arch/powerpc/kernel/misc_32.S b/arch/powerpc/kernel/misc_32.S
-index 695b24a2d..032ada21b 100644
+index 695b24a..032ada2 100644
 --- a/arch/powerpc/kernel/misc_32.S
 +++ b/arch/powerpc/kernel/misc_32.S
 @@ -42,6 +42,7 @@
@@ -59,7 +59,7 @@ index 695b24a2d..032ada21b 100644
  /*
   * void call_do_irq(struct pt_regs *regs, struct thread_info *irqtp);
 diff --git a/arch/powerpc/kernel/misc_64.S b/arch/powerpc/kernel/misc_64.S
-index facc02964..8b1774186 100644
+index facc029..8b17741 100644
 --- a/arch/powerpc/kernel/misc_64.S
 +++ b/arch/powerpc/kernel/misc_64.S
 @@ -32,6 +32,7 @@
@@ -79,7 +79,7 @@ index facc02964..8b1774186 100644
  _GLOBAL(call_do_irq)
  	mflr	r0
 diff --git a/arch/sh/kernel/irq.c b/arch/sh/kernel/irq.c
-index 5717c7cbd..66dd399b2 100644
+index 5717c7c..66dd399 100644
 --- a/arch/sh/kernel/irq.c
 +++ b/arch/sh/kernel/irq.c
 @@ -148,6 +148,7 @@ void irq_ctx_exit(int cpu)
@@ -99,7 +99,7 @@ index 5717c7cbd..66dd399b2 100644
  static inline void handle_one_irq(unsigned int irq)
  {
 diff --git a/arch/sparc/kernel/irq_64.c b/arch/sparc/kernel/irq_64.c
-index 713670e6d..5dfc71534 100644
+index 713670e..5dfc715 100644
 --- a/arch/sparc/kernel/irq_64.c
 +++ b/arch/sparc/kernel/irq_64.c
 @@ -854,6 +854,7 @@ void __irq_entry handler_irq(int pil, struct pt_regs *regs)
@@ -119,7 +119,7 @@ index 713670e6d..5dfc71534 100644
  #ifdef CONFIG_HOTPLUG_CPU
  void fixup_irqs(void)
 diff --git a/arch/x86/entry/entry_64.S b/arch/x86/entry/entry_64.S
-index ccb5e3486..7ffd83c57 100644
+index ccb5e34..7ffd83c 100644
 --- a/arch/x86/entry/entry_64.S
 +++ b/arch/x86/entry/entry_64.S
 @@ -1083,6 +1083,7 @@ bad_gs:
@@ -139,7 +139,7 @@ index ccb5e3486..7ffd83c57 100644
  #ifdef CONFIG_XEN
  idtentry hypervisor_callback xen_do_hypervisor_callback has_error_code=0
 diff --git a/arch/x86/kernel/irq_32.c b/arch/x86/kernel/irq_32.c
-index 95600a99a..9192d7608 100644
+index 95600a9..9192d76 100644
 --- a/arch/x86/kernel/irq_32.c
 +++ b/arch/x86/kernel/irq_32.c
 @@ -130,6 +130,7 @@ void irq_ctx_init(int cpu)
@@ -159,7 +159,7 @@ index 95600a99a..9192d7608 100644
  bool handle_irq(struct irq_desc *desc, struct pt_regs *regs)
  {
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index e74936c7b..cb2d1384c 100644
+index e74936c..cb2d138 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -506,7 +506,7 @@ struct softirq_action

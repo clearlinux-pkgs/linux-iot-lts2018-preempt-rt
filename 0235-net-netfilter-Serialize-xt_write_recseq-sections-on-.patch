@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 13 insertions(+)
 
 diff --git a/include/linux/netfilter/x_tables.h b/include/linux/netfilter/x_tables.h
-index 9077b3ebe..1710f2aff 100644
+index 9077b3e..1710f2a 100644
 --- a/include/linux/netfilter/x_tables.h
 +++ b/include/linux/netfilter/x_tables.h
 @@ -6,6 +6,7 @@
@@ -54,7 +54,7 @@ index 9077b3ebe..1710f2aff 100644
  
  /*
 diff --git a/net/netfilter/core.c b/net/netfilter/core.c
-index 93aaec3a5..b364cf8e5 100644
+index 93aaec3..b364cf8 100644
 --- a/net/netfilter/core.c
 +++ b/net/netfilter/core.c
 @@ -20,6 +20,7 @@

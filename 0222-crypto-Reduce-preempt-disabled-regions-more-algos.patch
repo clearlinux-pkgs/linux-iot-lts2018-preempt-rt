@@ -42,7 +42,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 25 insertions(+), 27 deletions(-)
 
 diff --git a/arch/x86/crypto/cast5_avx_glue.c b/arch/x86/crypto/cast5_avx_glue.c
-index 41034745d..d4bf7fc02 100644
+index 4103474..d4bf7fc 100644
 --- a/arch/x86/crypto/cast5_avx_glue.c
 +++ b/arch/x86/crypto/cast5_avx_glue.c
 @@ -61,7 +61,7 @@ static inline void cast5_fpu_end(bool fpu_enabled)
@@ -125,7 +125,7 @@ index 41034745d..d4bf7fc02 100644
  		ctr_crypt_final(&walk, ctx);
  		err = skcipher_walk_done(&walk, 0);
 diff --git a/arch/x86/crypto/glue_helper.c b/arch/x86/crypto/glue_helper.c
-index a78ef99a9..dac489a1c 100644
+index a78ef99..dac489a 100644
 --- a/arch/x86/crypto/glue_helper.c
 +++ b/arch/x86/crypto/glue_helper.c
 @@ -38,7 +38,7 @@ int glue_ecb_req_128bit(const struct common_glue_ctx *gctx,

@@ -66,7 +66,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 6 insertions(+)
 
 diff --git a/arch/arm/mm/fault.c b/arch/arm/mm/fault.c
-index a9ee0d9dc..20b0e146d 100644
+index a9ee0d9..20b0e14 100644
 --- a/arch/arm/mm/fault.c
 +++ b/arch/arm/mm/fault.c
 @@ -439,6 +439,9 @@ do_translation_fault(unsigned long addr, unsigned int fsr,

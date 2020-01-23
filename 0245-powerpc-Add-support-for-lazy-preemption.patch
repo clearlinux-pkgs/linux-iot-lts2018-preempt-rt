@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  5 files changed, 33 insertions(+), 11 deletions(-)
 
 diff --git a/arch/powerpc/Kconfig b/arch/powerpc/Kconfig
-index 1563820a3..d4835f8cf 100644
+index 1563820..d4835f8 100644
 --- a/arch/powerpc/Kconfig
 +++ b/arch/powerpc/Kconfig
 @@ -216,6 +216,7 @@ config PPC
@@ -27,7 +27,7 @@ index 1563820a3..d4835f8cf 100644
  	select HAVE_REGS_AND_STACK_ACCESS_API
  	select HAVE_RELIABLE_STACKTRACE		if PPC64 && CPU_LITTLE_ENDIAN
 diff --git a/arch/powerpc/include/asm/thread_info.h b/arch/powerpc/include/asm/thread_info.h
-index 3c0002044..ce316076b 100644
+index 3c00020..ce31607 100644
 --- a/arch/powerpc/include/asm/thread_info.h
 +++ b/arch/powerpc/include/asm/thread_info.h
 @@ -37,6 +37,8 @@ struct thread_info {
@@ -76,7 +76,7 @@ index 3c0002044..ce316076b 100644
  /* Bits in local_flags */
  /* Don't move TLF_NAPPING without adjusting the code in entry_32.S */
 diff --git a/arch/powerpc/kernel/asm-offsets.c b/arch/powerpc/kernel/asm-offsets.c
-index 50400f213..1bb82c5dc 100644
+index 50400f2..1bb82c5 100644
 --- a/arch/powerpc/kernel/asm-offsets.c
 +++ b/arch/powerpc/kernel/asm-offsets.c
 @@ -156,6 +156,7 @@ int main(void)
@@ -88,7 +88,7 @@ index 50400f213..1bb82c5dc 100644
  	OFFSET(TI_CPU, thread_info, cpu);
  
 diff --git a/arch/powerpc/kernel/entry_32.S b/arch/powerpc/kernel/entry_32.S
-index 26b3f853c..3783f3ef1 100644
+index 26b3f85..3783f3e 100644
 --- a/arch/powerpc/kernel/entry_32.S
 +++ b/arch/powerpc/kernel/entry_32.S
 @@ -888,7 +888,14 @@ resume_kernel:
@@ -140,7 +140,7 @@ index 26b3f853c..3783f3ef1 100644
  	andi.	r0,r9,_TIF_USER_WORK_MASK
  	beq	restore_user
 diff --git a/arch/powerpc/kernel/entry_64.S b/arch/powerpc/kernel/entry_64.S
-index 58b50967b..ef02e41d5 100644
+index 58b5096..ef02e41 100644
 --- a/arch/powerpc/kernel/entry_64.S
 +++ b/arch/powerpc/kernel/entry_64.S
 @@ -176,7 +176,7 @@ system_call:			/* label this so stack traces look sane */

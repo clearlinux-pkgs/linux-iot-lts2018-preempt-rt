@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 14 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/block/zram/zcomp.c b/drivers/block/zram/zcomp.c
-index 4ed0a78fd..dd65a27ae 100644
+index 4ed0a78..dd65a27 100644
 --- a/drivers/block/zram/zcomp.c
 +++ b/drivers/block/zram/zcomp.c
 @@ -116,12 +116,19 @@ ssize_t zcomp_available_show(const char *comp, char *buf)
@@ -54,7 +54,7 @@ index 4ed0a78fd..dd65a27ae 100644
  	return 0;
  }
 diff --git a/drivers/block/zram/zcomp.h b/drivers/block/zram/zcomp.h
-index 41c1002a7..d424eafcb 100644
+index 41c1002..d424eaf 100644
 --- a/drivers/block/zram/zcomp.h
 +++ b/drivers/block/zram/zcomp.h
 @@ -14,6 +14,7 @@ struct zcomp_strm {
@@ -66,7 +66,7 @@ index 41c1002a7..d424eafcb 100644
  
  /* dynamic per-device compression frontend */
 diff --git a/drivers/block/zram/zram_drv.c b/drivers/block/zram/zram_drv.c
-index d6cf9508b..715201992 100644
+index d6cf950..7152019 100644
 --- a/drivers/block/zram/zram_drv.c
 +++ b/drivers/block/zram/zram_drv.c
 @@ -1028,6 +1028,7 @@ static int __zram_bvec_read(struct zram *zram, struct page *page, u32 index,

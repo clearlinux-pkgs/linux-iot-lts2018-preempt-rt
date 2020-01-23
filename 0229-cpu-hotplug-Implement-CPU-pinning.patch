@@ -10,7 +10,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 39 insertions(+)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 834f46cb2..4559d8039 100644
+index 834f46c..4559d80 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -671,6 +671,7 @@ struct task_struct {
@@ -22,7 +22,7 @@ index 834f46cb2..4559d8039 100644
  	int				migrate_disable_atomic;
  # endif
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index cf1f2eb6b..e6c2d814f 100644
+index cf1f2eb..e6c2d81 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -75,6 +75,11 @@ static DEFINE_PER_CPU(struct cpuhp_cpu_state, cpuhp_state) = {

@@ -20,7 +20,7 @@ Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
  5 files changed, 17 insertions(+), 5 deletions(-)
 
 diff --git a/arch/arm64/Kconfig b/arch/arm64/Kconfig
-index 51fe21f5d..9bf5be2d6 100644
+index 51fe21f..9bf5be2 100644
 --- a/arch/arm64/Kconfig
 +++ b/arch/arm64/Kconfig
 @@ -141,6 +141,7 @@ config ARM64
@@ -32,7 +32,7 @@ index 51fe21f5d..9bf5be2d6 100644
  	select HAVE_RCU_TABLE_FREE
  	select HAVE_RSEQ
 diff --git a/arch/arm64/include/asm/thread_info.h b/arch/arm64/include/asm/thread_info.h
-index cb2c10a8f..f1820f731 100644
+index cb2c10a..f1820f7 100644
 --- a/arch/arm64/include/asm/thread_info.h
 +++ b/arch/arm64/include/asm/thread_info.h
 @@ -43,6 +43,7 @@ struct thread_info {
@@ -71,7 +71,7 @@ index cb2c10a8f..f1820f731 100644
  				 _TIF_SYSCALL_TRACEPOINT | _TIF_SECCOMP | \
  				 _TIF_NOHZ)
 diff --git a/arch/arm64/kernel/asm-offsets.c b/arch/arm64/kernel/asm-offsets.c
-index 92fba851c..844c71bc8 100644
+index 92fba85..844c71b 100644
 --- a/arch/arm64/kernel/asm-offsets.c
 +++ b/arch/arm64/kernel/asm-offsets.c
 @@ -41,6 +41,7 @@ int main(void)
@@ -83,7 +83,7 @@ index 92fba851c..844c71bc8 100644
  #ifdef CONFIG_ARM64_SW_TTBR0_PAN
    DEFINE(TSK_TI_TTBR0,		offsetof(struct task_struct, thread_info.ttbr0));
 diff --git a/arch/arm64/kernel/entry.S b/arch/arm64/kernel/entry.S
-index 5f800384c..b582580c8 100644
+index 5f80038..b582580 100644
 --- a/arch/arm64/kernel/entry.S
 +++ b/arch/arm64/kernel/entry.S
 @@ -623,11 +623,16 @@ el1_irq:
@@ -115,7 +115,7 @@ index 5f800384c..b582580c8 100644
  #endif
  
 diff --git a/arch/arm64/kernel/signal.c b/arch/arm64/kernel/signal.c
-index 5dcc94290..4fec251fe 100644
+index 5dcc942..4fec251 100644
 --- a/arch/arm64/kernel/signal.c
 +++ b/arch/arm64/kernel/signal.c
 @@ -926,7 +926,7 @@ asmlinkage void do_notify_resume(struct pt_regs *regs,

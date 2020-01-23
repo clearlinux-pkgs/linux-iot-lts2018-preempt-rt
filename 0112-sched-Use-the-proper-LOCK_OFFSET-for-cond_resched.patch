@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 4 insertions(+)
 
 diff --git a/include/linux/preempt.h b/include/linux/preempt.h
-index f7a17fcc3..b7fe717eb 100644
+index f7a17fc..b7fe717 100644
 --- a/include/linux/preempt.h
 +++ b/include/linux/preempt.h
 @@ -118,7 +118,11 @@

@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 104 insertions(+), 15 deletions(-)
 
 diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
-index 9aba444d7..c76c32aea 100644
+index 9aba444..c76c32a 100644
 --- a/include/linux/netdevice.h
 +++ b/include/linux/netdevice.h
 @@ -587,7 +587,11 @@ struct netdev_queue {
@@ -183,7 +183,7 @@ index 9aba444d7..c76c32aea 100644
  }
  
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 53d921537..5e1cc92c2 100644
+index 53d9215..5e1cc92 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1216,6 +1216,9 @@ struct task_struct {
@@ -197,7 +197,7 @@ index 53d921537..5e1cc92c2 100644
  	int				pagefault_disabled;
  #ifdef CONFIG_MMU
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 430ca0e79..ed1537cc9 100644
+index 430ca0e..ed1537c 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -3538,8 +3538,10 @@ static void skb_update_prio(struct sk_buff *skb)
@@ -248,7 +248,7 @@ index 430ca0e79..ed1537cc9 100644
  	queue->dev = dev;
  #ifdef CONFIG_BQL
 diff --git a/net/core/filter.c b/net/core/filter.c
-index 91b950261..024c4852f 100644
+index e6fa885..b3b9b8d 100644
 --- a/net/core/filter.c
 +++ b/net/core/filter.c
 @@ -2000,7 +2000,7 @@ static inline int __bpf_tx_skb(struct net_device *dev, struct sk_buff *skb)
@@ -260,9 +260,9 @@ index 91b950261..024c4852f 100644
  		net_crit_ratelimited("bpf: recursion limit reached on datapath, buggy bpf program?\n");
  		kfree_skb(skb);
  		return -ENETDOWN;
-@@ -2009,9 +2009,9 @@ static inline int __bpf_tx_skb(struct net_device *dev, struct sk_buff *skb)
+@@ -2008,9 +2008,9 @@ static inline int __bpf_tx_skb(struct net_device *dev, struct sk_buff *skb)
+ 
  	skb->dev = dev;
- 	skb->tstamp = 0;
  
 -	__this_cpu_inc(xmit_recursion);
 +	xmit_rec_inc();

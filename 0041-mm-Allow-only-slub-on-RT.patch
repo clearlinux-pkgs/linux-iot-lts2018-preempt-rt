@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/init/Kconfig b/init/Kconfig
-index 47035b5a4..ae9a0113a 100644
+index 47035b5..ae9a011 100644
 --- a/init/Kconfig
 +++ b/init/Kconfig
 @@ -1637,6 +1637,7 @@ choice

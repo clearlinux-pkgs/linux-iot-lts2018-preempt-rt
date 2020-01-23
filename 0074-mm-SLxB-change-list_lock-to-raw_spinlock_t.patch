@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 73 insertions(+), 73 deletions(-)
 
 diff --git a/mm/slab.c b/mm/slab.c
-index 46f21e73d..38f660934 100644
+index 46f21e7..38f6609 100644
 --- a/mm/slab.c
 +++ b/mm/slab.c
 @@ -233,7 +233,7 @@ static void kmem_cache_node_init(struct kmem_cache_node *parent)
@@ -385,7 +385,7 @@ index 46f21e73d..38f660934 100644
  	} while (!is_store_user_clean(cachep));
  
 diff --git a/mm/slab.h b/mm/slab.h
-index 9632772e1..d6b01d61f 100644
+index 9632772..d6b01d6 100644
 --- a/mm/slab.h
 +++ b/mm/slab.h
 @@ -454,7 +454,7 @@ static inline void slab_post_alloc_hook(struct kmem_cache *s, gfp_t flags,
@@ -398,7 +398,7 @@ index 9632772e1..d6b01d61f 100644
  #ifdef CONFIG_SLAB
  	struct list_head slabs_partial;	/* partial list first, better asm code */
 diff --git a/mm/slub.c b/mm/slub.c
-index 9c3937c5c..ba20c68a9 100644
+index 9c3937c..ba20c68 100644
 --- a/mm/slub.c
 +++ b/mm/slub.c
 @@ -1167,7 +1167,7 @@ static noinline int free_debug_processing(

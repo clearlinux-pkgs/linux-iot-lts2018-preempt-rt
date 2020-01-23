@@ -36,7 +36,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 4 insertions(+)
 
 diff --git a/fs/exec.c b/fs/exec.c
-index 561ea6482..0d95c6349 100644
+index 561ea64..0d95c63 100644
 --- a/fs/exec.c
 +++ b/fs/exec.c
 @@ -1028,12 +1028,14 @@ static int exec_mmap(struct mm_struct *mm)
@@ -55,7 +55,7 @@ index 561ea6482..0d95c6349 100644
  	if (old_mm) {
  		up_read(&old_mm->mmap_sem);
 diff --git a/mm/mmu_context.c b/mm/mmu_context.c
-index 3e612ae74..d0ccc0709 100644
+index 3e612ae..d0ccc07 100644
 --- a/mm/mmu_context.c
 +++ b/mm/mmu_context.c
 @@ -25,6 +25,7 @@ void use_mm(struct mm_struct *mm)

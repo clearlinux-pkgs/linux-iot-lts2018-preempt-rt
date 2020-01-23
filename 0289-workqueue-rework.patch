@@ -36,7 +36,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  delete mode 100644 include/linux/kthread-cgroup.h
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index 7d7094658..752c9e754 100644
+index 7d70946..752c9e7 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -973,7 +973,7 @@ void blk_queue_exit(struct request_queue *q)
@@ -67,7 +67,7 @@ index 7d7094658..752c9e754 100644
  	/*
  	 * Init percpu_ref in atomic mode so that it's faster to shutdown.
 diff --git a/drivers/block/loop.c b/drivers/block/loop.c
-index 351ea22ff..9cd231a27 100644
+index 351ea22..9cd231a 100644
 --- a/drivers/block/loop.c
 +++ b/drivers/block/loop.c
 @@ -70,7 +70,7 @@
@@ -80,7 +80,7 @@ index 351ea22ff..9cd231a27 100644
  #include <linux/sysfs.h>
  #include <linux/miscdevice.h>
 diff --git a/drivers/spi/spi-rockchip.c b/drivers/spi/spi-rockchip.c
-index 63b10236e..185bbdce6 100644
+index 63b1023..185bbdc 100644
 --- a/drivers/spi/spi-rockchip.c
 +++ b/drivers/spi/spi-rockchip.c
 @@ -22,7 +22,6 @@
@@ -92,7 +92,7 @@ index 63b10236e..185bbdce6 100644
  #define DRIVER_NAME "rockchip-spi"
  
 diff --git a/drivers/thermal/x86_pkg_temp_thermal.c b/drivers/thermal/x86_pkg_temp_thermal.c
-index 82f21fd4a..1ef937d79 100644
+index 82f21fd..1ef937d 100644
 --- a/drivers/thermal/x86_pkg_temp_thermal.c
 +++ b/drivers/thermal/x86_pkg_temp_thermal.c
 @@ -29,7 +29,6 @@
@@ -154,7 +154,7 @@ index 82f21fd4a..1ef937d79 100644
  	kfree(packages);
  }
 diff --git a/fs/aio.c b/fs/aio.c
-index 0c613d805..c74dd321f 100644
+index 0c613d8..c74dd32 100644
 --- a/fs/aio.c
 +++ b/fs/aio.c
 @@ -121,7 +121,7 @@ struct kioctx {
@@ -190,7 +190,7 @@ index 0c613d805..c74dd321f 100644
  
  static int ioctx_add_table(struct kioctx *ctx, struct mm_struct *mm)
 diff --git a/include/linux/blk-cgroup.h b/include/linux/blk-cgroup.h
-index 0473efda4..da587e60f 100644
+index 0473efd..da587e6 100644
 --- a/include/linux/blk-cgroup.h
 +++ b/include/linux/blk-cgroup.h
 @@ -14,7 +14,7 @@
@@ -203,7 +203,7 @@ index 0473efda4..da587e60f 100644
  #include <linux/seq_file.h>
  #include <linux/radix-tree.h>
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index 15a489abf..45653e23e 100644
+index 15a489a..45653e2 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -656,7 +656,7 @@ struct request_queue {
@@ -216,7 +216,7 @@ index 15a489abf..45653e23e 100644
  	struct list_head	all_q_node;
  
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index a9321f642..97d9ba269 100644
+index a9321f6..97d9ba2 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -13,7 +13,6 @@
@@ -241,7 +241,7 @@ index a9321f642..97d9ba269 100644
  };
 diff --git a/include/linux/kthread-cgroup.h b/include/linux/kthread-cgroup.h
 deleted file mode 100644
-index 53d34bca9..000000000
+index 53d34bc..0000000
 --- a/include/linux/kthread-cgroup.h
 +++ /dev/null
 @@ -1,17 +0,0 @@
@@ -263,7 +263,7 @@ index 53d34bca9..000000000
 -#endif
 -#endif
 diff --git a/include/linux/kthread.h b/include/linux/kthread.h
-index 7cf56eb54..6b8c064f0 100644
+index 7cf56eb..6b8c064 100644
 --- a/include/linux/kthread.h
 +++ b/include/linux/kthread.h
 @@ -4,6 +4,7 @@
@@ -296,7 +296,7 @@ index 7cf56eb54..6b8c064f0 100644
 +#endif
  #endif /* _LINUX_KTHREAD_H */
 diff --git a/include/linux/swait.h b/include/linux/swait.h
-index f426a0661..21ae66cd4 100644
+index f426a06..21ae66c 100644
 --- a/include/linux/swait.h
 +++ b/include/linux/swait.h
 @@ -299,4 +299,18 @@ do {									\
@@ -319,7 +319,7 @@ index f426a0661..21ae66cd4 100644
 +
  #endif /* _LINUX_SWAIT_H */
 diff --git a/include/linux/workqueue.h b/include/linux/workqueue.h
-index 60d673e15..546aa73fb 100644
+index 60d673e..546aa73 100644
 --- a/include/linux/workqueue.h
 +++ b/include/linux/workqueue.h
 @@ -455,10 +455,6 @@ __alloc_workqueue_key(const char *fmt, unsigned int flags, int max_active,
@@ -334,7 +334,7 @@ index 60d673e15..546aa73fb 100644
  
  extern bool queue_work_on(int cpu, struct workqueue_struct *wq,
 diff --git a/init/main.c b/init/main.c
-index e514dd93d..6e0218838 100644
+index e514dd9..6e02188 100644
 --- a/init/main.c
 +++ b/init/main.c
 @@ -1129,7 +1129,6 @@ static noinline void __init kernel_init_freeable(void)
@@ -346,7 +346,7 @@ index e514dd93d..6e0218838 100644
  	init_mm_internals();
  
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 290cd520d..82b372868 100644
+index 290cd52..82b3728 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -285,12 +285,7 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,
@@ -425,7 +425,7 @@ index 290cd520d..82b372868 100644
  	}
  
 diff --git a/kernel/kthread.c b/kernel/kthread.c
-index 9db017761..5641b5578 100644
+index 9db0177..5641b55 100644
 --- a/kernel/kthread.c
 +++ b/kernel/kthread.c
 @@ -20,7 +20,6 @@
@@ -457,7 +457,7 @@ index 9db017761..5641b5578 100644
  /**
   * kthread_associate_blkcg - associate blkcg to current kthread
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 678c2c4de..a1c0123e7 100644
+index 678c2c4..a1c0123 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -3607,6 +3607,7 @@ static inline void sched_submit_work(struct task_struct *tsk)
@@ -469,7 +469,7 @@ index 678c2c4de..a1c0123e7 100644
  	 * If a worker went to sleep, notify and ask workqueue whether
  	 * it wants to wake up a task to maintain concurrency.
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index ed5d8d51c..94d97eae0 100644
+index ed5d8d5..94d97ea 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -730,29 +730,6 @@ static void hrtimer_switch_to_hres(void)
@@ -511,7 +511,7 @@ index ed5d8d51c..94d97eae0 100644
  #else
  
 diff --git a/kernel/workqueue.c b/kernel/workqueue.c
-index 714d0cfe4..75f59299d 100644
+index 714d0cf..75f5929 100644
 --- a/kernel/workqueue.c
 +++ b/kernel/workqueue.c
 @@ -49,8 +49,6 @@

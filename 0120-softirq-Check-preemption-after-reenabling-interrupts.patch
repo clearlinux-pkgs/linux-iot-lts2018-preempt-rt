@@ -21,7 +21,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 18 insertions(+)
 
 diff --git a/block/blk-softirq.c b/block/blk-softirq.c
-index 15c1f5e12..162827788 100644
+index 15c1f5e..1628277 100644
 --- a/block/blk-softirq.c
 +++ b/block/blk-softirq.c
 @@ -53,6 +53,7 @@ static void trigger_softirq(void *data)
@@ -49,7 +49,7 @@ index 15c1f5e12..162827788 100644
  EXPORT_SYMBOL(__blk_complete_request);
  
 diff --git a/include/linux/preempt.h b/include/linux/preempt.h
-index b7fe717eb..9984f2b75 100644
+index b7fe717..9984f2b 100644
 --- a/include/linux/preempt.h
 +++ b/include/linux/preempt.h
 @@ -187,8 +187,10 @@ do { \
@@ -72,7 +72,7 @@ index b7fe717eb..9984f2b75 100644
  
  #define migrate_disable()			barrier()
 diff --git a/lib/irq_poll.c b/lib/irq_poll.c
-index 86a709954..9c069ef83 100644
+index 86a7099..9c069ef 100644
 --- a/lib/irq_poll.c
 +++ b/lib/irq_poll.c
 @@ -37,6 +37,7 @@ void irq_poll_sched(struct irq_poll *iop)
@@ -116,7 +116,7 @@ index 86a709954..9c069ef83 100644
  	return 0;
  }
 diff --git a/net/core/dev.c b/net/core/dev.c
-index a26d87073..f64e9d036 100644
+index a26d870..f64e9d0 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -2727,6 +2727,7 @@ static void __netif_reschedule(struct Qdisc *q)

@@ -16,7 +16,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 2 deletions(-)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index 4c448dddc..38f53b95e 100644
+index 4c448dd..38f53b9 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -921,9 +921,7 @@ void exit_pi_state_list(struct task_struct *curr)

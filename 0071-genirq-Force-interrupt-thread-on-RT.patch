@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 6 insertions(+)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index eeceac337..315f852b4 100644
+index eeceac3..315f852 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -427,7 +427,11 @@ extern int irq_set_irqchip_state(unsigned int irq, enum irqchip_irq_state which,
@@ -29,7 +29,7 @@ index eeceac337..315f852b4 100644
  #define force_irqthreads	(0)
  #endif
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 23bcfa710..3c26d0708 100644
+index 23bcfa7..3c26d07 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -24,6 +24,7 @@

@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 49 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index 315f852b4..a943c07b5 100644
+index 315f852..a943c07 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -13,6 +13,7 @@
@@ -48,7 +48,7 @@ index 315f852b4..a943c07b5 100644
  	void (*release)(struct kref *ref);
  };
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 3c26d0708..eadcbfbd4 100644
+index 3c26d07..eadcbfb 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -285,7 +285,12 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,

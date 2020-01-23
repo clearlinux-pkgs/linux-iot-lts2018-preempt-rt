@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  11 files changed, 37 insertions(+), 14 deletions(-)
 
 diff --git a/arch/x86/kvm/lapic.c b/arch/x86/kvm/lapic.c
-index 262e49301..c2f51b6e8 100644
+index 262e493..c2f51b6 100644
 --- a/arch/x86/kvm/lapic.c
 +++ b/arch/x86/kvm/lapic.c
 @@ -2257,7 +2257,7 @@ int kvm_create_lapic(struct kvm_vcpu *vcpu)
@@ -40,7 +40,7 @@ index 262e49301..c2f51b6e8 100644
  
  	/*
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index 8714f1a37..082147c07 100644
+index 8714f1a..082147c 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -42,6 +42,7 @@ enum hrtimer_mode {
@@ -64,7 +64,7 @@ index 8714f1a37..082147c07 100644
  
  /*
 diff --git a/kernel/events/core.c b/kernel/events/core.c
-index 460d5fd3e..60a883088 100644
+index 460d5fd..60a8830 100644
 --- a/kernel/events/core.c
 +++ b/kernel/events/core.c
 @@ -1102,7 +1102,7 @@ static void __perf_mux_hrtimer_init(struct perf_cpu_context *cpuctx, int cpu)
@@ -86,7 +86,7 @@ index 460d5fd3e..60a883088 100644
  
  	/*
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 584978640..2f6b4365d 100644
+index 5849786..2f6b436 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -315,7 +315,7 @@ static void hrtick_rq_init(struct rq *rq)
@@ -99,7 +99,7 @@ index 584978640..2f6b4365d 100644
  }
  #else	/* CONFIG_SCHED_HRTICK */
 diff --git a/kernel/sched/deadline.c b/kernel/sched/deadline.c
-index 4b13df38c..974a8f9b6 100644
+index 4b13df3..974a8f9 100644
 --- a/kernel/sched/deadline.c
 +++ b/kernel/sched/deadline.c
 @@ -1086,7 +1086,7 @@ void init_dl_task_timer(struct sched_dl_entity *dl_se)
@@ -112,7 +112,7 @@ index 4b13df38c..974a8f9b6 100644
  }
  
 diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
-index 6e6d9e999..21cf60c36 100644
+index 6e6d9e9..21cf60c 100644
 --- a/kernel/sched/fair.c
 +++ b/kernel/sched/fair.c
 @@ -4914,9 +4914,9 @@ void init_cfs_bandwidth(struct cfs_bandwidth *cfs_b)
@@ -128,7 +128,7 @@ index 6e6d9e999..21cf60c36 100644
  	cfs_b->distribute_running = 0;
  }
 diff --git a/kernel/sched/rt.c b/kernel/sched/rt.c
-index b6ca4a630..aeb99395c 100644
+index b6ca4a6..aeb9939 100644
 --- a/kernel/sched/rt.c
 +++ b/kernel/sched/rt.c
 @@ -45,8 +45,8 @@ void init_rt_bandwidth(struct rt_bandwidth *rt_b, u64 period, u64 runtime)
@@ -143,7 +143,7 @@ index b6ca4a630..aeb99395c 100644
  }
  
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index e135cb27d..1fd5ec39e 100644
+index e135cb2..1fd5ec3 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -1138,7 +1138,9 @@ void hrtimer_start_range_ns(struct hrtimer *timer, ktime_t tim,
@@ -192,7 +192,7 @@ index e135cb27d..1fd5ec39e 100644
  	sl->timer.function = hrtimer_wakeup;
  	sl->task = task;
 diff --git a/kernel/time/tick-broadcast-hrtimer.c b/kernel/time/tick-broadcast-hrtimer.c
-index a836efd34..c50e8f326 100644
+index a836efd..c50e8f3 100644
 --- a/kernel/time/tick-broadcast-hrtimer.c
 +++ b/kernel/time/tick-broadcast-hrtimer.c
 @@ -107,7 +107,7 @@ static enum hrtimer_restart bc_handler(struct hrtimer *t)
@@ -205,7 +205,7 @@ index a836efd34..c50e8f326 100644
  	clockevents_register_device(&ce_broadcast_hrtimer);
  }
 diff --git a/kernel/time/tick-sched.c b/kernel/time/tick-sched.c
-index 54fd344ef..c217af74d 100644
+index 54fd344..c217af7 100644
 --- a/kernel/time/tick-sched.c
 +++ b/kernel/time/tick-sched.c
 @@ -1310,7 +1310,7 @@ void tick_setup_sched_timer(void)
@@ -218,7 +218,7 @@ index 54fd344ef..c217af74d 100644
  
  	/* Get the next period (per-CPU) */
 diff --git a/kernel/watchdog.c b/kernel/watchdog.c
-index bbc4940f2..defd493ba 100644
+index bbc4940..defd493 100644
 --- a/kernel/watchdog.c
 +++ b/kernel/watchdog.c
 @@ -483,7 +483,7 @@ static void watchdog_enable(unsigned int cpu)

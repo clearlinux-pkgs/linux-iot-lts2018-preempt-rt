@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 73 insertions(+), 12 deletions(-)
 
 diff --git a/kernel/softirq.c b/kernel/softirq.c
-index 3e9333d14..fe4e59c80 100644
+index 3e9333d..fe4e59c 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
 @@ -59,6 +59,10 @@ EXPORT_PER_CPU_SYMBOL(irq_stat);

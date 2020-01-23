@@ -18,7 +18,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 164 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index c87c11bfd..ba37d39d5 100644
+index c87c11b..ba37d39 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -832,6 +832,9 @@ struct task_struct {
@@ -32,7 +32,7 @@ index c87c11bfd..ba37d39d5 100644
  
  	/* Process credentials: */
 diff --git a/init/init_task.c b/init/init_task.c
-index 0b49b9cf5..9e3362748 100644
+index 0b49b9c..9e33627 100644
 --- a/init/init_task.c
 +++ b/init/init_task.c
 @@ -50,6 +50,12 @@ static struct sighand_struct init_sighand = {
@@ -57,7 +57,7 @@ index 0b49b9cf5..9e3362748 100644
  	.thread_group	= LIST_HEAD_INIT(init_task.thread_group),
  	.thread_node	= LIST_HEAD_INIT(init_signals.thread_head),
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 8c285876e..b3744a043 100644
+index 8c28587..b3744a0 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -1580,6 +1580,9 @@ static void rt_mutex_init_task(struct task_struct *p)
@@ -71,7 +71,7 @@ index 8c285876e..b3744a043 100644
  	tsk->cputime_expires.virt_exp = 0;
  	tsk->cputime_expires.sched_exp = 0;
 diff --git a/kernel/time/posix-cpu-timers.c b/kernel/time/posix-cpu-timers.c
-index d62d7ae52..8d95e8de9 100644
+index d62d7ae..8d95e8d 100644
 --- a/kernel/time/posix-cpu-timers.c
 +++ b/kernel/time/posix-cpu-timers.c
 @@ -3,8 +3,10 @@

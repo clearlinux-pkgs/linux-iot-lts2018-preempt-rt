@@ -35,7 +35,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 24 insertions(+)
 
 diff --git a/arch/arm/kernel/process.c b/arch/arm/kernel/process.c
-index 82ab015bf..8d3c7ce34 100644
+index 82ab015..8d3c7ce 100644
 --- a/arch/arm/kernel/process.c
 +++ b/arch/arm/kernel/process.c
 @@ -324,6 +324,30 @@ unsigned long arch_randomize_brk(struct mm_struct *mm)

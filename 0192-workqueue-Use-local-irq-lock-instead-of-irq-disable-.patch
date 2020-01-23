@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 30 insertions(+), 15 deletions(-)
 
 diff --git a/kernel/workqueue.c b/kernel/workqueue.c
-index 544007905..0efb8d25d 100644
+index 5440079..0efb8d2 100644
 --- a/kernel/workqueue.c
 +++ b/kernel/workqueue.c
 @@ -49,6 +49,7 @@

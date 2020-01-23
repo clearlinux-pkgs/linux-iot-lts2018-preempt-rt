@@ -11,7 +11,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 2 insertions(+), 13 deletions(-)
 
 diff --git a/fs/aio.c b/fs/aio.c
-index 16dcf8521..911e23087 100644
+index 16dcf85..911e230 100644
 --- a/fs/aio.c
 +++ b/fs/aio.c
 @@ -42,7 +42,6 @@

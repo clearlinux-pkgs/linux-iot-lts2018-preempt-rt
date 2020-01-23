@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 30 insertions(+), 1 deletion(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index ea33d6abd..4860cd26c 100644
+index ea33d6a..4860cd2 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -189,6 +189,9 @@ void blk_rq_init(struct request_queue *q, struct request *rq)
@@ -29,7 +29,7 @@ index ea33d6abd..4860cd26c 100644
  	rq->q = q;
  	rq->__sector = (sector_t) -1;
 diff --git a/block/blk-mq.c b/block/blk-mq.c
-index 376fb90de..5808446e4 100644
+index 376fb90..5808446 100644
 --- a/block/blk-mq.c
 +++ b/block/blk-mq.c
 @@ -320,6 +320,9 @@ static struct request *blk_mq_rq_ctx_init(struct blk_mq_alloc_data *data,
@@ -87,7 +87,7 @@ index 376fb90de..5808446e4 100644
  		rq->q->softirq_done_fn(rq);
  	}
 diff --git a/include/linux/blk-mq.h b/include/linux/blk-mq.h
-index 2885dce1a..8dbb9ecf9 100644
+index 2885dce..8dbb9ec 100644
 --- a/include/linux/blk-mq.h
 +++ b/include/linux/blk-mq.h
 @@ -256,7 +256,7 @@ static inline u16 blk_mq_unique_tag_to_tag(u32 unique_tag)
@@ -100,7 +100,7 @@ index 2885dce1a..8dbb9ecf9 100644
  void blk_mq_start_request(struct request *rq);
  void blk_mq_end_request(struct request *rq, blk_status_t error);
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index d51e10f50..f1960add9 100644
+index d51e10f..f1960ad 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -149,6 +149,9 @@ enum mq_rq_state {

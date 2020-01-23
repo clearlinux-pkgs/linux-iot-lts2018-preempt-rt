@@ -19,7 +19,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  7 files changed, 88 insertions(+), 7 deletions(-)
 
 diff --git a/fs/timerfd.c b/fs/timerfd.c
-index d69ad801e..82d0f5241 100644
+index d69ad80..82d0f52 100644
 --- a/fs/timerfd.c
 +++ b/fs/timerfd.c
 @@ -471,7 +471,10 @@ static int do_timerfd_settime(int ufd, int flags,
@@ -35,7 +35,7 @@ index d69ad801e..82d0f5241 100644
  
  	/*
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index cbd041b22..8714f1a37 100644
+index cbd041b..8714f1a 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -22,6 +22,7 @@
@@ -80,7 +80,7 @@ index cbd041b22..8714f1a37 100644
  	return timer->base->running == timer;
  }
 diff --git a/include/linux/posix-timers.h b/include/linux/posix-timers.h
-index ee7e987ea..0571b498d 100644
+index ee7e987..0571b49 100644
 --- a/include/linux/posix-timers.h
 +++ b/include/linux/posix-timers.h
 @@ -114,8 +114,8 @@ struct k_itimer {
@@ -94,7 +94,7 @@ index ee7e987ea..0571b498d 100644
  
  void run_posix_cpu_timers(struct task_struct *task);
 diff --git a/kernel/time/alarmtimer.c b/kernel/time/alarmtimer.c
-index f4255a65c..1d1f077cf 100644
+index f4255a6..1d1f077 100644
 --- a/kernel/time/alarmtimer.c
 +++ b/kernel/time/alarmtimer.c
 @@ -436,7 +436,7 @@ int alarm_cancel(struct alarm *alarm)
@@ -107,7 +107,7 @@ index f4255a65c..1d1f077cf 100644
  }
  EXPORT_SYMBOL_GPL(alarm_cancel);
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index c6f755495..e135cb27d 100644
+index c6f7554..e135cb2 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -939,6 +939,33 @@ u64 hrtimer_forward(struct hrtimer *timer, ktime_t now, ktime_t interval)
@@ -172,7 +172,7 @@ index c6f755495..e135cb27d 100644
  }
  
 diff --git a/kernel/time/itimer.c b/kernel/time/itimer.c
-index 9a65713c8..55b0e5836 100644
+index 9a65713..55b0e58 100644
 --- a/kernel/time/itimer.c
 +++ b/kernel/time/itimer.c
 @@ -215,6 +215,7 @@ int do_setitimer(int which, struct itimerval *value, struct itimerval *ovalue)
@@ -184,7 +184,7 @@ index 9a65713c8..55b0e5836 100644
  		}
  		expires = timeval_to_ktime(value->it_value);
 diff --git a/kernel/time/posix-timers.c b/kernel/time/posix-timers.c
-index 5a01c4fdb..a5ec421e3 100644
+index 5a01c4f..a5ec421 100644
 --- a/kernel/time/posix-timers.c
 +++ b/kernel/time/posix-timers.c
 @@ -463,7 +463,7 @@ static struct k_itimer * alloc_posix_timer(void)

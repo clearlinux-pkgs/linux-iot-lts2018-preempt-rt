@@ -16,7 +16,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 30 insertions(+), 19 deletions(-)
 
 diff --git a/include/linux/swap.h b/include/linux/swap.h
-index ee8f9f554..2ad000e36 100644
+index ee8f9f5..2ad000e 100644
 --- a/include/linux/swap.h
 +++ b/include/linux/swap.h
 @@ -12,6 +12,7 @@
@@ -36,7 +36,7 @@ index ee8f9f554..2ad000e36 100644
  extern void lru_cache_add_anon(struct page *page);
  extern void lru_cache_add_file(struct page *page);
 diff --git a/mm/compaction.c b/mm/compaction.c
-index 5079ddbec..c40d3a13c 100644
+index 5079ddb..c40d3a1 100644
 --- a/mm/compaction.c
 +++ b/mm/compaction.c
 @@ -1668,10 +1668,12 @@ static enum compact_result compact_zone(struct zone *zone, struct compact_contro
@@ -55,7 +55,7 @@ index 5079ddbec..c40d3a13c 100644
  				cc->last_migrated_pfn = 0;
  			}
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index bff6c04eb..f7d30f995 100644
+index bff6c04..f7d30f9 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -7212,8 +7212,9 @@ void __init free_area_init(unsigned long *zones_size)
@@ -70,7 +70,7 @@ index bff6c04eb..f7d30f995 100644
  
  	/*
 diff --git a/mm/swap.c b/mm/swap.c
-index 45fdbfb6b..92f994b96 100644
+index 45fdbfb..92f994b 100644
 --- a/mm/swap.c
 +++ b/mm/swap.c
 @@ -33,6 +33,7 @@

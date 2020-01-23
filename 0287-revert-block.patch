@@ -14,7 +14,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  2 files changed, 1 insertion(+), 15 deletions(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index 13bf37156..4860cd26c 100644
+index 13bf371..4860cd2 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -973,21 +973,12 @@ void blk_queue_exit(struct request_queue *q)
@@ -58,7 +58,7 @@ index 13bf37156..4860cd26c 100644
  			sizeof(struct request), 0, SLAB_PANIC, NULL);
  
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index 7b7c0bc6a..f1960add9 100644
+index 7b7c0bc..f1960ad 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -27,7 +27,6 @@

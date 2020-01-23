@@ -61,7 +61,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 27 insertions(+)
 
 diff --git a/include/linux/delay.h b/include/linux/delay.h
-index b78bab439..7c4bc414a 100644
+index b78bab4..7c4bc41 100644
 --- a/include/linux/delay.h
 +++ b/include/linux/delay.h
 @@ -64,4 +64,10 @@ static inline void ssleep(unsigned int seconds)
@@ -76,7 +76,7 @@ index b78bab439..7c4bc414a 100644
 +
  #endif /* defined(_LINUX_DELAY_H) */
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index b800efb64..98a771065 100644
+index b800efb..98a7710 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -1897,6 +1897,27 @@ COMPAT_SYSCALL_DEFINE2(nanosleep, struct compat_timespec __user *, rqtp,

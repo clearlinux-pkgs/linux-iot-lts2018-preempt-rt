@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 33 insertions(+), 8 deletions(-)
 
 diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
-index d5527e382..9aba444d7 100644
+index d5527e3..9aba444 100644
 --- a/include/linux/netdevice.h
 +++ b/include/linux/netdevice.h
 @@ -2982,6 +2982,7 @@ struct softnet_data {
@@ -27,7 +27,7 @@ index d5527e382..9aba444d7 100644
  };
  
 diff --git a/include/linux/skbuff.h b/include/linux/skbuff.h
-index 25407c206..d4d7aea13 100644
+index 25407c2..d4d7aea 100644
 --- a/include/linux/skbuff.h
 +++ b/include/linux/skbuff.h
 @@ -287,6 +287,7 @@ struct sk_buff_head {
@@ -52,7 +52,7 @@ index 25407c206..d4d7aea13 100644
  		struct lock_class_key *class)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 4926a260b..430ca0e79 100644
+index 4926a26..430ca0e 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -218,14 +218,14 @@ static inline struct hlist_head *dev_index_hash(struct net *net, int ifindex)

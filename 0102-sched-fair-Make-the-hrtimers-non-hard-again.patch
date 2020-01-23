@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
-index 21cf60c36..6e6d9e999 100644
+index 21cf60c..6e6d9e9 100644
 --- a/kernel/sched/fair.c
 +++ b/kernel/sched/fair.c
 @@ -4914,9 +4914,9 @@ void init_cfs_bandwidth(struct cfs_bandwidth *cfs_b)

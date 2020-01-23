@@ -45,7 +45,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/sched/completion.c b/kernel/sched/completion.c
-index 755a58084..49c141379 100644
+index 755a580..49c1413 100644
 --- a/kernel/sched/completion.c
 +++ b/kernel/sched/completion.c
 @@ -72,12 +72,12 @@ do_wait_for_common(struct completion *x,

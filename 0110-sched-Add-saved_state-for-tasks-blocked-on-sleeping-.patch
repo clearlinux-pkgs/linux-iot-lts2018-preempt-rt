@@ -17,7 +17,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 36 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index a1ef00db6..c073a3273 100644
+index a1ef00d..c073a32 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -600,6 +600,8 @@ struct task_struct {
@@ -38,7 +38,7 @@ index a1ef00db6..c073a3273 100644
  
  #ifdef CONFIG_SMP
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 79e0d052e..d1c564acf 100644
+index 79e0d05..d1c564a 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1999,8 +1999,27 @@ try_to_wake_up(struct task_struct *p, unsigned int state, int wake_flags)
@@ -90,7 +90,7 @@ index 79e0d052e..d1c564acf 100644
  {
  	return try_to_wake_up(p, state, 0);
 diff --git a/kernel/sched/sched.h b/kernel/sched/sched.h
-index 94bec97bd..c79e32488 100644
+index 94bec97..c79e324 100644
 --- a/kernel/sched/sched.h
 +++ b/kernel/sched/sched.h
 @@ -1439,6 +1439,7 @@ static inline int task_on_rq_migrating(struct task_struct *p)

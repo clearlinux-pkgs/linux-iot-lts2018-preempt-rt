@@ -33,7 +33,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 47 insertions(+), 100 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 3b2664e69..dcf2deedd 100644
+index 3b2664e..dcf2dee 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1704,10 +1704,6 @@ static inline void ttwu_activate(struct rq *rq, struct task_struct *p, int en_fl
@@ -169,7 +169,7 @@ index 3b2664e69..dcf2deedd 100644
  EXPORT_SYMBOL(schedule);
  
 diff --git a/kernel/workqueue.c b/kernel/workqueue.c
-index 34734cdb5..045b82ca0 100644
+index 34734cd..045b82c 100644
 --- a/kernel/workqueue.c
 +++ b/kernel/workqueue.c
 @@ -843,43 +843,32 @@ static void wake_up_worker(struct worker_pool *pool)
@@ -264,7 +264,7 @@ index 34734cdb5..045b82ca0 100644
  
  /**
 diff --git a/kernel/workqueue_internal.h b/kernel/workqueue_internal.h
-index 66fbb5a9e..30cfed226 100644
+index 66fbb5a..30cfed2 100644
 --- a/kernel/workqueue_internal.h
 +++ b/kernel/workqueue_internal.h
 @@ -44,6 +44,7 @@ struct worker {

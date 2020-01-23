@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 4 deletions(-)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index f64e9d036..4926a260b 100644
+index f64e9d0..4926a26 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -4541,11 +4541,9 @@ int netif_rx_ni(struct sk_buff *skb)

@@ -33,7 +33,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  6 files changed, 109 insertions(+), 7 deletions(-)
 
 diff --git a/include/linux/preempt.h b/include/linux/preempt.h
-index 27c3176d8..9eafc3489 100644
+index 27c3176..9eafc34 100644
 --- a/include/linux/preempt.h
 +++ b/include/linux/preempt.h
 @@ -211,6 +211,15 @@ extern void migrate_enable(void);
@@ -53,7 +53,7 @@ index 27c3176d8..9eafc3489 100644
  #define migrate_disable()		barrier()
  #define migrate_enable()		barrier()
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 32a9ca5df..c5f050aff 100644
+index 32a9ca5..c5f050a 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -673,6 +673,15 @@ struct task_struct {
@@ -97,7 +97,7 @@ index 32a9ca5df..c5f050aff 100644
   * Wrappers for p->thread_info->cpu access. No-op on UP.
   */
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 94788662b..2a9bf2443 100644
+index 9478866..2a9bf24 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1141,6 +1141,7 @@ void __sched rt_spin_lock_slowunlock(struct rt_mutex *lock)
@@ -159,7 +159,7 @@ index 94788662b..2a9bf2443 100644
  		spin_acquire(&lock->dep_map, 0, 1, _RET_IP_);
  	}
 diff --git a/kernel/locking/rwlock-rt.c b/kernel/locking/rwlock-rt.c
-index 8f90afe11..c3b912051 100644
+index 8f90afe..c3b9120 100644
 --- a/kernel/locking/rwlock-rt.c
 +++ b/kernel/locking/rwlock-rt.c
 @@ -305,12 +305,15 @@ int __lockfunc rt_read_trylock(rwlock_t *rwlock)
@@ -230,7 +230,7 @@ index 8f90afe11..c3b912051 100644
  EXPORT_SYMBOL(rt_write_unlock);
  
 diff --git a/kernel/rcu/tree_plugin.h b/kernel/rcu/tree_plugin.h
-index a97c20ea9..564e3927e 100644
+index a97c20e..564e392 100644
 --- a/kernel/rcu/tree_plugin.h
 +++ b/kernel/rcu/tree_plugin.h
 @@ -337,9 +337,13 @@ static void rcu_preempt_note_context_switch(bool preempt)
@@ -249,7 +249,7 @@ index a97c20ea9..564e3927e 100644
  	    !t->rcu_read_unlock_special.b.blocked) {
  
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 6bab30347..d49580cb0 100644
+index 6bab303..d49580c 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -7354,4 +7354,49 @@ void migrate_enable(void)

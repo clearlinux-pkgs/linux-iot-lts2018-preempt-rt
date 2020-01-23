@@ -18,7 +18,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  3 files changed, 21 insertions(+), 94 deletions(-)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index 38f53b95e..6ee55df4f 100644
+index 38f53b9..6ee55df 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -2150,16 +2150,6 @@ static int futex_requeue(u32 __user *uaddr1, unsigned int flags,
@@ -144,7 +144,7 @@ index 38f53b95e..6ee55df4f 100644
  			ret = 0;
  
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 7f6f402e0..44a33057a 100644
+index 7f6f402..44a3305 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -142,11 +142,6 @@ static void fixup_rt_mutex_waiters(struct rt_mutex *lock)
@@ -240,7 +240,7 @@ index 7f6f402e0..44a33057a 100644
  		return;
  	}
 diff --git a/kernel/locking/rtmutex_common.h b/kernel/locking/rtmutex_common.h
-index a501f3b47..758dc4387 100644
+index a501f3b..758dc43 100644
 --- a/kernel/locking/rtmutex_common.h
 +++ b/kernel/locking/rtmutex_common.h
 @@ -132,8 +132,6 @@ enum rtmutex_chainwalk {

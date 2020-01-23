@@ -52,7 +52,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 31 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 71d161c93..1c3f56d3d 100644
+index 71d161c..1c3f56d 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -137,7 +137,8 @@ static void fixup_rt_mutex_waiters(struct rt_mutex *lock)
@@ -101,7 +101,7 @@ index 71d161c93..1c3f56d3d 100644
  	ret = task_blocks_on_rt_mutex(lock, waiter, task,
  				      RT_MUTEX_FULL_CHAINWALK);
 diff --git a/kernel/locking/rtmutex_common.h b/kernel/locking/rtmutex_common.h
-index f4b6596d2..461527f3f 100644
+index f4b6596..461527f 100644
 --- a/kernel/locking/rtmutex_common.h
 +++ b/kernel/locking/rtmutex_common.h
 @@ -131,6 +131,7 @@ enum rtmutex_chainwalk {

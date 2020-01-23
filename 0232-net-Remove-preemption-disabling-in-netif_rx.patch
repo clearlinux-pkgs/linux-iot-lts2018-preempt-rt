@@ -35,7 +35,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 950356b8b..ee8cb6d4f 100644
+index 950356b..ee8cb6d 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -4499,7 +4499,7 @@ static int netif_rx_internal(struct sk_buff *skb)

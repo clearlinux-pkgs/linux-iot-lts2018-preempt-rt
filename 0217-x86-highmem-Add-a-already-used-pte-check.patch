@@ -11,7 +11,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/arch/x86/mm/iomap_32.c b/arch/x86/mm/iomap_32.c
-index d5a48210d..c0ec8d430 100644
+index d5a4821..c0ec8d4 100644
 --- a/arch/x86/mm/iomap_32.c
 +++ b/arch/x86/mm/iomap_32.c
 @@ -69,6 +69,8 @@ void *kmap_atomic_prot_pfn(unsigned long pfn, pgprot_t prot)

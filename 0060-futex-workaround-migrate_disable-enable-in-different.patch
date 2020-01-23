@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 19 insertions(+)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index e75ad30aa..5c8053098 100644
+index e75ad30..5c80530 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -2879,6 +2879,14 @@ static int futex_lock_pi(u32 __user *uaddr, unsigned int flags,

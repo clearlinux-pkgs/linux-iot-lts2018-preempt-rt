@@ -31,7 +31,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index 5ec49f862..60be4530c 100644
+index 5ec49f8..60be453 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -921,7 +921,9 @@ void exit_pi_state_list(struct task_struct *curr)

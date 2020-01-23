@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 41 insertions(+)
 
 diff --git a/drivers/block/zram/zram_drv.c b/drivers/block/zram/zram_drv.c
-index 76abe40bf..d6cf9508b 100644
+index 76abe40..d6cf950 100644
 --- a/drivers/block/zram/zram_drv.c
 +++ b/drivers/block/zram/zram_drv.c
 @@ -53,6 +53,40 @@ static size_t huge_class_size;
@@ -85,7 +85,7 @@ index 76abe40bf..d6cf9508b 100644
  }
  
 diff --git a/drivers/block/zram/zram_drv.h b/drivers/block/zram/zram_drv.h
-index d1095dfdf..144e91061 100644
+index d1095df..144e910 100644
 --- a/drivers/block/zram/zram_drv.h
 +++ b/drivers/block/zram/zram_drv.h
 @@ -61,6 +61,9 @@ struct zram_table_entry {

@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 27 insertions(+), 2 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index ba37d39d5..a1ef00db6 100644
+index ba37d39..a1ef00d 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1194,6 +1194,9 @@ struct task_struct {
@@ -28,7 +28,7 @@ index ba37d39d5..a1ef00db6 100644
  	unsigned long			task_state_change;
  #endif
 diff --git a/include/linux/sched/task.h b/include/linux/sched/task.h
-index 44c6f1580..d2b33e57c 100644
+index 44c6f15..d2b33e5 100644
 --- a/include/linux/sched/task.h
 +++ b/include/linux/sched/task.h
 @@ -90,6 +90,15 @@ extern void sched_exec(void);
@@ -57,7 +57,7 @@ index 44c6f1580..d2b33e57c 100644
  
  #ifdef CONFIG_ARCH_WANTS_DYNAMIC_TASK_STRUCT
 diff --git a/kernel/fork.c b/kernel/fork.c
-index b3744a043..4b85282d9 100644
+index b3744a0..4b85282 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -666,7 +666,9 @@ static inline void put_signal_struct(struct signal_struct *sig)

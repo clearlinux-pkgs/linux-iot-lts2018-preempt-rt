@@ -32,7 +32,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 11 insertions(+), 2 deletions(-)
 
 diff --git a/fs/aio.c b/fs/aio.c
-index 911e23087..0c613d805 100644
+index 911e230..0c613d8 100644
 --- a/fs/aio.c
 +++ b/fs/aio.c
 @@ -121,6 +121,7 @@ struct kioctx {

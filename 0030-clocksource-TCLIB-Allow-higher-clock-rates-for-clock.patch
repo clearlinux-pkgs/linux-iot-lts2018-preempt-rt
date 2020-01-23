@@ -19,7 +19,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 31 insertions(+), 17 deletions(-)
 
 diff --git a/drivers/clocksource/tcb_clksrc.c b/drivers/clocksource/tcb_clksrc.c
-index de6baf564..ba15242a6 100644
+index de6baf5..ba15242 100644
 --- a/drivers/clocksource/tcb_clksrc.c
 +++ b/drivers/clocksource/tcb_clksrc.c
 @@ -25,8 +25,7 @@
@@ -134,7 +134,7 @@ index de6baf564..ba15242a6 100644
  		goto err_unregister_clksrc;
  
 diff --git a/drivers/misc/Kconfig b/drivers/misc/Kconfig
-index 3726eacdf..0900dec7e 100644
+index 3726eac..0900dec 100644
 --- a/drivers/misc/Kconfig
 +++ b/drivers/misc/Kconfig
 @@ -69,8 +69,7 @@ config ATMEL_TCB_CLKSRC
