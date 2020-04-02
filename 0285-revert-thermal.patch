@@ -11,7 +11,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 3 insertions(+), 49 deletions(-)
 
 diff --git a/drivers/thermal/x86_pkg_temp_thermal.c b/drivers/thermal/x86_pkg_temp_thermal.c
-index a5991cb..1ef937d 100644
+index a5991cbb408f..1ef937d799e4 100644
 --- a/drivers/thermal/x86_pkg_temp_thermal.c
 +++ b/drivers/thermal/x86_pkg_temp_thermal.c
 @@ -29,7 +29,6 @@

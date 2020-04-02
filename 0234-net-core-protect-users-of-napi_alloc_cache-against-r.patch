@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 19 insertions(+), 6 deletions(-)
 
 diff --git a/net/core/skbuff.c b/net/core/skbuff.c
-index 6ca7cb2..c5c0d20 100644
+index 6ca7cb2b4364..c5c0d2095873 100644
 --- a/net/core/skbuff.c
 +++ b/net/core/skbuff.c
 @@ -332,6 +332,7 @@ struct napi_alloc_cache {

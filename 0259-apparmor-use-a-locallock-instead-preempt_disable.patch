@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 17 insertions(+), 4 deletions(-)
 
 diff --git a/security/apparmor/include/path.h b/security/apparmor/include/path.h
-index b6380c5..12abfdd 100644
+index b6380c5f0097..12abfddb19c9 100644
 --- a/security/apparmor/include/path.h
 +++ b/security/apparmor/include/path.h
 @@ -40,8 +40,10 @@ struct aa_buffers {
@@ -67,7 +67,7 @@ index b6380c5..12abfdd 100644
  
  #endif /* __AA_PATH_H */
 diff --git a/security/apparmor/lsm.c b/security/apparmor/lsm.c
-index 8b8b706..8330ef5 100644
+index 730de4638b4e..edc911ff6a4d 100644
 --- a/security/apparmor/lsm.c
 +++ b/security/apparmor/lsm.c
 @@ -45,7 +45,7 @@

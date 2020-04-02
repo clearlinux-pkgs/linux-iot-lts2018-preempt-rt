@@ -74,7 +74,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 7 insertions(+), 5 deletions(-)
 
 diff --git a/include/linux/list_bl.h b/include/linux/list_bl.h
-index 69b6592..0b5de7d 100644
+index 69b659259bac..0b5de7d9ffcf 100644
 --- a/include/linux/list_bl.h
 +++ b/include/linux/list_bl.h
 @@ -43,13 +43,15 @@ struct hlist_bl_node {

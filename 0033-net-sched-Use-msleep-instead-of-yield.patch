@@ -45,7 +45,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/net/sched/sch_generic.c b/net/sched/sch_generic.c
-index 8a4d01e..4ab20f1 100644
+index 8a4d01e427a2..4ab20f1138fd 100644
 --- a/net/sched/sch_generic.c
 +++ b/net/sched/sch_generic.c
 @@ -1204,7 +1204,7 @@ void dev_deactivate_many(struct list_head *head)

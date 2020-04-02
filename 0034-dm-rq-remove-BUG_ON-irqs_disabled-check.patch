@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 deletion(-)
 
 diff --git a/drivers/md/dm-rq.c b/drivers/md/dm-rq.c
-index 4d36373..12ed082 100644
+index 4d36373e1c0f..12ed08245130 100644
 --- a/drivers/md/dm-rq.c
 +++ b/drivers/md/dm-rq.c
 @@ -692,7 +692,6 @@ static void dm_old_request_fn(struct request_queue *q)

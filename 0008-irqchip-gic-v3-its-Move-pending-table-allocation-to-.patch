@@ -12,7 +12,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 53 insertions(+), 28 deletions(-)
 
 diff --git a/drivers/irqchip/irq-gic-v3-its.c b/drivers/irqchip/irq-gic-v3-its.c
-index 050d6e0..fc4c319 100644
+index f9b73336a39e..0387399054b7 100644
 --- a/drivers/irqchip/irq-gic-v3-its.c
 +++ b/drivers/irqchip/irq-gic-v3-its.c
 @@ -179,6 +179,7 @@ static DEFINE_RAW_SPINLOCK(vmovp_lock);
@@ -154,7 +154,7 @@ index 050d6e0..fc4c319 100644
  		return err;
  
 diff --git a/include/linux/irqchip/arm-gic-v3.h b/include/linux/irqchip/arm-gic-v3.h
-index 3188c0b..5b57501 100644
+index 1d21e98d6854..fdddead7e307 100644
 --- a/include/linux/irqchip/arm-gic-v3.h
 +++ b/include/linux/irqchip/arm-gic-v3.h
 @@ -585,6 +585,7 @@ struct rdists {

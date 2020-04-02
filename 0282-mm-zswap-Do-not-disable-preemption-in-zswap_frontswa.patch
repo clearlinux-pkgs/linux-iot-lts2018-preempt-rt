@@ -68,7 +68,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 7 insertions(+), 5 deletions(-)
 
 diff --git a/mm/zswap.c b/mm/zswap.c
-index cd91fd9..420225d 100644
+index cd91fd9d96b8..420225d3ff0b 100644
 --- a/mm/zswap.c
 +++ b/mm/zswap.c
 @@ -27,6 +27,7 @@

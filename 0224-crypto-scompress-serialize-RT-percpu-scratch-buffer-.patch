@@ -40,7 +40,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/crypto/scompress.c b/crypto/scompress.c
-index 968bbcf..c2f0077 100644
+index 968bbcf65c94..c2f0077e0801 100644
 --- a/crypto/scompress.c
 +++ b/crypto/scompress.c
 @@ -24,6 +24,7 @@

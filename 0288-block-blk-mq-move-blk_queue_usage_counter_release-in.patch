@@ -54,7 +54,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  2 files changed, 13 insertions(+), 1 deletion(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index 4860cd2..7d70946 100644
+index 4860cd26cd5a..7d709465876e 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -973,12 +973,21 @@ void blk_queue_exit(struct request_queue *q)
@@ -89,7 +89,7 @@ index 4860cd2..7d70946 100644
  	/*
  	 * Init percpu_ref in atomic mode so that it's faster to shutdown.
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index f1960ad..15a489a 100644
+index 111ab4209797..981103415cd8 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -13,6 +13,7 @@

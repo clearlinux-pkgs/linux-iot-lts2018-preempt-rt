@@ -51,7 +51,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 15 insertions(+), 1 deletion(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index 4860cd2..13bf371 100644
+index 4860cd26cd5a..13bf37156bb0 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -973,12 +973,21 @@ void blk_queue_exit(struct request_queue *q)
@@ -95,7 +95,7 @@ index 4860cd2..13bf371 100644
  			sizeof(struct request), 0, SLAB_PANIC, NULL);
  
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index f1960ad..7b7c0bc 100644
+index 111ab4209797..2f3b2e5196eb 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -27,6 +27,7 @@

@@ -28,7 +28,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/arch/powerpc/kvm/Kconfig b/arch/powerpc/kvm/Kconfig
-index 68a0e9d..6f4d5d7 100644
+index 68a0e9d5b440..6f4d5d7615af 100644
 --- a/arch/powerpc/kvm/Kconfig
 +++ b/arch/powerpc/kvm/Kconfig
 @@ -178,6 +178,7 @@ config KVM_E500MC

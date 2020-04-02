@@ -18,7 +18,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/init/Kconfig b/init/Kconfig
-index ae9a011..61e8b53 100644
+index ae9a0113a699..61e8b531649b 100644
 --- a/init/Kconfig
 +++ b/init/Kconfig
 @@ -784,6 +784,7 @@ config CFS_BANDWIDTH

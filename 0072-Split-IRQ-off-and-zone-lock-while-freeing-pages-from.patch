@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 52 insertions(+), 30 deletions(-)
 
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 74fb5c3..3b51ad4 100644
+index e5c610d711f3..0cfcd42517a4 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -1095,7 +1095,7 @@ static inline void prefetch_buddy(struct page *page)

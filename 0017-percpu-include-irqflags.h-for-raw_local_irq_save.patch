@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/include/asm-generic/percpu.h b/include/asm-generic/percpu.h
-index 1817a84..942d64c 100644
+index 1817a8415a5e..942d64c0476e 100644
 --- a/include/asm-generic/percpu.h
 +++ b/include/asm-generic/percpu.h
 @@ -5,6 +5,7 @@

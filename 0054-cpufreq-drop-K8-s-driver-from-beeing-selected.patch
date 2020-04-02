@@ -21,7 +21,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/cpufreq/Kconfig.x86 b/drivers/cpufreq/Kconfig.x86
-index 35f7182..bb4a616 100644
+index 35f71825b7f3..bb4a6160d0f7 100644
 --- a/drivers/cpufreq/Kconfig.x86
 +++ b/drivers/cpufreq/Kconfig.x86
 @@ -125,7 +125,7 @@ config X86_POWERNOW_K7_ACPI

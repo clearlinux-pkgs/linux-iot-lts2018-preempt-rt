@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 9 insertions(+)
 
 diff --git a/kernel/locking/rwsem-rt.c b/kernel/locking/rwsem-rt.c
-index 660e22c..f518495 100644
+index 660e22caf709..f518495bd6cc 100644
 --- a/kernel/locking/rwsem-rt.c
 +++ b/kernel/locking/rwsem-rt.c
 @@ -1,5 +1,6 @@

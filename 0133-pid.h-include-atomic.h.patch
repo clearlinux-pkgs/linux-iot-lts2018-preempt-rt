@@ -26,7 +26,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/include/linux/pid.h b/include/linux/pid.h
-index 14a9a39..a9026a5 100644
+index 14a9a39da9c7..a9026a5da196 100644
 --- a/include/linux/pid.h
 +++ b/include/linux/pid.h
 @@ -3,6 +3,7 @@

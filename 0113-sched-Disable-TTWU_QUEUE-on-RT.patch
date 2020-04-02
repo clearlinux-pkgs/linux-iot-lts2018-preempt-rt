@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 5 insertions(+)
 
 diff --git a/kernel/sched/features.h b/kernel/sched/features.h
-index 85ae848..68de184 100644
+index 85ae8488039c..68de18405857 100644
 --- a/kernel/sched/features.h
 +++ b/kernel/sched/features.h
 @@ -46,11 +46,16 @@ SCHED_FEAT(LB_BIAS, true)

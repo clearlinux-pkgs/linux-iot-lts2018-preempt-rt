@@ -16,7 +16,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/block/blk-ioc.c b/block/blk-ioc.c
-index 01580f8..98d87e5 100644
+index 01580f88fcb3..98d87e52ccdc 100644
 --- a/block/blk-ioc.c
 +++ b/block/blk-ioc.c
 @@ -9,6 +9,7 @@

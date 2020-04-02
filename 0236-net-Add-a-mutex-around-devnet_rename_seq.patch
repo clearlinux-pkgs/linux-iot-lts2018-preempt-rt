@@ -21,7 +21,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 20 insertions(+), 14 deletions(-)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index ee8cb6d..fd54d56 100644
+index 935156f1c5d4..dbd9bdffafff 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -196,6 +196,7 @@ static unsigned int napi_gen_id = NR_CPUS;

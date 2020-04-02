@@ -12,7 +12,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 11 insertions(+), 4 deletions(-)
 
 diff --git a/kernel/time/timer.c b/kernel/time/timer.c
-index 9019c9c..3fab1c5 100644
+index 9019c9caf146..3fab1c50bf1b 100644
 --- a/kernel/time/timer.c
 +++ b/kernel/time/timer.c
 @@ -217,8 +217,7 @@ static DEFINE_PER_CPU(struct timer_base, timer_bases[NR_BASES]);

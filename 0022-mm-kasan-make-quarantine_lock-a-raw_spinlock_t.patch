@@ -22,7 +22,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 9 insertions(+), 9 deletions(-)
 
 diff --git a/mm/kasan/quarantine.c b/mm/kasan/quarantine.c
-index 3a8ddf8..b209dba 100644
+index 3a8ddf8baf7d..b209dbaefde8 100644
 --- a/mm/kasan/quarantine.c
 +++ b/mm/kasan/quarantine.c
 @@ -103,7 +103,7 @@ static int quarantine_head;

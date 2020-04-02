@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 30 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/printk/printk.c b/kernel/printk/printk.c
-index 9a7f259..83f3861 100644
+index f934baed564d..c927f89961a8 100644
 --- a/kernel/printk/printk.c
 +++ b/kernel/printk/printk.c
 @@ -1624,6 +1624,7 @@ SYSCALL_DEFINE3(syslog, int, type, char __user *, buf, int, len)

@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 5 insertions(+), 3 deletions(-)
 
 diff --git a/net/packet/af_packet.c b/net/packet/af_packet.c
-index ac65e66..b4267ce 100644
+index ecea8edae61c..2a9ebb5a7714 100644
 --- a/net/packet/af_packet.c
 +++ b/net/packet/af_packet.c
 @@ -63,6 +63,7 @@
@@ -44,7 +44,7 @@ index ac65e66..b4267ce 100644
  		}
  		prb_close_block(pkc, pbd, po, status);
 diff --git a/net/rds/ib_rdma.c b/net/rds/ib_rdma.c
-index 0b347f4..f395f06 100644
+index 0b347f46b2f4..f395f06031bc 100644
 --- a/net/rds/ib_rdma.c
 +++ b/net/rds/ib_rdma.c
 @@ -34,6 +34,7 @@

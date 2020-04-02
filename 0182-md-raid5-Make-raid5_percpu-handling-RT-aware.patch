@@ -19,7 +19,7 @@ Tested-by: Udo van den Heuvel <udovdh@xs4all.nl>
  2 files changed, 6 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/md/raid5.c b/drivers/md/raid5.c
-index 0102138..379ce2f 100644
+index 01021382131b..379ce2f57512 100644
 --- a/drivers/md/raid5.c
 +++ b/drivers/md/raid5.c
 @@ -2069,8 +2069,9 @@ static void raid_run_ops(struct stripe_head *sh, unsigned long ops_request)
@@ -60,7 +60,7 @@ index 0102138..379ce2f 100644
  	if (!err) {
  		conf->scribble_disks = max(conf->raid_disks,
 diff --git a/drivers/md/raid5.h b/drivers/md/raid5.h
-index 8474c22..a3bf907 100644
+index 8474c224127b..a3bf907ab2af 100644
 --- a/drivers/md/raid5.h
 +++ b/drivers/md/raid5.h
 @@ -637,6 +637,7 @@ struct r5conf {

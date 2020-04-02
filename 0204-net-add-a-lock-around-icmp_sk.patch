@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 8 insertions(+)
 
 diff --git a/net/ipv4/icmp.c b/net/ipv4/icmp.c
-index 4efa5e3..de67d59 100644
+index 4efa5e33513e..de67d595e298 100644
 --- a/net/ipv4/icmp.c
 +++ b/net/ipv4/icmp.c
 @@ -77,6 +77,7 @@

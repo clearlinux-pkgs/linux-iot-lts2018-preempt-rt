@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/arm/mm/highmem.c b/arch/arm/mm/highmem.c
-index d02f818..eb4b225 100644
+index d02f8187b1cc..eb4b225d28c9 100644
 --- a/arch/arm/mm/highmem.c
 +++ b/arch/arm/mm/highmem.c
 @@ -112,10 +112,10 @@ void __kunmap_atomic(void *kvaddr)

@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 12 insertions(+), 12 deletions(-)
 
 diff --git a/drivers/scsi/fcoe/fcoe.c b/drivers/scsi/fcoe/fcoe.c
-index 6768b2e..c20f51a 100644
+index 6768b2e8148a..c20f51af6bdf 100644
 --- a/drivers/scsi/fcoe/fcoe.c
 +++ b/drivers/scsi/fcoe/fcoe.c
 @@ -1459,11 +1459,11 @@ static int fcoe_rcv(struct sk_buff *skb, struct net_device *netdev,
@@ -72,7 +72,7 @@ index 6768b2e..c20f51a 100644
  }
  
 diff --git a/drivers/scsi/fcoe/fcoe_ctlr.c b/drivers/scsi/fcoe/fcoe_ctlr.c
-index 24cbd0a..ccf6080 100644
+index 24cbd0a2cc69..ccf60801fe9d 100644
 --- a/drivers/scsi/fcoe/fcoe_ctlr.c
 +++ b/drivers/scsi/fcoe/fcoe_ctlr.c
 @@ -838,7 +838,7 @@ static unsigned long fcoe_ctlr_age_fcfs(struct fcoe_ctlr *fip)
@@ -94,7 +94,7 @@ index 24cbd0a..ccf6080 100644
  	list_for_each_entry_safe(fcf, next, &del_list, list) {
  		/* Removes fcf from current list */
 diff --git a/drivers/scsi/libfc/fc_exch.c b/drivers/scsi/libfc/fc_exch.c
-index 42bcf7f..2ce045d 100644
+index 6ba257cbc6d9..d2398a19f84c 100644
 --- a/drivers/scsi/libfc/fc_exch.c
 +++ b/drivers/scsi/libfc/fc_exch.c
 @@ -833,10 +833,10 @@ static struct fc_exch *fc_exch_em_alloc(struct fc_lport *lport,

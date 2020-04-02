@@ -11,7 +11,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 
 diff --git a/localversion-rt b/localversion-rt
 new file mode 100644
-index 0000000..1199eba
+index 000000000000..1199ebade17b
 --- /dev/null
 +++ b/localversion-rt
 @@ -0,0 +1 @@

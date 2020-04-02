@@ -21,7 +21,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index d0450f0..e6022cc 100644
+index d0450f06612c..e6022cc2605b 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1013,6 +1013,7 @@ int __migrate_disabled(struct task_struct *p)

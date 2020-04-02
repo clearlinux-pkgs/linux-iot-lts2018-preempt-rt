@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+)
 
 diff --git a/arch/x86/kernel/fpu/signal.c b/arch/x86/kernel/fpu/signal.c
-index d99a8ee..5e0274a 100644
+index d99a8ee9e185..5e0274a94133 100644
 --- a/arch/x86/kernel/fpu/signal.c
 +++ b/arch/x86/kernel/fpu/signal.c
 @@ -344,10 +344,12 @@ static int __fpu__restore_sig(void __user *buf, void __user *buf_fx, int size)

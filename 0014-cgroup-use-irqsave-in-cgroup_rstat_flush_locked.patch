@@ -21,7 +21,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/cgroup/rstat.c b/kernel/cgroup/rstat.c
-index bb95a35..3266a97 100644
+index bb95a35e8c2d..3266a9781b4e 100644
 --- a/kernel/cgroup/rstat.c
 +++ b/kernel/cgroup/rstat.c
 @@ -159,8 +159,9 @@ static void cgroup_rstat_flush_locked(struct cgroup *cgrp, bool may_sleep)

@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 212 insertions(+), 5 deletions(-)
 
 diff --git a/drivers/clocksource/timer-atmel-tcb.c b/drivers/clocksource/timer-atmel-tcb.c
-index 21fbe43..63ce3b6 100644
+index 21fbe430f91b..63ce3b69338a 100644
 --- a/drivers/clocksource/timer-atmel-tcb.c
 +++ b/drivers/clocksource/timer-atmel-tcb.c
 @@ -32,7 +32,7 @@ struct atmel_tcb_clksrc {

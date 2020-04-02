@@ -19,7 +19,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 4 insertions(+), 22 deletions(-)
 
 diff --git a/kernel/rcu/srcutree.c b/kernel/rcu/srcutree.c
-index 1ff17e2..df03754 100644
+index 1ff17e297f0c..df0375453ba1 100644
 --- a/kernel/rcu/srcutree.c
 +++ b/kernel/rcu/srcutree.c
 @@ -38,6 +38,7 @@
@@ -69,7 +69,7 @@ index 1ff17e2..df03754 100644
  }
  
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index ae716ca..f162a4f 100644
+index ae716ca783bc..f162a4f54b05 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
 @@ -3784,8 +3784,6 @@ int rcutree_online_cpu(unsigned int cpu)

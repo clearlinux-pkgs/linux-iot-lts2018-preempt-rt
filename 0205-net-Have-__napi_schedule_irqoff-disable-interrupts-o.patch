@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 14 insertions(+)
 
 diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
-index c76c32a..49dc281 100644
+index 5de4b66e11fe..1d6bb0ab437f 100644
 --- a/include/linux/netdevice.h
 +++ b/include/linux/netdevice.h
 @@ -422,7 +422,19 @@ typedef enum rx_handler_result rx_handler_result_t;
@@ -51,10 +51,10 @@ index c76c32a..49dc281 100644
  static inline bool napi_disable_pending(struct napi_struct *n)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 1a30cf6..950356b 100644
+index 6c6c1c6d534b..19e2cd0897b3 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
-@@ -5967,6 +5967,7 @@ bool napi_schedule_prep(struct napi_struct *n)
+@@ -5938,6 +5938,7 @@ bool napi_schedule_prep(struct napi_struct *n)
  }
  EXPORT_SYMBOL(napi_schedule_prep);
  
@@ -62,7 +62,7 @@ index 1a30cf6..950356b 100644
  /**
   * __napi_schedule_irqoff - schedule for receive
   * @n: entry to schedule
-@@ -5978,6 +5979,7 @@ void __napi_schedule_irqoff(struct napi_struct *n)
+@@ -5949,6 +5950,7 @@ void __napi_schedule_irqoff(struct napi_struct *n)
  	____napi_schedule(this_cpu_ptr(&softnet_data), n);
  }
  EXPORT_SYMBOL(__napi_schedule_irqoff);

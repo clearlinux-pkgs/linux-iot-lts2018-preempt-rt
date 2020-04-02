@@ -17,7 +17,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  7 files changed, 79 insertions(+), 3 deletions(-)
 
 diff --git a/arch/x86/Kconfig b/arch/x86/Kconfig
-index f22e787..a56f57f 100644
+index f22e787329cf..a56f57f95993 100644
 --- a/arch/x86/Kconfig
 +++ b/arch/x86/Kconfig
 @@ -180,6 +180,7 @@ config X86
@@ -29,7 +29,7 @@ index f22e787..a56f57f 100644
  	select HAVE_RCU_TABLE_INVALIDATE	if HAVE_RCU_TABLE_FREE
  	select HAVE_REGS_AND_STACK_ACCESS_API
 diff --git a/arch/x86/entry/common.c b/arch/x86/entry/common.c
-index 91676b0..3b5e41d 100644
+index 91676b0d2d4c..3b5e41d9b29d 100644
 --- a/arch/x86/entry/common.c
 +++ b/arch/x86/entry/common.c
 @@ -134,7 +134,7 @@ static long syscall_trace_enter(struct pt_regs *regs)
@@ -51,10 +51,10 @@ index 91676b0..3b5e41d 100644
  
  #ifdef ARCH_RT_DELAYS_SIGNAL_SEND
 diff --git a/arch/x86/entry/entry_32.S b/arch/x86/entry/entry_32.S
-index 8059d4f..9859882 100644
+index d07432062ee6..d44f446a0e74 100644
 --- a/arch/x86/entry/entry_32.S
 +++ b/arch/x86/entry/entry_32.S
-@@ -766,8 +766,25 @@ END(ret_from_exception)
+@@ -750,8 +750,25 @@ END(ret_from_exception)
  ENTRY(resume_kernel)
  	DISABLE_INTERRUPTS(CLBR_ANY)
  .Lneed_resched:
@@ -81,7 +81,7 @@ index 8059d4f..9859882 100644
  	jz	restore_all_kernel
  	call	preempt_schedule_irq
 diff --git a/arch/x86/entry/entry_64.S b/arch/x86/entry/entry_64.S
-index 7ffd83c..663a99f 100644
+index 7ffd83c57ef2..663a99f6320f 100644
 --- a/arch/x86/entry/entry_64.S
 +++ b/arch/x86/entry/entry_64.S
 @@ -732,7 +732,23 @@ retint_kernel:
@@ -109,7 +109,7 @@ index 7ffd83c..663a99f 100644
  	jmp	0b
  1:
 diff --git a/arch/x86/include/asm/preempt.h b/arch/x86/include/asm/preempt.h
-index 7f2dbd9..22992c8 100644
+index 7f2dbd91fc74..22992c837795 100644
 --- a/arch/x86/include/asm/preempt.h
 +++ b/arch/x86/include/asm/preempt.h
 @@ -86,17 +86,46 @@ static __always_inline void __preempt_count_sub(int val)
@@ -161,7 +161,7 @@ index 7f2dbd9..22992c8 100644
  
  #ifdef CONFIG_PREEMPT
 diff --git a/arch/x86/include/asm/thread_info.h b/arch/x86/include/asm/thread_info.h
-index 82b73b7..dc26729 100644
+index 82b73b75d67c..dc267291f131 100644
 --- a/arch/x86/include/asm/thread_info.h
 +++ b/arch/x86/include/asm/thread_info.h
 @@ -56,17 +56,24 @@ struct task_struct;
@@ -215,7 +215,7 @@ index 82b73b7..dc26729 100644
  
  /*
 diff --git a/arch/x86/kernel/asm-offsets.c b/arch/x86/kernel/asm-offsets.c
-index 01de31d..ce1c5b9 100644
+index 01de31db300d..ce1c5b9fbd8c 100644
 --- a/arch/x86/kernel/asm-offsets.c
 +++ b/arch/x86/kernel/asm-offsets.c
 @@ -38,6 +38,7 @@ void common(void) {

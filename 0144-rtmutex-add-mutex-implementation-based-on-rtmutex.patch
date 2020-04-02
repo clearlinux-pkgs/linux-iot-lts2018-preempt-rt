@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 
 diff --git a/include/linux/mutex_rt.h b/include/linux/mutex_rt.h
 new file mode 100644
-index 0000000..3fcb5ed
+index 000000000000..3fcb5edb1d2b
 --- /dev/null
 +++ b/include/linux/mutex_rt.h
 @@ -0,0 +1,130 @@
@@ -150,7 +150,7 @@ index 0000000..3fcb5ed
 +#endif
 diff --git a/kernel/locking/mutex-rt.c b/kernel/locking/mutex-rt.c
 new file mode 100644
-index 0000000..4f81595
+index 000000000000..4f81595c0f52
 --- /dev/null
 +++ b/kernel/locking/mutex-rt.c
 @@ -0,0 +1,223 @@

@@ -17,7 +17,7 @@ Signed-off-by: Peter Zijlstra (Intel) <peterz@infradead.org>
  2 files changed, 20 insertions(+), 36 deletions(-)
 
 diff --git a/fs/locks.c b/fs/locks.c
-index 28270e7..552476d 100644
+index 28270e74be34..552476d6f6bb 100644
 --- a/fs/locks.c
 +++ b/fs/locks.c
 @@ -936,7 +936,7 @@ static int flock_lock_inode(struct inode *inode, struct file_lock *request)
@@ -161,7 +161,7 @@ index 28270e7..552476d 100644
  	locks_dispose_list(&dispose);
  }
 diff --git a/include/linux/percpu-rwsem.h b/include/linux/percpu-rwsem.h
-index 79b99d6..fb44e23 100644
+index 79b99d653e03..fb44e237316d 100644
 --- a/include/linux/percpu-rwsem.h
 +++ b/include/linux/percpu-rwsem.h
 @@ -29,7 +29,7 @@ static struct percpu_rw_semaphore name = {				\

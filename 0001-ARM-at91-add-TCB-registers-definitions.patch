@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 
 diff --git a/include/soc/at91/atmel_tcb.h b/include/soc/at91/atmel_tcb.h
 new file mode 100644
-index 0000000..657e234
+index 000000000000..657e234b1483
 --- /dev/null
 +++ b/include/soc/at91/atmel_tcb.h
 @@ -0,0 +1,183 @@

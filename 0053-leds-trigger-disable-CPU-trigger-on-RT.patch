@@ -23,7 +23,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/drivers/leds/trigger/Kconfig b/drivers/leds/trigger/Kconfig
-index 4018af7..b4ce8c1 100644
+index 4018af769969..b4ce8c115949 100644
 --- a/drivers/leds/trigger/Kconfig
 +++ b/drivers/leds/trigger/Kconfig
 @@ -63,6 +63,7 @@ config LEDS_TRIGGER_BACKLIGHT

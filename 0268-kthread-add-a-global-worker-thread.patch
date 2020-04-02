@@ -28,7 +28,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  create mode 100644 include/linux/kthread-cgroup.h
 
 diff --git a/drivers/block/loop.c b/drivers/block/loop.c
-index 9cd231a..351ea22 100644
+index 9cd231a27328..351ea22ffb56 100644
 --- a/drivers/block/loop.c
 +++ b/drivers/block/loop.c
 @@ -70,7 +70,7 @@
@@ -41,7 +41,7 @@ index 9cd231a..351ea22 100644
  #include <linux/sysfs.h>
  #include <linux/miscdevice.h>
 diff --git a/drivers/spi/spi-rockchip.c b/drivers/spi/spi-rockchip.c
-index 185bbdc..63b1023 100644
+index 185bbdce62b1..63b10236eb05 100644
 --- a/drivers/spi/spi-rockchip.c
 +++ b/drivers/spi/spi-rockchip.c
 @@ -22,6 +22,7 @@
@@ -53,7 +53,7 @@ index 185bbdc..63b1023 100644
  #define DRIVER_NAME "rockchip-spi"
  
 diff --git a/include/linux/blk-cgroup.h b/include/linux/blk-cgroup.h
-index 6d766a1..0473efd 100644
+index 6d766a19f2bb..0473efda4c65 100644
 --- a/include/linux/blk-cgroup.h
 +++ b/include/linux/blk-cgroup.h
 @@ -14,7 +14,7 @@
@@ -67,7 +67,7 @@ index 6d766a1..0473efd 100644
  #include <linux/radix-tree.h>
 diff --git a/include/linux/kthread-cgroup.h b/include/linux/kthread-cgroup.h
 new file mode 100644
-index 0000000..53d34bc
+index 000000000000..53d34bca9d72
 --- /dev/null
 +++ b/include/linux/kthread-cgroup.h
 @@ -0,0 +1,17 @@
@@ -89,7 +89,7 @@ index 0000000..53d34bc
 +#endif
 +#endif
 diff --git a/include/linux/kthread.h b/include/linux/kthread.h
-index ad29289..7cf56eb 100644
+index ad292898f7f2..7cf56eb54103 100644
 --- a/include/linux/kthread.h
 +++ b/include/linux/kthread.h
 @@ -4,7 +4,6 @@
@@ -131,7 +131,7 @@ index ad29289..7cf56eb 100644
 +
  #endif /* _LINUX_KTHREAD_H */
 diff --git a/init/main.c b/init/main.c
-index 6e02188..e514dd9 100644
+index 6e02188386a7..e514dd93de76 100644
 --- a/init/main.c
 +++ b/init/main.c
 @@ -1129,6 +1129,7 @@ static noinline void __init kernel_init_freeable(void)
@@ -143,7 +143,7 @@ index 6e02188..e514dd9 100644
  	init_mm_internals();
  
 diff --git a/kernel/kthread.c b/kernel/kthread.c
-index 5641b55..9db0177 100644
+index 5641b55783a6..9db017761a1f 100644
 --- a/kernel/kthread.c
 +++ b/kernel/kthread.c
 @@ -20,6 +20,7 @@

@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 10 insertions(+), 9 deletions(-)
 
 diff --git a/kernel/fork.c b/kernel/fork.c
-index e05834c..a6f39cb 100644
+index d4ec53c72577..29b54a64daf5 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -40,6 +40,7 @@
@@ -28,7 +28,7 @@ index e05834c..a6f39cb 100644
  #include <linux/vmacache.h>
  #include <linux/nsproxy.h>
  #include <linux/capability.h>
-@@ -688,6 +689,15 @@ void __put_task_struct(struct task_struct *tsk)
+@@ -698,6 +699,15 @@ void __put_task_struct(struct task_struct *tsk)
  	WARN_ON(atomic_read(&tsk->usage));
  	WARN_ON(tsk == current);
  
@@ -45,7 +45,7 @@ index e05834c..a6f39cb 100644
  	task_numa_free(tsk, true);
  	security_task_free(tsk);
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index cb89c90..79e0d05 100644
+index cb89c90513dd..79e0d052e848 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -2741,15 +2741,6 @@ static struct rq *finish_task_switch(struct task_struct *prev)

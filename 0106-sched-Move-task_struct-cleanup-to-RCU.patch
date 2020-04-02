@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 27 insertions(+), 2 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index ba37d39..a1ef00d 100644
+index a90b6be626cd..0b8850b6093b 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1194,6 +1194,9 @@ struct task_struct {
@@ -28,7 +28,7 @@ index ba37d39..a1ef00d 100644
  	unsigned long			task_state_change;
  #endif
 diff --git a/include/linux/sched/task.h b/include/linux/sched/task.h
-index 44c6f15..d2b33e5 100644
+index 44c6f15800ff..d2b33e57c636 100644
 --- a/include/linux/sched/task.h
 +++ b/include/linux/sched/task.h
 @@ -90,6 +90,15 @@ extern void sched_exec(void);
@@ -57,10 +57,10 @@ index 44c6f15..d2b33e5 100644
  
  #ifdef CONFIG_ARCH_WANTS_DYNAMIC_TASK_STRUCT
 diff --git a/kernel/fork.c b/kernel/fork.c
-index b3744a0..4b85282 100644
+index ccfcd44a370f..309f4a20d4ac 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
-@@ -666,7 +666,9 @@ static inline void put_signal_struct(struct signal_struct *sig)
+@@ -676,7 +676,9 @@ static inline void put_signal_struct(struct signal_struct *sig)
  	if (atomic_dec_and_test(&sig->sigcnt))
  		free_signal_struct(sig);
  }
@@ -71,7 +71,7 @@ index b3744a0..4b85282 100644
  void __put_task_struct(struct task_struct *tsk)
  {
  	WARN_ON(!tsk->exit_state);
-@@ -683,7 +685,18 @@ void __put_task_struct(struct task_struct *tsk)
+@@ -693,7 +695,18 @@ void __put_task_struct(struct task_struct *tsk)
  	if (!profile_handoff_task(tsk))
  		free_task(tsk);
  }

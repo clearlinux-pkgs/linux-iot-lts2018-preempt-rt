@@ -12,7 +12,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 28 insertions(+)
 
 diff --git a/kernel/printk/printk.c b/kernel/printk/printk.c
-index 217abc6..58517c6 100644
+index 49ea374ba8ea..acef3657a316 100644
 --- a/kernel/printk/printk.c
 +++ b/kernel/printk/printk.c
 @@ -1427,12 +1427,23 @@ static int syslog_print_all(char __user *buf, int size, bool clear)

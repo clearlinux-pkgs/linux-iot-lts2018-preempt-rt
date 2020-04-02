@@ -20,7 +20,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 
 diff --git a/include/linux/locallock.h b/include/linux/locallock.h
 new file mode 100644
-index 0000000..d658c25
+index 000000000000..d658c2552601
 --- /dev/null
 +++ b/include/linux/locallock.h
 @@ -0,0 +1,271 @@
@@ -296,7 +296,7 @@ index 0000000..d658c25
 +
 +#endif
 diff --git a/include/linux/percpu.h b/include/linux/percpu.h
-index 70b7123..24421bf 100644
+index 70b7123f38c7..24421bf8c4b3 100644
 --- a/include/linux/percpu.h
 +++ b/include/linux/percpu.h
 @@ -19,6 +19,35 @@

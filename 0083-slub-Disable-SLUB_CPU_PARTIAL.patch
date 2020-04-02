@@ -36,7 +36,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/init/Kconfig b/init/Kconfig
-index 61e8b53..b4e88fb 100644
+index 61e8b531649b..b4e88fb19c26 100644
 --- a/init/Kconfig
 +++ b/init/Kconfig
 @@ -1701,7 +1701,7 @@ config SLAB_FREELIST_HARDENED

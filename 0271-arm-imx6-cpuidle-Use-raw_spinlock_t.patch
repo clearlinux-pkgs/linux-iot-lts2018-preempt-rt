@@ -15,7 +15,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/arch/arm/mach-imx/cpuidle-imx6q.c b/arch/arm/mach-imx/cpuidle-imx6q.c
-index 326e870..d9ac80a 100644
+index 326e870d7123..d9ac80aa1eb0 100644
 --- a/arch/arm/mach-imx/cpuidle-imx6q.c
 +++ b/arch/arm/mach-imx/cpuidle-imx6q.c
 @@ -17,22 +17,22 @@
