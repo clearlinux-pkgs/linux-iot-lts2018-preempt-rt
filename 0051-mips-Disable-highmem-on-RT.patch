@@ -11,7 +11,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/mips/Kconfig b/arch/mips/Kconfig
-index a830a9701e50..3d5fae3891be 100644
+index a830a9701..3d5fae389 100644
 --- a/arch/mips/Kconfig
 +++ b/arch/mips/Kconfig
 @@ -2518,7 +2518,7 @@ config MIPS_CRC_SUPPORT

@@ -83,7 +83,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  23 files changed, 74 insertions(+), 72 deletions(-)
 
 diff --git a/arch/ia64/kernel/mca.c b/arch/ia64/kernel/mca.c
-index 6115464d5f03..f09e34c8409c 100644
+index 6115464d5..f09e34c84 100644
 --- a/arch/ia64/kernel/mca.c
 +++ b/arch/ia64/kernel/mca.c
 @@ -1824,7 +1824,7 @@ format_mca_init_stack(void *mca_data, unsigned long offset,
@@ -96,7 +96,7 @@ index 6115464d5f03..f09e34c8409c 100644
  	p->parent = p->real_parent = p->group_leader = p;
  	INIT_LIST_HEAD(&p->children);
 diff --git a/arch/mips/include/asm/switch_to.h b/arch/mips/include/asm/switch_to.h
-index e610473d61b8..1428b4febbc9 100644
+index e610473d6..1428b4feb 100644
 --- a/arch/mips/include/asm/switch_to.h
 +++ b/arch/mips/include/asm/switch_to.h
 @@ -42,7 +42,7 @@ extern struct task_struct *ll_task;
@@ -118,7 +118,7 @@ index e610473d61b8..1428b4febbc9 100644
  	next->thread.emulated_fp = 0;					\
  } while(0)
 diff --git a/arch/mips/kernel/mips-mt-fpaff.c b/arch/mips/kernel/mips-mt-fpaff.c
-index a7c0f97e4b0d..1a08428eedcf 100644
+index a7c0f97e4..1a08428ee 100644
 --- a/arch/mips/kernel/mips-mt-fpaff.c
 +++ b/arch/mips/kernel/mips-mt-fpaff.c
 @@ -177,7 +177,7 @@ asmlinkage long mipsmt_sys_sched_getaffinity(pid_t pid, unsigned int len,
@@ -131,7 +131,7 @@ index a7c0f97e4b0d..1a08428eedcf 100644
  
  out_unlock:
 diff --git a/arch/mips/kernel/traps.c b/arch/mips/kernel/traps.c
-index 9dab0ed1b227..3623cf32f5f4 100644
+index 9dab0ed1b..3623cf32f 100644
 --- a/arch/mips/kernel/traps.c
 +++ b/arch/mips/kernel/traps.c
 @@ -1174,12 +1174,12 @@ static void mt_ase_fp_affinity(void)
@@ -151,7 +151,7 @@ index 9dab0ed1b227..3623cf32f5f4 100644
  			set_cpus_allowed_ptr(current, &tmask);
  			set_thread_flag(TIF_FPUBOUND);
 diff --git a/arch/powerpc/platforms/cell/spufs/sched.c b/arch/powerpc/platforms/cell/spufs/sched.c
-index c9ef3c532169..cb10249b1125 100644
+index c9ef3c532..cb10249b1 100644
 --- a/arch/powerpc/platforms/cell/spufs/sched.c
 +++ b/arch/powerpc/platforms/cell/spufs/sched.c
 @@ -141,7 +141,7 @@ void __spu_update_sched_info(struct spu_context *ctx)
@@ -164,7 +164,7 @@ index c9ef3c532169..cb10249b1125 100644
  	/* Save the current cpu id for spu interrupt routing. */
  	ctx->last_ran = raw_smp_processor_id();
 diff --git a/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
-index a999a58ca331..d6410d0740ea 100644
+index a999a58ca..d6410d074 100644
 --- a/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
 +++ b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
 @@ -1445,7 +1445,7 @@ static int pseudo_lock_dev_mmap(struct file *filp, struct vm_area_struct *vma)
@@ -177,7 +177,7 @@ index a999a58ca331..d6410d0740ea 100644
  		return -EINVAL;
  	}
 diff --git a/drivers/infiniband/hw/hfi1/affinity.c b/drivers/infiniband/hw/hfi1/affinity.c
-index 01ed0a667928..2c62de6b5bf1 100644
+index 01ed0a667..2c62de6b5 100644
 --- a/drivers/infiniband/hw/hfi1/affinity.c
 +++ b/drivers/infiniband/hw/hfi1/affinity.c
 @@ -1039,7 +1039,7 @@ int hfi1_get_proc_affinity(int node)
@@ -208,7 +208,7 @@ index 01ed0a667928..2c62de6b5bf1 100644
  			  current->pid, current->comm,
  			  cpumask_pr_args(proc_mask));
 diff --git a/drivers/infiniband/hw/hfi1/sdma.c b/drivers/infiniband/hw/hfi1/sdma.c
-index 291c12f588b5..05e7b28a03c1 100644
+index 291c12f58..05e7b28a0 100644
 --- a/drivers/infiniband/hw/hfi1/sdma.c
 +++ b/drivers/infiniband/hw/hfi1/sdma.c
 @@ -853,14 +853,13 @@ struct sdma_engine *sdma_select_user_engine(struct hfi1_devdata *dd,
@@ -228,7 +228,7 @@ index 291c12f588b5..05e7b28a03c1 100644
  
  	cpu_id = smp_processor_id();
 diff --git a/drivers/infiniband/hw/qib/qib_file_ops.c b/drivers/infiniband/hw/qib/qib_file_ops.c
-index 98e1ce14fa2a..5d3828625017 100644
+index 98e1ce14f..5d3828625 100644
 --- a/drivers/infiniband/hw/qib/qib_file_ops.c
 +++ b/drivers/infiniband/hw/qib/qib_file_ops.c
 @@ -1142,7 +1142,7 @@ static __poll_t qib_poll(struct file *fp, struct poll_table_struct *pt)
@@ -253,7 +253,7 @@ index 98e1ce14fa2a..5d3828625017 100644
  		if (weight == 1 && !test_bit(cpu, qib_cpulist))
  			if (!find_hca(cpu, &unit) && unit >= 0)
 diff --git a/fs/proc/array.c b/fs/proc/array.c
-index 9eb99a43f849..e4d0cfebaac5 100644
+index 9eb99a43f..e4d0cfeba 100644
 --- a/fs/proc/array.c
 +++ b/fs/proc/array.c
 @@ -381,9 +381,9 @@ static inline void task_context_switch_counts(struct seq_file *m,
@@ -269,7 +269,7 @@ index 9eb99a43f849..e4d0cfebaac5 100644
  
  static inline void task_core_dumping(struct seq_file *m, struct mm_struct *mm)
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 0530de9a4efc..4298a87b9de6 100644
+index 0530de9a4..4298a87b9 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -660,7 +660,8 @@ struct task_struct {
@@ -292,7 +292,7 @@ index 0530de9a4efc..4298a87b9de6 100644
  #define PF_MUTEX_TESTER		0x20000000	/* Thread belongs to the rt mutex tester */
  #define PF_FREEZER_SKIP		0x40000000	/* Freezer should not count it as freezable */
 diff --git a/init/init_task.c b/init/init_task.c
-index 5aebe3be4d7c..0b49b9cf5571 100644
+index 5aebe3be4..0b49b9cf5 100644
 --- a/init/init_task.c
 +++ b/init/init_task.c
 @@ -71,7 +71,8 @@ struct task_struct init_task
@@ -306,7 +306,7 @@ index 5aebe3be4d7c..0b49b9cf5571 100644
  	.mm		= NULL,
  	.active_mm	= &init_mm,
 diff --git a/kernel/cgroup/cpuset.c b/kernel/cgroup/cpuset.c
-index ff956ccbb6df..7bb129c5b412 100644
+index ff956ccbb..7bb129c5b 100644
 --- a/kernel/cgroup/cpuset.c
 +++ b/kernel/cgroup/cpuset.c
 @@ -2090,7 +2090,7 @@ static void cpuset_fork(struct task_struct *task)
@@ -319,7 +319,7 @@ index ff956ccbb6df..7bb129c5b412 100644
  }
  
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 1a2d18e98bf9..bc182d6fa2a9 100644
+index 1a2d18e98..bc182d6fa 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -850,6 +850,8 @@ static struct task_struct *dup_task_struct(struct task_struct *orig, int node)
@@ -332,7 +332,7 @@ index 1a2d18e98bf9..bc182d6fa2a9 100644
  	/*
  	 * One for us, one for whoever does the "release_task()" (usually
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 2befd2c4ce9e..07dc66137a26 100644
+index 2befd2c4c..07dc66137 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -878,7 +878,7 @@ static inline bool is_per_cpu_kthread(struct task_struct *p)
@@ -501,7 +501,7 @@ index 2befd2c4ce9e..07dc66137a26 100644
  		 * stabilizes the mask.
  		 *
 diff --git a/kernel/sched/cpudeadline.c b/kernel/sched/cpudeadline.c
-index 50316455ea66..d57fb2f8ae67 100644
+index 50316455e..d57fb2f8a 100644
 --- a/kernel/sched/cpudeadline.c
 +++ b/kernel/sched/cpudeadline.c
 @@ -124,14 +124,14 @@ int cpudl_find(struct cpudl *cp, struct task_struct *p,
@@ -522,7 +522,7 @@ index 50316455ea66..d57fb2f8ae67 100644
  			if (later_mask)
  				cpumask_set_cpu(best_cpu, later_mask);
 diff --git a/kernel/sched/cpupri.c b/kernel/sched/cpupri.c
-index daaadf939ccb..f7d2c10b4c92 100644
+index daaadf939..f7d2c10b4 100644
 --- a/kernel/sched/cpupri.c
 +++ b/kernel/sched/cpupri.c
 @@ -98,11 +98,11 @@ int cpupri_find(struct cpupri *cp, struct task_struct *p,
@@ -540,7 +540,7 @@ index daaadf939ccb..f7d2c10b4c92 100644
  			/*
  			 * We have to ensure that we have at least one bit
 diff --git a/kernel/sched/deadline.c b/kernel/sched/deadline.c
-index ebec37cb3be9..4b13df38c069 100644
+index ebec37cb3..4b13df38c 100644
 --- a/kernel/sched/deadline.c
 +++ b/kernel/sched/deadline.c
 @@ -539,7 +539,7 @@ static struct rq *dl_task_offline_migration(struct rq *rq, struct task_struct *p
@@ -571,7 +571,7 @@ index ebec37cb3be9..4b13df38c069 100644
  				     !dl_task(task) ||
  				     !task_on_rq_queued(task))) {
 diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
-index ded41daf0d73..fe58e95484cf 100644
+index ded41daf0..fe58e9548 100644
 --- a/kernel/sched/fair.c
 +++ b/kernel/sched/fair.c
 @@ -1691,7 +1691,7 @@ static void task_numa_compare(struct task_numa_env *env,
@@ -718,7 +718,7 @@ index ded41daf0d73..fe58e95484cf 100644
  							    flags);
  				env.flags |= LBF_ALL_PINNED;
 diff --git a/kernel/sched/rt.c b/kernel/sched/rt.c
-index b980cc96604f..b6ca4a630050 100644
+index b980cc966..b6ca4a630 100644
 --- a/kernel/sched/rt.c
 +++ b/kernel/sched/rt.c
 @@ -1611,7 +1611,7 @@ static void put_prev_task_rt(struct rq *rq, struct task_struct *p)
@@ -740,7 +740,7 @@ index b980cc96604f..b6ca4a630050 100644
  				     !rt_task(task) ||
  				     !task_on_rq_queued(task))) {
 diff --git a/kernel/trace/trace_hwlat.c b/kernel/trace/trace_hwlat.c
-index 8030e24dbf14..862f4b0139fc 100644
+index 8030e24db..862f4b013 100644
 --- a/kernel/trace/trace_hwlat.c
 +++ b/kernel/trace/trace_hwlat.c
 @@ -279,7 +279,7 @@ static void move_to_next_cpu(void)
@@ -753,7 +753,7 @@ index 8030e24dbf14..862f4b0139fc 100644
  
  	get_online_cpus();
 diff --git a/lib/smp_processor_id.c b/lib/smp_processor_id.c
-index 85925aaa4fff..fb35c45b9421 100644
+index 85925aaa4..fb35c45b9 100644
 --- a/lib/smp_processor_id.c
 +++ b/lib/smp_processor_id.c
 @@ -22,7 +22,7 @@ notrace static unsigned int check_preemption_disabled(const char *what1,
@@ -766,7 +766,7 @@ index 85925aaa4fff..fb35c45b9421 100644
  
  	/*
 diff --git a/samples/trace_events/trace-events-sample.c b/samples/trace_events/trace-events-sample.c
-index 5522692100ba..8b4be8e1802a 100644
+index 552269210..8b4be8e18 100644
 --- a/samples/trace_events/trace-events-sample.c
 +++ b/samples/trace_events/trace-events-sample.c
 @@ -33,7 +33,7 @@ static void simple_thread_func(int cnt)

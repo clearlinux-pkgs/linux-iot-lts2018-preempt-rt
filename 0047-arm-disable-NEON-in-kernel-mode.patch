@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 17 insertions(+), 16 deletions(-)
 
 diff --git a/arch/arm/Kconfig b/arch/arm/Kconfig
-index 91ba9fe945ff..bd9d180db5c7 100644
+index 91ba9fe94..bd9d180db 100644
 --- a/arch/arm/Kconfig
 +++ b/arch/arm/Kconfig
 @@ -2163,7 +2163,7 @@ config NEON
@@ -33,7 +33,7 @@ index 91ba9fe945ff..bd9d180db5c7 100644
  	  Say Y to include support for NEON in kernel mode.
  
 diff --git a/arch/arm64/crypto/Kconfig b/arch/arm64/crypto/Kconfig
-index d51944ff9f91..0d4b3f0cfba6 100644
+index d51944ff9..0d4b3f0cf 100644
 --- a/arch/arm64/crypto/Kconfig
 +++ b/arch/arm64/crypto/Kconfig
 @@ -19,43 +19,43 @@ config CRYPTO_SHA512_ARM64
@@ -147,7 +147,7 @@ index d51944ff9f91..0d4b3f0cfba6 100644
  	select CRYPTO_AES_ARM64_NEON_BLK
  	select CRYPTO_AES_ARM64
 diff --git a/arch/arm64/crypto/crc32-ce-glue.c b/arch/arm64/crypto/crc32-ce-glue.c
-index 34b4e3d46aab..ae055cdad8cf 100644
+index 34b4e3d46..ae055cdad 100644
 --- a/arch/arm64/crypto/crc32-ce-glue.c
 +++ b/arch/arm64/crypto/crc32-ce-glue.c
 @@ -208,7 +208,8 @@ static struct shash_alg crc32_pmull_algs[] = { {

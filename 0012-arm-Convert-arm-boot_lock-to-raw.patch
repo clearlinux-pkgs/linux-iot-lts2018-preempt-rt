@@ -35,7 +35,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  8 files changed, 47 insertions(+), 47 deletions(-)
 
 diff --git a/arch/arm/mach-exynos/platsmp.c b/arch/arm/mach-exynos/platsmp.c
-index 6a1e682371b3..17dca0ff336e 100644
+index 6a1e68237..17dca0ff3 100644
 --- a/arch/arm/mach-exynos/platsmp.c
 +++ b/arch/arm/mach-exynos/platsmp.c
 @@ -239,7 +239,7 @@ static void write_pen_release(int val)
@@ -86,7 +86,7 @@ index 6a1e682371b3..17dca0ff336e 100644
  	return pen_release != -1 ? ret : 0;
  }
 diff --git a/arch/arm/mach-hisi/platmcpm.c b/arch/arm/mach-hisi/platmcpm.c
-index f66815c3dd07..00524abd963f 100644
+index f66815c3d..00524abd9 100644
 --- a/arch/arm/mach-hisi/platmcpm.c
 +++ b/arch/arm/mach-hisi/platmcpm.c
 @@ -61,7 +61,7 @@
@@ -175,7 +175,7 @@ index f66815c3dd07..00524abd963f 100644
  }
  #endif
 diff --git a/arch/arm/mach-omap2/omap-smp.c b/arch/arm/mach-omap2/omap-smp.c
-index 1c73694c871a..ac4d2f030b87 100644
+index 1c73694c8..ac4d2f030 100644
 --- a/arch/arm/mach-omap2/omap-smp.c
 +++ b/arch/arm/mach-omap2/omap-smp.c
 @@ -69,7 +69,7 @@ static const struct omap_smp_config omap5_cfg __initconst = {
@@ -217,7 +217,7 @@ index 1c73694c871a..ac4d2f030b87 100644
  	return 0;
  }
 diff --git a/arch/arm/mach-prima2/platsmp.c b/arch/arm/mach-prima2/platsmp.c
-index 75ef5d4be554..c17c86e5d860 100644
+index 75ef5d4be..c17c86e5d 100644
 --- a/arch/arm/mach-prima2/platsmp.c
 +++ b/arch/arm/mach-prima2/platsmp.c
 @@ -22,7 +22,7 @@
@@ -259,7 +259,7 @@ index 75ef5d4be554..c17c86e5d860 100644
  	return pen_release != -1 ? -ENOSYS : 0;
  }
 diff --git a/arch/arm/mach-qcom/platsmp.c b/arch/arm/mach-qcom/platsmp.c
-index 5494c9e0c909..e8ce157d3548 100644
+index 5494c9e0c..e8ce157d3 100644
 --- a/arch/arm/mach-qcom/platsmp.c
 +++ b/arch/arm/mach-qcom/platsmp.c
 @@ -46,7 +46,7 @@
@@ -301,7 +301,7 @@ index 5494c9e0c909..e8ce157d3548 100644
  	return ret;
  }
 diff --git a/arch/arm/mach-spear/platsmp.c b/arch/arm/mach-spear/platsmp.c
-index 39038a03836a..6da5c93872bf 100644
+index 39038a038..6da5c9387 100644
 --- a/arch/arm/mach-spear/platsmp.c
 +++ b/arch/arm/mach-spear/platsmp.c
 @@ -32,7 +32,7 @@ static void write_pen_release(int val)
@@ -343,7 +343,7 @@ index 39038a03836a..6da5c93872bf 100644
  	return pen_release != -1 ? -ENOSYS : 0;
  }
 diff --git a/arch/arm/mach-sti/platsmp.c b/arch/arm/mach-sti/platsmp.c
-index 231f19e17436..a3419b7003e6 100644
+index 231f19e17..a3419b700 100644
 --- a/arch/arm/mach-sti/platsmp.c
 +++ b/arch/arm/mach-sti/platsmp.c
 @@ -35,7 +35,7 @@ static void write_pen_release(int val)
@@ -385,7 +385,7 @@ index 231f19e17436..a3419b7003e6 100644
  	return pen_release != -1 ? -ENOSYS : 0;
  }
 diff --git a/arch/arm/plat-versatile/platsmp.c b/arch/arm/plat-versatile/platsmp.c
-index c2366510187a..6b60f582b738 100644
+index c23665101..6b60f582b 100644
 --- a/arch/arm/plat-versatile/platsmp.c
 +++ b/arch/arm/plat-versatile/platsmp.c
 @@ -32,7 +32,7 @@ static void write_pen_release(int val)

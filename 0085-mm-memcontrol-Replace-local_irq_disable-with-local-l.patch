@@ -12,7 +12,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 16 insertions(+), 8 deletions(-)
 
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 1323fa231eed..4156a4e766fb 100644
+index 1323fa231..4156a4e76 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -69,6 +69,7 @@

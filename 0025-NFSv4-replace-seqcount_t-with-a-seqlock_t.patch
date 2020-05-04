@@ -26,7 +26,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 21 insertions(+), 11 deletions(-)
 
 diff --git a/fs/nfs/delegation.c b/fs/nfs/delegation.c
-index b0c0c2fc2fba..26565ba05dc1 100644
+index b0c0c2fc2..26565ba05 100644
 --- a/fs/nfs/delegation.c
 +++ b/fs/nfs/delegation.c
 @@ -162,11 +162,11 @@ static int nfs_delegation_claim_opens(struct inode *inode,
@@ -44,7 +44,7 @@ index b0c0c2fc2fba..26565ba05dc1 100644
  		mutex_unlock(&sp->so_delegreturn_mutex);
  		put_nfs_open_context(ctx);
 diff --git a/fs/nfs/nfs4_fs.h b/fs/nfs/nfs4_fs.h
-index 5b61520dce88..2771aafaca19 100644
+index 5b61520dc..2771aafac 100644
 --- a/fs/nfs/nfs4_fs.h
 +++ b/fs/nfs/nfs4_fs.h
 @@ -114,7 +114,7 @@ struct nfs4_state_owner {
@@ -57,7 +57,7 @@ index 5b61520dce88..2771aafaca19 100644
  };
  
 diff --git a/fs/nfs/nfs4proc.c b/fs/nfs/nfs4proc.c
-index 668b648064b7..187d411668ed 100644
+index 668b64806..187d41166 100644
 --- a/fs/nfs/nfs4proc.c
 +++ b/fs/nfs/nfs4proc.c
 @@ -2870,7 +2870,7 @@ static int _nfs4_open_and_get_state(struct nfs4_opendata *opendata,
@@ -79,7 +79,7 @@ index 668b648064b7..187d411668ed 100644
  	}
  
 diff --git a/fs/nfs/nfs4state.c b/fs/nfs/nfs4state.c
-index b3086e99420c..c9bf1eb7e1b2 100644
+index b3086e994..c9bf1eb7e 100644
 --- a/fs/nfs/nfs4state.c
 +++ b/fs/nfs/nfs4state.c
 @@ -515,7 +515,7 @@ nfs4_alloc_state_owner(struct nfs_server *server,

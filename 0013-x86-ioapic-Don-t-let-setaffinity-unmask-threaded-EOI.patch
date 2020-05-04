@@ -34,7 +34,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 8 insertions(+), 8 deletions(-)
 
 diff --git a/arch/x86/kernel/apic/io_apic.c b/arch/x86/kernel/apic/io_apic.c
-index fa3b85b222e3..1bdad61a3ef7 100644
+index fa3b85b22..1bdad61a3 100644
 --- a/arch/x86/kernel/apic/io_apic.c
 +++ b/arch/x86/kernel/apic/io_apic.c
 @@ -1722,7 +1722,7 @@ static bool io_apic_level_ack_pending(struct mp_chip_data *data)

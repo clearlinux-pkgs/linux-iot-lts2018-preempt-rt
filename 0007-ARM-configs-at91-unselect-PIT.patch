@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 2 insertions(+)
 
 diff --git a/arch/arm/configs/at91_dt_defconfig b/arch/arm/configs/at91_dt_defconfig
-index 09f262e59fef..f4b253bd05ed 100644
+index 09f262e59..f4b253bd0 100644
 --- a/arch/arm/configs/at91_dt_defconfig
 +++ b/arch/arm/configs/at91_dt_defconfig
 @@ -19,6 +19,7 @@ CONFIG_ARCH_MULTI_V5=y
@@ -27,7 +27,7 @@ index 09f262e59fef..f4b253bd05ed 100644
  CONFIG_UACCESS_WITH_MEMCPY=y
  CONFIG_ZBOOT_ROM_TEXT=0x0
 diff --git a/arch/arm/configs/sama5_defconfig b/arch/arm/configs/sama5_defconfig
-index f2bbc6339ca6..be92871ab155 100644
+index f2bbc6339..be92871ab 100644
 --- a/arch/arm/configs/sama5_defconfig
 +++ b/arch/arm/configs/sama5_defconfig
 @@ -20,6 +20,7 @@ CONFIG_ARCH_AT91=y

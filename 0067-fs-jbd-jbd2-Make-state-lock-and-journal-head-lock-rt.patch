@@ -17,7 +17,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 32 insertions(+)
 
 diff --git a/include/linux/buffer_head.h b/include/linux/buffer_head.h
-index 8a1bcfb145d7..5869330d1f38 100644
+index 8a1bcfb14..5869330d1 100644
 --- a/include/linux/buffer_head.h
 +++ b/include/linux/buffer_head.h
 @@ -78,6 +78,10 @@ struct buffer_head {
@@ -43,7 +43,7 @@ index 8a1bcfb145d7..5869330d1f38 100644
  }
  
 diff --git a/include/linux/jbd2.h b/include/linux/jbd2.h
-index 268f3000d1b3..8f5d6ecb802e 100644
+index 268f3000d..8f5d6ecb8 100644
 --- a/include/linux/jbd2.h
 +++ b/include/linux/jbd2.h
 @@ -347,32 +347,56 @@ static inline struct journal_head *bh2jh(struct buffer_head *bh)

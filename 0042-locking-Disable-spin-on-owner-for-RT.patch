@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/Kconfig.locks b/kernel/Kconfig.locks
-index 84d882f3e299..af27c4000812 100644
+index 84d882f3e..af27c4000 100644
 --- a/kernel/Kconfig.locks
 +++ b/kernel/Kconfig.locks
 @@ -225,11 +225,11 @@ config ARCH_SUPPORTS_ATOMIC_RMW
