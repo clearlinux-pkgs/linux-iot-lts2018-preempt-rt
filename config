@@ -1,13 +1,13 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.19.113 Kernel Configuration
+# Linux/x86 4.19.120 Kernel Configuration
 #
 
 #
-# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.2.1 20200310 gcc_9_2_0_release-744-g85c08558c6
+# Compiler: gcc (Clear Linux OS for Intel Architecture) 9.3.1 20200428 releases/gcc-9.3.0-188-g89da6494d7
 #
 CONFIG_CC_IS_GCC=y
-CONFIG_GCC_VERSION=90201
+CONFIG_GCC_VERSION=90301
 CONFIG_CLANG_VERSION=0
 CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_IRQ_WORK=y
@@ -290,7 +290,7 @@ CONFIG_X86_X2APIC=y
 CONFIG_X86_MPPARSE=y
 # CONFIG_GOLDFISH is not set
 CONFIG_RETPOLINE=y
-# CONFIG_INTEL_RDT is not set
+CONFIG_X86_CPU_RESCTRL=y
 # CONFIG_X86_EXTENDED_PLATFORM is not set
 CONFIG_X86_INTEL_LPSS=y
 # CONFIG_X86_AMD_PLATFORM_DEVICE is not set
