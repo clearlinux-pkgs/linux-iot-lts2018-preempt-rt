@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 69 insertions(+), 5 deletions(-)
 
 diff --git a/mm/slub.c b/mm/slub.c
-index a3b4c5c04..19bc021a2 100644
+index 83ca3f1c0..7a0706ccd 100644
 --- a/mm/slub.c
 +++ b/mm/slub.c
 @@ -1330,6 +1330,12 @@ static inline void dec_slabs_node(struct kmem_cache *s, int node,

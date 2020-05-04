@@ -17,7 +17,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 32 insertions(+)
 
 diff --git a/include/linux/buffer_head.h b/include/linux/buffer_head.h
-index 8a1bcfb14..5869330d1 100644
+index 572541d6c..703bf3335 100644
 --- a/include/linux/buffer_head.h
 +++ b/include/linux/buffer_head.h
 @@ -78,6 +78,10 @@ struct buffer_head {

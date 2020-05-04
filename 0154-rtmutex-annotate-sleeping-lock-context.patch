@@ -53,7 +53,7 @@ index 27c3176d8..9eafc3489 100644
  #define migrate_disable()		barrier()
  #define migrate_enable()		barrier()
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index dd47fd913..682cf84a7 100644
+index d207f79c2..50197f5c4 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -673,6 +673,15 @@ struct task_struct {

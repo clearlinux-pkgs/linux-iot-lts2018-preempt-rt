@@ -12,7 +12,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 53 insertions(+), 28 deletions(-)
 
 diff --git a/drivers/irqchip/irq-gic-v3-its.c b/drivers/irqchip/irq-gic-v3-its.c
-index f9b73336a..038739905 100644
+index fe7d63cdf..937c94625 100644
 --- a/drivers/irqchip/irq-gic-v3-its.c
 +++ b/drivers/irqchip/irq-gic-v3-its.c
 @@ -179,6 +179,7 @@ static DEFINE_RAW_SPINLOCK(vmovp_lock);
@@ -106,7 +106,7 @@ index f9b73336a..038739905 100644
  }
  
  static void its_cpu_init_collection(struct its_node *its)
-@@ -3585,16 +3607,6 @@ static int redist_disable_lpis(void)
+@@ -3591,16 +3613,6 @@ static int redist_disable_lpis(void)
  	u64 timeout = USEC_PER_SEC;
  	u64 val;
  
@@ -123,7 +123,7 @@ index f9b73336a..038739905 100644
  	if (!gic_rdists_supports_plpis()) {
  		pr_info("CPU%d: LPIs not supported\n", smp_processor_id());
  		return -ENXIO;
-@@ -3604,7 +3616,18 @@ static int redist_disable_lpis(void)
+@@ -3610,7 +3622,18 @@ static int redist_disable_lpis(void)
  	if (!(val & GICR_CTLR_ENABLE_LPIS))
  		return 0;
  
@@ -143,7 +143,7 @@ index f9b73336a..038739905 100644
  		smp_processor_id());
  	add_taint(TAINT_CRAP, LOCKDEP_STILL_OK);
  
-@@ -3860,7 +3883,8 @@ int __init its_init(struct fwnode_handle *handle, struct rdists *rdists,
+@@ -3866,7 +3889,8 @@ int __init its_init(struct fwnode_handle *handle, struct rdists *rdists,
  	}
  
  	gic_rdists = rdists;

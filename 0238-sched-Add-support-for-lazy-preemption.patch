@@ -143,7 +143,7 @@ index ed8413e71..9c74a019b 100644
  } while (0)
  
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index fc9300d07..a8ebd49c4 100644
+index ff1fe0b3c..852b1221c 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1733,6 +1733,44 @@ static inline int test_tsk_need_resched(struct task_struct *tsk)
@@ -244,7 +244,7 @@ index 907d72b3b..306567f72 100644
  	prompt "Preemption Model"
  	default PREEMPT_NONE
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 948fbcc4d..1541189f4 100644
+index 4841696b0..9f2e05b2e 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -304,11 +304,13 @@ void pin_current_cpu(void)
@@ -509,10 +509,10 @@ index 68de18405..12a12be67 100644
  
  /*
 diff --git a/kernel/sched/sched.h b/kernel/sched/sched.h
-index c79e32488..c90574112 100644
+index 96823c632..005874299 100644
 --- a/kernel/sched/sched.h
 +++ b/kernel/sched/sched.h
-@@ -1634,6 +1634,15 @@ extern void reweight_task(struct task_struct *p, int prio);
+@@ -1640,6 +1640,15 @@ extern void reweight_task(struct task_struct *p, int prio);
  extern void resched_curr(struct rq *rq);
  extern void resched_cpu(int cpu);
  

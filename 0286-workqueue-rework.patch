@@ -65,7 +65,7 @@ index 7d7094658..752c9e754 100644
  	/*
  	 * Init percpu_ref in atomic mode so that it's faster to shutdown.
 diff --git a/drivers/block/loop.c b/drivers/block/loop.c
-index 351ea22ff..9cd231a27 100644
+index aee44299b..c1341c86b 100644
 --- a/drivers/block/loop.c
 +++ b/drivers/block/loop.c
 @@ -70,7 +70,7 @@
@@ -201,7 +201,7 @@ index 0473efda4..da587e60f 100644
  #include <linux/seq_file.h>
  #include <linux/radix-tree.h>
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index 981103415..6a0bfa0a2 100644
+index 066b59dc3..59763af05 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -656,7 +656,7 @@ struct request_queue {

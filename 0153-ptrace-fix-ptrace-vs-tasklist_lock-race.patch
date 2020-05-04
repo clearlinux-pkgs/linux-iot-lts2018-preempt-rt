@@ -30,7 +30,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 68 insertions(+), 7 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 527d04f91..dd47fd913 100644
+index a0d1a009a..d207f79c2 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -101,12 +101,8 @@ struct task_group;

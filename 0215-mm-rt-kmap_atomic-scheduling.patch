@@ -247,7 +247,7 @@ index 069067983..1ac89e471 100644
  }
  
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 756fed8f5..dc668524c 100644
+index 37334ec1a..f18668e16 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -28,6 +28,7 @@

@@ -36,7 +36,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 4 insertions(+)
 
 diff --git a/fs/exec.c b/fs/exec.c
-index 561ea6482..0d95c6349 100644
+index 3818813d7..4c7de4ac4 100644
 --- a/fs/exec.c
 +++ b/fs/exec.c
 @@ -1028,12 +1028,14 @@ static int exec_mmap(struct mm_struct *mm)

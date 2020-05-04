@@ -183,7 +183,7 @@ index b816eb0bc..5de4b66e1 100644
  }
  
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index a38a2c2a8..756fed8f5 100644
+index 4a4f03a8d..37334ec1a 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -1216,6 +1216,9 @@ struct task_struct {
@@ -197,7 +197,7 @@ index a38a2c2a8..756fed8f5 100644
  	int				pagefault_disabled;
  #ifdef CONFIG_MMU
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 65eeba4e5..031079f67 100644
+index 4c1ee6e86..53a86d09f 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -3540,8 +3540,10 @@ static void skb_update_prio(struct sk_buff *skb)
@@ -238,7 +238,7 @@ index 65eeba4e5..031079f67 100644
  				if (dev_xmit_complete(rc)) {
  					HARD_TX_UNLOCK(dev, txq);
  					goto out;
-@@ -8565,7 +8570,7 @@ static void netdev_init_one_queue(struct net_device *dev,
+@@ -8566,7 +8571,7 @@ static void netdev_init_one_queue(struct net_device *dev,
  	/* Initialize queue lock */
  	spin_lock_init(&queue->_xmit_lock);
  	netdev_set_xmit_lockdep_class(&queue->_xmit_lock, dev->type);

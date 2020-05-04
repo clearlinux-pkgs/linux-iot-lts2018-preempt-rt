@@ -17,7 +17,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 43 insertions(+), 20 deletions(-)
 
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 9a4d150ea..d6f9be9c6 100644
+index 19f274de3..4180a5312 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -60,6 +60,7 @@

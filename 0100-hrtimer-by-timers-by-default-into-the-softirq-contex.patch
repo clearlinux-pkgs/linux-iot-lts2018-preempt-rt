@@ -64,7 +64,7 @@ index 8714f1a37..082147c07 100644
  
  /*
 diff --git a/kernel/events/core.c b/kernel/events/core.c
-index 8c70ee23f..9804b1a8b 100644
+index 21e3c65ab..8cf84d6b1 100644
 --- a/kernel/events/core.c
 +++ b/kernel/events/core.c
 @@ -1102,7 +1102,7 @@ static void __perf_mux_hrtimer_init(struct perf_cpu_context *cpuctx, int cpu)
@@ -76,7 +76,7 @@ index 8c70ee23f..9804b1a8b 100644
  	timer->function = perf_mux_hrtimer_handler;
  }
  
-@@ -9269,7 +9269,7 @@ static void perf_swevent_init_hrtimer(struct perf_event *event)
+@@ -9279,7 +9279,7 @@ static void perf_swevent_init_hrtimer(struct perf_event *event)
  	if (!is_sampling_event(event))
  		return;
  

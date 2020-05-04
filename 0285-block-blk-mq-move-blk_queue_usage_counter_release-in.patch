@@ -89,7 +89,7 @@ index 4860cd26c..7d7094658 100644
  	/*
  	 * Init percpu_ref in atomic mode so that it's faster to shutdown.
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index 111ab4209..981103415 100644
+index 7cd627f2a..066b59dc3 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -13,6 +13,7 @@

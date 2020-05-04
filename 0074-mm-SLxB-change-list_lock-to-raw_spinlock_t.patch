@@ -398,7 +398,7 @@ index 9632772e1..d6b01d61f 100644
  #ifdef CONFIG_SLAB
  	struct list_head slabs_partial;	/* partial list first, better asm code */
 diff --git a/mm/slub.c b/mm/slub.c
-index 9b7b98927..a3b4c5c04 100644
+index d8116a43a..83ca3f1c0 100644
 --- a/mm/slub.c
 +++ b/mm/slub.c
 @@ -1167,7 +1167,7 @@ static noinline int free_debug_processing(

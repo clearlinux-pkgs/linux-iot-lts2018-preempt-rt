@@ -100,7 +100,7 @@ index 2885dce1a..8dbb9ecf9 100644
  void blk_mq_start_request(struct request *rq);
  void blk_mq_end_request(struct request *rq, blk_status_t error);
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index 6e67aeb56..111ab4209 100644
+index 745b2d0dc..7cd627f2a 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -149,6 +149,9 @@ enum mq_rq_state {

@@ -20,7 +20,7 @@ Signed-off-by: Anders Roxell <anders.roxell@linaro.org>
  5 files changed, 17 insertions(+), 5 deletions(-)
 
 diff --git a/arch/arm64/Kconfig b/arch/arm64/Kconfig
-index 51fe21f5d..9bf5be2d6 100644
+index 1fe3e5cb2..6cbaf00c1 100644
 --- a/arch/arm64/Kconfig
 +++ b/arch/arm64/Kconfig
 @@ -141,6 +141,7 @@ config ARM64

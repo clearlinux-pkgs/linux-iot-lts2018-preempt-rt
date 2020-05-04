@@ -35,10 +35,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index efebf78b5..81174cf6b 100644
+index 40f04f102..0544619bf 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
-@@ -4489,7 +4489,7 @@ static int netif_rx_internal(struct sk_buff *skb)
+@@ -4490,7 +4490,7 @@ static int netif_rx_internal(struct sk_buff *skb)
  		struct rps_dev_flow voidflow, *rflow = &voidflow;
  		int cpu;
  
@@ -47,7 +47,7 @@ index efebf78b5..81174cf6b 100644
  		rcu_read_lock();
  
  		cpu = get_rps_cpu(skb->dev, skb, &rflow);
-@@ -4499,14 +4499,14 @@ static int netif_rx_internal(struct sk_buff *skb)
+@@ -4500,14 +4500,14 @@ static int netif_rx_internal(struct sk_buff *skb)
  		ret = enqueue_to_backlog(skb, cpu, &rflow->last_qtail);
  
  		rcu_read_unlock();

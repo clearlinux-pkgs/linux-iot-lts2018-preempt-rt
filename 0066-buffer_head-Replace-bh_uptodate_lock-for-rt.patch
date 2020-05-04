@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 46 insertions(+), 25 deletions(-)
 
 diff --git a/fs/buffer.c b/fs/buffer.c
-index a550e0d8e..a5b3a456d 100644
+index c49fdab5c..b649c4d58 100644
 --- a/fs/buffer.c
 +++ b/fs/buffer.c
 @@ -274,8 +274,7 @@ static void end_buffer_async_read(struct buffer_head *bh, int uptodate)
@@ -77,7 +77,7 @@ index a550e0d8e..a5b3a456d 100644
  }
  EXPORT_SYMBOL(end_buffer_async_write);
  
-@@ -3368,6 +3360,7 @@ struct buffer_head *alloc_buffer_head(gfp_t gfp_flags)
+@@ -3379,6 +3371,7 @@ struct buffer_head *alloc_buffer_head(gfp_t gfp_flags)
  	struct buffer_head *ret = kmem_cache_zalloc(bh_cachep, gfp_flags);
  	if (ret) {
  		INIT_LIST_HEAD(&ret->b_assoc_buffers);
@@ -145,7 +145,7 @@ index 8946130c8..71d0b3ba7 100644
  
  /**
 diff --git a/include/linux/buffer_head.h b/include/linux/buffer_head.h
-index 96225a77c..8a1bcfb14 100644
+index 9168fc33a..572541d6c 100644
 --- a/include/linux/buffer_head.h
 +++ b/include/linux/buffer_head.h
 @@ -76,8 +76,42 @@ struct buffer_head {

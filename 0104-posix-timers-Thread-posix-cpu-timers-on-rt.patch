@@ -18,7 +18,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 164 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index e4af260f8..a90b6be62 100644
+index 3b0a95e10..b6fbc5aa3 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -832,6 +832,9 @@ struct task_struct {

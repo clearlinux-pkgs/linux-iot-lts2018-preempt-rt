@@ -53,7 +53,7 @@ index c01813c3f..3196d0e76 100644
  
  #ifdef MODULE
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 4298a87b9..0489d3e0e 100644
+index 463c20160..3277801f5 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -662,6 +662,13 @@ struct task_struct {

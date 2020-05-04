@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/arch/x86/entry/entry_32.S b/arch/x86/entry/entry_32.S
-index d44f446a0..56398b072 100644
+index 324b7539e..d8b40085c 100644
 --- a/arch/x86/entry/entry_32.S
 +++ b/arch/x86/entry/entry_32.S
 @@ -759,15 +759,15 @@ ENTRY(resume_kernel)

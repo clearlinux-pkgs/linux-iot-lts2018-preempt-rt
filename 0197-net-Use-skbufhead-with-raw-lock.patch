@@ -52,7 +52,7 @@ index 25407c206..d4d7aea13 100644
  		struct lock_class_key *class)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 655dbfac0..65eeba4e5 100644
+index 0285ea11a..4c1ee6e86 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -218,14 +218,14 @@ static inline struct hlist_head *dev_index_hash(struct net *net, int ifindex)
@@ -72,7 +72,7 @@ index 655dbfac0..65eeba4e5 100644
  #endif
  }
  
-@@ -5248,7 +5248,7 @@ static void flush_backlog(struct work_struct *work)
+@@ -5249,7 +5249,7 @@ static void flush_backlog(struct work_struct *work)
  	skb_queue_walk_safe(&sd->input_pkt_queue, skb, tmp) {
  		if (skb->dev->reg_state == NETREG_UNREGISTERING) {
  			__skb_unlink(skb, &sd->input_pkt_queue);
@@ -81,7 +81,7 @@ index 655dbfac0..65eeba4e5 100644
  			input_queue_head_incr(sd);
  		}
  	}
-@@ -5258,11 +5258,14 @@ static void flush_backlog(struct work_struct *work)
+@@ -5259,11 +5259,14 @@ static void flush_backlog(struct work_struct *work)
  	skb_queue_walk_safe(&sd->process_queue, skb, tmp) {
  		if (skb->dev->reg_state == NETREG_UNREGISTERING) {
  			__skb_unlink(skb, &sd->process_queue);
@@ -97,7 +97,7 @@ index 655dbfac0..65eeba4e5 100644
  }
  
  static void flush_all_backlogs(void)
-@@ -5841,7 +5844,9 @@ static int process_backlog(struct napi_struct *napi, int quota)
+@@ -5842,7 +5845,9 @@ static int process_backlog(struct napi_struct *napi, int quota)
  	while (again) {
  		struct sk_buff *skb;
  
@@ -107,7 +107,7 @@ index 655dbfac0..65eeba4e5 100644
  			rcu_read_lock();
  			__netif_receive_skb(skb);
  			rcu_read_unlock();
-@@ -5849,9 +5854,9 @@ static int process_backlog(struct napi_struct *napi, int quota)
+@@ -5850,9 +5855,9 @@ static int process_backlog(struct napi_struct *napi, int quota)
  			if (++work >= quota)
  				return work;
  
@@ -118,7 +118,7 @@ index 655dbfac0..65eeba4e5 100644
  		rps_lock(sd);
  		if (skb_queue_empty(&sd->input_pkt_queue)) {
  			/*
-@@ -6316,13 +6321,21 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)
+@@ -6317,13 +6322,21 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)
  	unsigned long time_limit = jiffies +
  		usecs_to_jiffies(netdev_budget_usecs);
  	int budget = netdev_budget;
@@ -140,7 +140,7 @@ index 655dbfac0..65eeba4e5 100644
  	for (;;) {
  		struct napi_struct *n;
  
-@@ -9506,10 +9519,13 @@ static int dev_cpu_dead(unsigned int oldcpu)
+@@ -9507,10 +9520,13 @@ static int dev_cpu_dead(unsigned int oldcpu)
  		netif_rx_ni(skb);
  		input_queue_head_incr(oldsd);
  	}
@@ -155,7 +155,7 @@ index 655dbfac0..65eeba4e5 100644
  
  	return 0;
  }
-@@ -9820,8 +9836,9 @@ static int __init net_dev_init(void)
+@@ -9821,8 +9837,9 @@ static int __init net_dev_init(void)
  
  		INIT_WORK(flush, flush_backlog);
  

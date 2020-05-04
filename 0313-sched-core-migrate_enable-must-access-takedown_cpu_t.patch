@@ -20,7 +20,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  2 files changed, 4 insertions(+)
 
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 2834eed32..d28254597 100644
+index cb446db57..687643615 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -845,7 +845,9 @@ static int take_cpu_down(void *_param)

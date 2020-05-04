@@ -36,7 +36,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/watchdog/watchdog_dev.c b/drivers/watchdog/watchdog_dev.c
-index e64aa88e9..11ba2c3b1 100644
+index 10b2090f3..c04384aa9 100644
 --- a/drivers/watchdog/watchdog_dev.c
 +++ b/drivers/watchdog/watchdog_dev.c
 @@ -145,7 +145,7 @@ static inline void watchdog_update_worker(struct watchdog_device *wdd)
@@ -57,7 +57,7 @@ index e64aa88e9..11ba2c3b1 100644
  		return 0;
  	}
  
-@@ -947,7 +947,7 @@ static int watchdog_cdev_register(struct watchdog_device *wdd)
+@@ -948,7 +948,7 @@ static int watchdog_cdev_register(struct watchdog_device *wdd)
  		return -ENODEV;
  
  	kthread_init_work(&wd_data->work, watchdog_ping_work);
@@ -66,7 +66,7 @@ index e64aa88e9..11ba2c3b1 100644
  	wd_data->timer.function = watchdog_timer_expired;
  
  	if (wdd->id == 0) {
-@@ -1004,7 +1004,7 @@ static int watchdog_cdev_register(struct watchdog_device *wdd)
+@@ -1005,7 +1005,7 @@ static int watchdog_cdev_register(struct watchdog_device *wdd)
  		__module_get(wdd->ops->owner);
  		get_device(&wd_data->dev);
  		if (handle_boot_enabled)

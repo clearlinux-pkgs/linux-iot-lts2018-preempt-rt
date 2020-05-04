@@ -17,7 +17,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 36 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 0b8850b60..f180bfadf 100644
+index 9a0e01e48..42846a65d 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -600,6 +600,8 @@ struct task_struct {
@@ -90,10 +90,10 @@ index 79e0d052e..d1c564acf 100644
  {
  	return try_to_wake_up(p, state, 0);
 diff --git a/kernel/sched/sched.h b/kernel/sched/sched.h
-index 94bec97bd..c79e32488 100644
+index 5f0eb4565..96823c632 100644
 --- a/kernel/sched/sched.h
 +++ b/kernel/sched/sched.h
-@@ -1439,6 +1439,7 @@ static inline int task_on_rq_migrating(struct task_struct *p)
+@@ -1445,6 +1445,7 @@ static inline int task_on_rq_migrating(struct task_struct *p)
  #define WF_SYNC			0x01		/* Waker goes to sleep after wakeup */
  #define WF_FORK			0x02		/* Child wakeup after fork */
  #define WF_MIGRATED		0x4		/* Internal use, task got migrated */

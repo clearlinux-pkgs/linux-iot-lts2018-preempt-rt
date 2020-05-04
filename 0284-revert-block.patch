@@ -58,7 +58,7 @@ index 13bf37156..4860cd26c 100644
  			sizeof(struct request), 0, SLAB_PANIC, NULL);
  
 diff --git a/include/linux/blkdev.h b/include/linux/blkdev.h
-index 2f3b2e519..111ab4209 100644
+index cc446661e..7cd627f2a 100644
 --- a/include/linux/blkdev.h
 +++ b/include/linux/blkdev.h
 @@ -27,7 +27,6 @@

@@ -269,7 +269,7 @@ index 9eb99a43f..e4d0cfeba 100644
  
  static inline void task_core_dumping(struct seq_file *m, struct mm_struct *mm)
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 0530de9a4..4298a87b9 100644
+index c69f308f3..463c20160 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -660,7 +660,8 @@ struct task_struct {

@@ -66,7 +66,7 @@ index e67645924..87347ccbb 100644
  #endif	/* !CONFIG_HOTPLUG_CPU */
  
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 854a6cb45..60ac27147 100644
+index bdae37091..729127d0e 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -227,6 +227,8 @@ extern void io_schedule_finish(int token);
@@ -120,7 +120,7 @@ index 9e3362748..4e5af4616 100644
  	.active_mm	= &init_mm,
  	.restart_block	= {
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 0d50ae262..2834eed32 100644
+index 27fe7c818..cb446db57 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -75,11 +75,6 @@ static DEFINE_PER_CPU(struct cpuhp_cpu_state, cpuhp_state) = {
@@ -582,10 +582,10 @@ index 6fd3f7b4d..e97ac751a 100644
 +}
  #endif
 diff --git a/kernel/sched/sched.h b/kernel/sched/sched.h
-index c90574112..78fa5911d 100644
+index 005874299..8b0c0b63a 100644
 --- a/kernel/sched/sched.h
 +++ b/kernel/sched/sched.h
-@@ -913,6 +913,10 @@ struct rq {
+@@ -919,6 +919,10 @@ struct rq {
  	/* Must be inspected within a rcu lock section */
  	struct cpuidle_state	*idle_state;
  #endif

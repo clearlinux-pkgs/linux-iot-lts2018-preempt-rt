@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 8 deletions(-)
 
 diff --git a/kernel/signal.c b/kernel/signal.c
-index c42eaf39b..feeae7177 100644
+index 6a5692118..f810797e4 100644
 --- a/kernel/signal.c
 +++ b/kernel/signal.c
 @@ -2108,15 +2108,7 @@ static void ptrace_stop(int exit_code, int why, int clear_code, siginfo_t *info)

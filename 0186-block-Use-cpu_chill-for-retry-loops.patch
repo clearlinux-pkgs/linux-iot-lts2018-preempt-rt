@@ -16,7 +16,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/block/blk-ioc.c b/block/blk-ioc.c
-index 01580f88f..98d87e52c 100644
+index 4c810969c..48089f5bc 100644
 --- a/block/blk-ioc.c
 +++ b/block/blk-ioc.c
 @@ -9,6 +9,7 @@
@@ -27,7 +27,7 @@ index 01580f88f..98d87e52c 100644
  
  #include "blk.h"
  
-@@ -118,7 +119,7 @@ static void ioc_release_fn(struct work_struct *work)
+@@ -119,7 +120,7 @@ static void ioc_release_fn(struct work_struct *work)
  			spin_unlock(q->queue_lock);
  		} else {
  			spin_unlock_irqrestore(&ioc->lock, flags);
@@ -36,7 +36,7 @@ index 01580f88f..98d87e52c 100644
  			spin_lock_irqsave_nested(&ioc->lock, flags, 1);
  		}
  	}
-@@ -202,7 +203,7 @@ void put_io_context_active(struct io_context *ioc)
+@@ -203,7 +204,7 @@ void put_io_context_active(struct io_context *ioc)
  				spin_unlock(icq->q->queue_lock);
  			} else {
  				spin_unlock_irqrestore(&ioc->lock, flags);

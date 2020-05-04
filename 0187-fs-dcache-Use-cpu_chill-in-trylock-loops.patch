@@ -35,7 +35,7 @@ index 70e9afe58..1a6b88ad4 100644
  			}
  			spin_unlock(&p->d_lock);
 diff --git a/fs/namespace.c b/fs/namespace.c
-index 1fce41ba3..5dc970027 100644
+index 741f40cd9..df83b6e31 100644
 --- a/fs/namespace.c
 +++ b/fs/namespace.c
 @@ -14,6 +14,7 @@

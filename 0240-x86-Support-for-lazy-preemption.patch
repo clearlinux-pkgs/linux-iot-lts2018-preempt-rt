@@ -51,7 +51,7 @@ index 91676b0d2..3b5e41d9b 100644
  
  #ifdef ARCH_RT_DELAYS_SIGNAL_SEND
 diff --git a/arch/x86/entry/entry_32.S b/arch/x86/entry/entry_32.S
-index d07432062..d44f446a0 100644
+index 37d9016d4..324b7539e 100644
 --- a/arch/x86/entry/entry_32.S
 +++ b/arch/x86/entry/entry_32.S
 @@ -750,8 +750,25 @@ END(ret_from_exception)

@@ -71,10 +71,10 @@ index 27a4bb230..25bcf2f27 100644
   * This function must run with irqs disabled!
   */
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 031079f67..f3c394d00 100644
+index 53a86d09f..2752a525d 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
-@@ -6370,7 +6370,7 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)
+@@ -6371,7 +6371,7 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)
  	list_splice_tail(&repoll, &list);
  	list_splice(&list, &sd->poll_list);
  	if (!list_empty(&sd->poll_list))

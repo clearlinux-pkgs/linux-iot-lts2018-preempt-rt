@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 5 insertions(+)
 
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 1541189f4..0d50ae262 100644
+index 9f2e05b2e..27fe7c818 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -307,7 +307,9 @@ void pin_current_cpu(void)

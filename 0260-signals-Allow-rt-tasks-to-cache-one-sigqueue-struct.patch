@@ -16,7 +16,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  5 files changed, 70 insertions(+), 5 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index a8ebd49c4..854a6cb45 100644
+index 852b1221c..bdae37091 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -895,6 +895,8 @@ struct task_struct {
@@ -66,7 +66,7 @@ index ecec0f8be..234e0ca9a 100644
  	p->utime = p->stime = p->gtime = 0;
  #ifdef CONFIG_ARCH_HAS_SCALED_CPUTIME
 diff --git a/kernel/signal.c b/kernel/signal.c
-index d1fa3c405..5c04f2891 100644
+index 6f7191a72..45748993f 100644
 --- a/kernel/signal.c
 +++ b/kernel/signal.c
 @@ -19,6 +19,7 @@
