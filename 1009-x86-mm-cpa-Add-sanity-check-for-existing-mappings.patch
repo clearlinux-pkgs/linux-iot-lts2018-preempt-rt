@@ -27,7 +27,7 @@ Signed-off-by: Lili Li <lili.li@intel.com>
  1 file changed, 67 insertions(+), 10 deletions(-)
 
 diff --git a/arch/x86/mm/pageattr.c b/arch/x86/mm/pageattr.c
-index 35a5fb83780d..6145fc9a5e2a 100644
+index 35a5fb837..6145fc9a5 100644
 --- a/arch/x86/mm/pageattr.c
 +++ b/arch/x86/mm/pageattr.c
 @@ -37,12 +37,14 @@ struct cpa_data {

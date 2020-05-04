@@ -33,7 +33,7 @@ Signed-off-by: Lili Li <lili.li@intel.com>
  2 files changed, 105 insertions(+), 2 deletions(-)
 
 diff --git a/arch/x86/Kconfig b/arch/x86/Kconfig
-index a56f57f95993..86275f50a2a0 100644
+index a56f57f95..86275f50a 100644
 --- a/arch/x86/Kconfig
 +++ b/arch/x86/Kconfig
 @@ -1485,6 +1485,14 @@ config X86_DIRECT_GBPAGES
@@ -52,7 +52,7 @@ index a56f57f95993..86275f50a2a0 100644
  	def_bool y
  
 diff --git a/arch/x86/mm/pageattr.c b/arch/x86/mm/pageattr.c
-index c98394830637..254f7b6c0bbd 100644
+index c98394830..254f7b6c0 100644
 --- a/arch/x86/mm/pageattr.c
 +++ b/arch/x86/mm/pageattr.c
 @@ -101,6 +101,95 @@ void arch_report_meminfo(struct seq_file *m)

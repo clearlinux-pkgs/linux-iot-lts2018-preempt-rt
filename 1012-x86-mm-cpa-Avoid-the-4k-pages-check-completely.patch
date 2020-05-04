@@ -45,7 +45,7 @@ Signed-off-by: Lili Li <lili.li@intel.com>
  1 file changed, 16 insertions(+), 48 deletions(-)
 
 diff --git a/arch/x86/mm/pageattr.c b/arch/x86/mm/pageattr.c
-index e3df9490f4ac..0550dd7e2c48 100644
+index e3df9490f..0550dd7e2 100644
 --- a/arch/x86/mm/pageattr.c
 +++ b/arch/x86/mm/pageattr.c
 @@ -111,7 +111,6 @@ static unsigned long cpa_1g_preserved;
