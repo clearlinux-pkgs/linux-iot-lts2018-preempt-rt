@@ -21,10 +21,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/cgroup/rstat.c b/kernel/cgroup/rstat.c
-index bb95a35e8..3266a9781 100644
+index d0ed410b4..3c949c46c 100644
 --- a/kernel/cgroup/rstat.c
 +++ b/kernel/cgroup/rstat.c
-@@ -159,8 +159,9 @@ static void cgroup_rstat_flush_locked(struct cgroup *cgrp, bool may_sleep)
+@@ -149,8 +149,9 @@ static void cgroup_rstat_flush_locked(struct cgroup *cgrp, bool may_sleep)
  		raw_spinlock_t *cpu_lock = per_cpu_ptr(&cgroup_rstat_cpu_lock,
  						       cpu);
  		struct cgroup *pos = NULL;
@@ -35,7 +35,7 @@ index bb95a35e8..3266a9781 100644
  		while ((pos = cgroup_rstat_cpu_pop_updated(pos, cgrp, cpu))) {
  			struct cgroup_subsys_state *css;
  
-@@ -172,7 +173,7 @@ static void cgroup_rstat_flush_locked(struct cgroup *cgrp, bool may_sleep)
+@@ -162,7 +163,7 @@ static void cgroup_rstat_flush_locked(struct cgroup *cgrp, bool may_sleep)
  				css->ss->css_rstat_flush(css, cpu);
  			rcu_read_unlock();
  		}

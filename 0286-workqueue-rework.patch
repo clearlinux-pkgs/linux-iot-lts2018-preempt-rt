@@ -308,10 +308,10 @@ index 60d673e15..546aa73fb 100644
  
  extern bool queue_work_on(int cpu, struct workqueue_struct *wq,
 diff --git a/init/main.c b/init/main.c
-index e514dd93d..6e0218838 100644
+index 064bdf985..7c064c6af 100644
 --- a/init/main.c
 +++ b/init/main.c
-@@ -1129,7 +1129,6 @@ static noinline void __init kernel_init_freeable(void)
+@@ -1131,7 +1131,6 @@ static noinline void __init kernel_init_freeable(void)
  	smp_prepare_cpus(setup_max_cpus);
  
  	workqueue_init();

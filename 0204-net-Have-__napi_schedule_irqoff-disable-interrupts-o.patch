@@ -51,10 +51,10 @@ index 5de4b66e1..1d6bb0ab4 100644
  static inline bool napi_disable_pending(struct napi_struct *n)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index d8c7c53e1..40f04f102 100644
+index 52d44a4db..c67056ad0 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
-@@ -5941,6 +5941,7 @@ bool napi_schedule_prep(struct napi_struct *n)
+@@ -5951,6 +5951,7 @@ bool napi_schedule_prep(struct napi_struct *n)
  }
  EXPORT_SYMBOL(napi_schedule_prep);
  
@@ -62,7 +62,7 @@ index d8c7c53e1..40f04f102 100644
  /**
   * __napi_schedule_irqoff - schedule for receive
   * @n: entry to schedule
-@@ -5952,6 +5953,7 @@ void __napi_schedule_irqoff(struct napi_struct *n)
+@@ -5962,6 +5963,7 @@ void __napi_schedule_irqoff(struct napi_struct *n)
  	____napi_schedule(this_cpu_ptr(&softnet_data), n);
  }
  EXPORT_SYMBOL(__napi_schedule_irqoff);

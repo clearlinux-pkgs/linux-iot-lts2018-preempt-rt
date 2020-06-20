@@ -80,7 +80,7 @@ index c9eb5041f..e1fb0b743 100644
  	inode->dirtied_when = 0;
  
 diff --git a/include/linux/fs.h b/include/linux/fs.h
-index 15b8e0288..d27634022 100644
+index 8d568b517..f964aeac7 100644
 --- a/include/linux/fs.h
 +++ b/include/linux/fs.h
 @@ -679,7 +679,7 @@ struct inode {

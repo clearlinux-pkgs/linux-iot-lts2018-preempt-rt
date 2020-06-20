@@ -18,10 +18,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/arch/x86/include/asm/stackprotector.h b/arch/x86/include/asm/stackprotector.h
-index 8ec97a62c..7bc85841f 100644
+index 9c556ea2e..b136992be 100644
 --- a/arch/x86/include/asm/stackprotector.h
 +++ b/arch/x86/include/asm/stackprotector.h
-@@ -60,7 +60,7 @@
+@@ -65,7 +65,7 @@
   */
  static __always_inline void boot_init_stack_canary(void)
  {
@@ -30,7 +30,7 @@ index 8ec97a62c..7bc85841f 100644
  	u64 tsc;
  
  #ifdef CONFIG_X86_64
-@@ -71,8 +71,14 @@ static __always_inline void boot_init_stack_canary(void)
+@@ -76,8 +76,14 @@ static __always_inline void boot_init_stack_canary(void)
  	 * of randomness. The TSC only matters for very early init,
  	 * there it already has some randomness on most systems. Later
  	 * on during the bootup the random pool has true entropy too.

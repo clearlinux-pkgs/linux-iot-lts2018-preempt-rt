@@ -131,10 +131,10 @@ index ad292898f..7cf56eb54 100644
 +
  #endif /* _LINUX_KTHREAD_H */
 diff --git a/init/main.c b/init/main.c
-index 6e0218838..e514dd93d 100644
+index 7c064c6af..064bdf985 100644
 --- a/init/main.c
 +++ b/init/main.c
-@@ -1129,6 +1129,7 @@ static noinline void __init kernel_init_freeable(void)
+@@ -1131,6 +1131,7 @@ static noinline void __init kernel_init_freeable(void)
  	smp_prepare_cpus(setup_max_cpus);
  
  	workqueue_init();

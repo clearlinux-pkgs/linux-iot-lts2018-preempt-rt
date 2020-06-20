@@ -81,10 +81,10 @@ index 37d9016d4..324b7539e 100644
  	jz	restore_all_kernel
  	call	preempt_schedule_irq
 diff --git a/arch/x86/entry/entry_64.S b/arch/x86/entry/entry_64.S
-index 7ffd83c57..663a99f63 100644
+index f53d995b1..94fccaa04 100644
 --- a/arch/x86/entry/entry_64.S
 +++ b/arch/x86/entry/entry_64.S
-@@ -732,7 +732,23 @@ retint_kernel:
+@@ -733,7 +733,23 @@ retint_kernel:
  	btl	$9, EFLAGS(%rsp)		/* were interrupts off? */
  	jnc	1f
  0:	cmpl	$0, PER_CPU_VAR(__preempt_count)

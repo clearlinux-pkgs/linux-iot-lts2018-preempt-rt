@@ -116,7 +116,7 @@ index 86a709954..9c069ef83 100644
  	return 0;
  }
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 426635e18..e1b0618e2 100644
+index 50498a75c..0e4cff101 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -2727,6 +2727,7 @@ static void __netif_reschedule(struct Qdisc *q)
@@ -143,7 +143,7 @@ index 426635e18..e1b0618e2 100644
  
  	atomic_long_inc(&skb->dev->rx_dropped);
  	kfree_skb(skb);
-@@ -5804,12 +5807,14 @@ static void net_rps_action_and_irq_enable(struct softnet_data *sd)
+@@ -5814,12 +5817,14 @@ static void net_rps_action_and_irq_enable(struct softnet_data *sd)
  		sd->rps_ipi_list = NULL;
  
  		local_irq_enable();
@@ -158,7 +158,7 @@ index 426635e18..e1b0618e2 100644
  }
  
  static bool sd_has_rps_ipi_waiting(struct softnet_data *sd)
-@@ -5887,6 +5892,7 @@ void __napi_schedule(struct napi_struct *n)
+@@ -5897,6 +5902,7 @@ void __napi_schedule(struct napi_struct *n)
  	local_irq_save(flags);
  	____napi_schedule(this_cpu_ptr(&softnet_data), n);
  	local_irq_restore(flags);
@@ -166,7 +166,7 @@ index 426635e18..e1b0618e2 100644
  }
  EXPORT_SYMBOL(__napi_schedule);
  
-@@ -9489,6 +9495,7 @@ static int dev_cpu_dead(unsigned int oldcpu)
+@@ -9501,6 +9507,7 @@ static int dev_cpu_dead(unsigned int oldcpu)
  
  	raise_softirq_irqoff(NET_TX_SOFTIRQ);
  	local_irq_enable();

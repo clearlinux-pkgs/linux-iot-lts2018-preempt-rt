@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 11 insertions(+), 11 deletions(-)
 
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 89d54ed4f..1d7fc29ac 100644
+index e46347b3d..dc1e0b7c7 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
 @@ -3353,17 +3353,17 @@ get_total_entries(struct trace_buffer *buf,

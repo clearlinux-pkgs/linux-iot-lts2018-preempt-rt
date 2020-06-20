@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 2752a525d..d8c7c53e1 100644
+index 55891a994..52d44a4db 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -3468,7 +3468,11 @@ static inline int __dev_xmit_skb(struct sk_buff *skb, struct Qdisc *q,

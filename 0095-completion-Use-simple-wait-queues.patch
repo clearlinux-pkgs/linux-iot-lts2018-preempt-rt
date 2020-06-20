@@ -67,7 +67,7 @@ index 11a501d06..1fe8a1b35 100644
  		destroy_workqueue(ffs->io_completion_wq);
  		kfree(ffs->dev_name);
 diff --git a/drivers/usb/gadget/legacy/inode.c b/drivers/usb/gadget/legacy/inode.c
-index 37ca0e669..56a16587b 100644
+index 25d417ad9..c5c11ff63 100644
 --- a/drivers/usb/gadget/legacy/inode.c
 +++ b/drivers/usb/gadget/legacy/inode.c
 @@ -343,7 +343,7 @@ ep_io (struct ep_data *epdata, void *buf, unsigned len)
@@ -160,7 +160,7 @@ index 73e06e998..f426a0661 100644
  extern long prepare_to_swait_event(struct swait_queue_head *q, struct swait_queue *wait, int state);
  
 diff --git a/kernel/power/hibernate.c b/kernel/power/hibernate.c
-index f5ce9f7ec..0f00ba013 100644
+index 537a2a3c1..5b1c16500 100644
 --- a/kernel/power/hibernate.c
 +++ b/kernel/power/hibernate.c
 @@ -690,6 +690,10 @@ static int load_image_and_restore(void)

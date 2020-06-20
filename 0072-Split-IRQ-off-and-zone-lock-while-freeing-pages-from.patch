@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 52 insertions(+), 30 deletions(-)
 
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 57888cedf..b8138a5d6 100644
+index d8c305138..2a543a376 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -1095,7 +1095,7 @@ static inline void prefetch_buddy(struct page *page)
@@ -111,7 +111,7 @@ index 57888cedf..b8138a5d6 100644
  }
  
  static void free_one_page(struct zone *zone,
-@@ -2544,13 +2551,18 @@ void drain_zone_pages(struct zone *zone, struct per_cpu_pages *pcp)
+@@ -2545,13 +2552,18 @@ void drain_zone_pages(struct zone *zone, struct per_cpu_pages *pcp)
  {
  	unsigned long flags;
  	int to_drain, batch;
@@ -131,7 +131,7 @@ index 57888cedf..b8138a5d6 100644
  }
  #endif
  
-@@ -2566,14 +2578,21 @@ static void drain_pages_zone(unsigned int cpu, struct zone *zone)
+@@ -2567,14 +2579,21 @@ static void drain_pages_zone(unsigned int cpu, struct zone *zone)
  	unsigned long flags;
  	struct per_cpu_pageset *pset;
  	struct per_cpu_pages *pcp;
@@ -155,7 +155,7 @@ index 57888cedf..b8138a5d6 100644
  }
  
  /*
-@@ -2795,7 +2814,10 @@ static void free_unref_page_commit(struct page *page, unsigned long pfn)
+@@ -2796,7 +2815,10 @@ static void free_unref_page_commit(struct page *page, unsigned long pfn)
  	pcp->count++;
  	if (pcp->count >= pcp->high) {
  		unsigned long batch = READ_ONCE(pcp->batch);

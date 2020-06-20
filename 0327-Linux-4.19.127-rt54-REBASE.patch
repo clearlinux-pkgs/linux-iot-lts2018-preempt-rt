@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <zanussi@kernel.org>
-Date: Tue, 28 Apr 2020 11:01:54 -0500
-Subject: [PATCH] Linux 4.19.115-rt50 REBASE
+Date: Mon, 8 Jun 2020 15:05:18 -0500
+Subject: [PATCH] Linux 4.19.127-rt54 REBASE
 
 Signed-off-by: Tom Zanussi <zanussi@kernel.org>
 ---
@@ -9,12 +9,12 @@ Signed-off-by: Tom Zanussi <zanussi@kernel.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/localversion-rt b/localversion-rt
-index 1199ebade..42c384668 100644
+index 1199ebade..3165a8781 100644
 --- a/localversion-rt
 +++ b/localversion-rt
 @@ -1 +1 @@
 --rt16
-+-rt50
++-rt54
 -- 
 https://clearlinux.org
 
