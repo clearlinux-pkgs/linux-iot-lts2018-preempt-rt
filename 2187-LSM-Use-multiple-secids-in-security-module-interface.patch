@@ -30,7 +30,7 @@ Signed-off-by: Casey Schaufler <casey@schaufler-ca.com>
  5 files changed, 27 insertions(+), 12 deletions(-)
 
 diff --git a/net/netlabel/netlabel_kapi.c b/net/netlabel/netlabel_kapi.c
-index 9cf89cd17..7194d2531 100644
+index 18dd27c95..0b45ec2d1 100644
 --- a/net/netlabel/netlabel_kapi.c
 +++ b/net/netlabel/netlabel_kapi.c
 @@ -244,7 +244,7 @@ int netlbl_cfg_unlbl_static_add(struct net *net,
@@ -115,10 +115,10 @@ index 4a397cde1..782ee194f 100644
  	audit_info->sessionid = audit_get_sessionid(current);
  }
 diff --git a/net/xfrm/xfrm_policy.c b/net/xfrm/xfrm_policy.c
-index 0a962b671..56954a717 100644
+index 51cbf8428..1a1634fc9 100644
 --- a/net/xfrm/xfrm_policy.c
 +++ b/net/xfrm/xfrm_policy.c
-@@ -2304,7 +2304,7 @@ int __xfrm_decode_session(struct sk_buff *skb, struct flowi *fl,
+@@ -2299,7 +2299,7 @@ int __xfrm_decode_session(struct sk_buff *skb, struct flowi *fl,
  
  	afinfo->decode_session(skb, fl, reverse);
  

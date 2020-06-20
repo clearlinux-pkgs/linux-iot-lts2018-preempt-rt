@@ -29,7 +29,7 @@ index 6b8c064f0..e9ff6738a 100644
  #endif
  #endif /* _LINUX_KTHREAD_H */
 diff --git a/net/netlabel/netlabel_kapi.c b/net/netlabel/netlabel_kapi.c
-index 7194d2531..9cf89cd17 100644
+index 0b45ec2d1..18dd27c95 100644
 --- a/net/netlabel/netlabel_kapi.c
 +++ b/net/netlabel/netlabel_kapi.c
 @@ -244,7 +244,7 @@ int netlbl_cfg_unlbl_static_add(struct net *net,
@@ -114,10 +114,10 @@ index 782ee194f..4a397cde1 100644
  	audit_info->sessionid = audit_get_sessionid(current);
  }
 diff --git a/net/xfrm/xfrm_policy.c b/net/xfrm/xfrm_policy.c
-index 56954a717..0a962b671 100644
+index 1a1634fc9..51cbf8428 100644
 --- a/net/xfrm/xfrm_policy.c
 +++ b/net/xfrm/xfrm_policy.c
-@@ -2304,7 +2304,7 @@ int __xfrm_decode_session(struct sk_buff *skb, struct flowi *fl,
+@@ -2299,7 +2299,7 @@ int __xfrm_decode_session(struct sk_buff *skb, struct flowi *fl,
  
  	afinfo->decode_session(skb, fl, reverse);
  
@@ -1142,7 +1142,7 @@ index 9a714d501..8fabed8c6 100644
  }
  #endif /* CONFIG_AUDIT */
 diff --git a/security/selinux/hooks.c b/security/selinux/hooks.c
-index abaa6ea17..107eb4fa3 100644
+index 414a6633d..f754c21c5 100644
 --- a/security/selinux/hooks.c
 +++ b/security/selinux/hooks.c
 @@ -331,14 +331,6 @@ static struct inode_security_struct *backing_inode_security(struct dentry *dentr
