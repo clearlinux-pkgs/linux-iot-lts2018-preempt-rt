@@ -356,7 +356,7 @@ Patch0323: 0323-lib-ubsan-Remove-flags-parameter-from-calls-to-ubsan.patch
 Patch0324: 0324-irq_work-Fix-checking-of-IRQ_WORK_LAZY-flag-set-on-n.patch
 Patch0325: 0325-tasklet-Address-a-race-resulting-in-double-enqueue.patch
 Patch0326: 0326-hrtimer-fix-logic-for-when-grabbing-softirq_expiry_l.patch
-Patch0327: 0327-Linux-4.19.115-rt50-REBASE.patch
+Patch0327: 0327-Linux-4.19.127-rt54-REBASE.patch
 Patch1001: 1001-greybus-Remove-android-make-file.patch
 Patch1002: 1002-x86-mm-init32-Mark-text-and-rodata-RO-in-one-go.patch
 Patch1003: 1003-x86-mm-cpa-Split-rename-and-clean-up-try_preserve_la.patch
